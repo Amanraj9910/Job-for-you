@@ -1,0 +1,62 @@
+name: New job source
+description: Propose a job board, ATS or feed to add as a source.
+labels: [source]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Only public, unauthenticated sources are accepted: official APIs, public ATS job-board feeds, RSS.
+        See docs/adding-a-source.md.
+  - type: input
+    id: name
+    attributes:
+      label: Source name
+      placeholder: e.g. Example Jobs
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Site or API documentation URL.
+    validations:
+      required: true
+  - type: dropdown
+    id: access
+    attributes:
+      label: Access method
+      options:
+        - Official public API
+        - Public ATS job-board feed (JSON)
+        - RSS / Atom feed
+        - Public HTML pages (no login)
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: coverage
+    attributes:
+      label: Countries / fields covered
+      placeholder: e.g. Germany, all fields; worldwide remote, tech only
+  - type: textarea
+    id: tos
+    attributes:
+      label: Terms of service / robots.txt notes
+      description: What do the ToS and robots.txt say about automated access? Rate limits? API key needed?
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: Sample response
+      description: A trimmed sample (one or two jobs). **Remove personal data** — recruiter names, emails, phone numbers.
+      render: json
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: The source works without logging in, captcha solving or anti-bot evasion.
+          required: true
+        - label: The sample contains no personal data.
+          required: true

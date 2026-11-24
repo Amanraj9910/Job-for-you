@@ -1,0 +1,144 @@
+{
+ "exhaustive": {
+  "nbHits": true,
+  "typo": true
+ },
+ "exhaustiveNbHits": true,
+ "exhaustiveTypo": true,
+ "hits": [
+  {
+   "_tags": [
+    "comment",
+    "author_jkulick21",
+    "story_49922569"
+   ],
+   "author": "hn_user",
+   "children": [
+    50171919
+   ],
+   "comment_text": "3Gimbals | <a href=\"https:&#x2F;&#x2F;www.linkedin.com&#x2F;jobs&#x2F;view&#x2F;4477632187\" rel=\"nofollow\">https:&#x2F;&#x2F;www.linkedin.com&#x2F;jobs&#x2F;view&#x2F;4477632187</a> (US&#x2F;Remote)<p>Hiring entry &#x2F; mid-level full stack swe&#x27;s with strong experience with Python, React&#x2F;TypeScript, CSS, REST APIs, SQL&#x2F;PostgreSQL, and experience with LLMs, RAG, prompt engineering, and AWS cloud.<p>We are a small team doing a cool mix of application dev on our webapp OMEN, etl stuff, and harness engineering. If interested apply!<p>Requirement: US Citizenship, Ability to obtain government clearance<p>Salary: $120k-$160k depending on experience",
+   "created_at": "2026-10-14T21:05:06Z",
+   "created_at_i": 1792011906,
+   "objectID": "50095249",
+   "parent_id": 49922569,
+   "story_id": 49922569,
+   "story_title": "Ask HN: Who is hiring? (October 2026)",
+   "updated_at": "2026-10-20T20:06:16Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_GOVSTAR",
+    "story_49922569"
+   ],
+   "author": "hn_user",
+   "comment_text": "GovStar | <a href=\"https:&#x2F;&#x2F;govstar.us\" rel=\"nofollow\">https:&#x2F;&#x2F;govstar.us</a> | Remote (U.S. Eastern&#x2F;Central Time) | Senior Full Stack Python Developer | U.S. Citizenship Required<p>GovStar is hiring a Senior Full Stack Python Developer to build secure, production-grade AI applications supporting U.S. national security initiatives.<p>This is a hands-on role for an experienced engineer who wants to stay close to the code, spending the majority of their time developing software.<p>We’re looking for strong experience with Python, React&#x2F;TypeScript, CSS, REST APIs, SQL&#x2F;PostgreSQL and NoSQL databases, plus experience with LLMs, RAG, prompt engineering, and cloud platforms such as Azure or AWS.<p>Relevant technologies: Python, React, TypeScript, Azure OpenAI, PostgreSQL, CosmosDB, Docker, Kubernetes, GitLab CI&#x2F;CD, LLMs, and RAG.<p>Requirements: U.S. citizenship • U.S. resident • Reside in Eastern or Central Time Zone • Ability to obtain government clearance • BA&#x2F;BS + 15 years relevant experience (experience may substitute for education).<p>Compensation varies by experience and demonstrated technical capability. We’re happy to discuss compensation expectations early in the process so neither side wastes time.<p>GovStar benefits include medical, dental, and vision coverage; 401(k) matching; paid time off; and an employee shares program.<p>To apply, email your resume and GitHub profile to jobs@example.com<p>Please mention “Hacker News” and “Senior Full Stack Python Developer” in the subject line.",
+   "created_at": "2026-10-14T16:26:28Z",
+   "created_at_i": 1791995188,
+   "objectID": "50090302",
+   "parent_id": 49922569,
+   "story_id": 49922569,
+   "story_title": "Ask HN: Who is hiring? (October 2026)",
+   "updated_at": "2026-10-22T17:06:54Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_adi_singh_21",
+    "story_49922569"
+   ],
+   "author": "hn_user",
+   "comment_text": "Irash Tech | Business Development Manager (Freelance, Commission-only) | REMOTE (Worldwide) | Contract<p>Irash Tech is a small AI-focused development agency based in Hyderabad, India. We build web apps (Next.js, React, Node), mobile apps (React Native&#x2F;Expo) and AI automation (LLM integrations, RAG, document processing, n8n&#x2F;Python workflows) for startups and small businesses.<p>I&#x27;m the founder, an engineer with 7+ years in full-stack and AI, and I handle scoping and delivery. I&#x27;m looking for people anywhere in the world who can find and close clients in their own market.<p>- 15% of project value on every client you close, paid within 14 days of client payment\n- 12 months of commission on repeat work from clients you bring\n- Commission-only, no base salary. Non-exclusive, so it works alongside your other work\n- You own the client relationship and negotiation; final quotes are approved by us<p>Good fit: you know founders, SMBs or agencies that need software built, and you&#x27;ve sold software, dev or digital services before.<p>Apply: <a href=\"https:&#x2F;&#x2F;www.irashtech.com&#x2F;careers&#x2F;business-development-manager\" rel=\"nofollow\">https:&#x2F;&#x2F;www.irashtech.com&#x2F;careers&#x2F;business-development-manag...</a>\nOr email hello@irashtech.com with a short note on one deal you&#x27;ve closed.",
+   "created_at": "2026-10-13T09:31:19Z",
+   "created_at_i": 1791883879,
+   "objectID": "50068986",
+   "parent_id": 49922569,
+   "story_id": 49922569,
+   "story_title": "Ask HN: Who is hiring? (October 2026)",
+   "updated_at": "2026-10-15T15:53:17Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_matternous",
+    "story_49922569"
+   ],
+   "author": "hn_user",
+   "comment_text": "Indiana Microelectronics LLC | RF Engineer | West Lafayette, IN | ONSITE | Full-time | Relocation assistance available<p>Indiana Micro is a small electronics company working on tunable RF filters and radio-frequency front-end (RFFE) systems for interference mitigation.<p>We’re looking for an RF engineer to design, simulate, test, and optimize RF hardware, such as filters, amplifiers, and mixers through integrated front-end systems. You’ll work with systems engineers, firmware developers, and customers from early\narchitecture through production.<p>Looking for:<p>- US citizen<p>- 3+ years of hands-on RF engineering, hardware design, or wireless communications experience.<p>- Strong RF&#x2F;microwave fundamentals and experience with tools such as HFSS, Keysight ADS, Microwave Office, and Altium.<p>- Practical lab experience with network analyzers, spectrum analyzers, and related test equipment.<p>- Familiarity with Python or MATLAB for test automation and data analysis.<p>- Bachelor’s or master’s in EE, computer engineering, electrical engineering technology, or a related field.<p>Benefits include retirement benefits and PTO.<p>Email careers@example.org to apply.",
+   "created_at": "2026-10-12T20:59:57Z",
+   "created_at_i": 1791838797,
+   "objectID": "50062997",
+   "parent_id": 49922569,
+   "story_id": 49922569,
+   "story_title": "Ask HN: Who is hiring? (October 2026)",
+   "updated_at": "2026-10-13T20:06:57Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_onnimonni",
+    "story_49922569"
+   ],
+   "author": "hn_user",
+   "children": [
+    50116161,
+    50171877
+   ],
+   "comment_text": "Treat Health | Full-stack Engineer (Elixir, Phoenix LiveView, React) | Helsinki, Finland | ONSITE | Full-time | Compensation in the link below<p>Treat Health is building healthcare where the right care takes minutes, not days. You describe your concern in your own words, our smart intake asks the follow-up questions a doctor would ask, and a licensed doctor reviews the whole picture and decides on the care. Prescriptions and records go straight to Kanta, Finland&#x27;s national health archive.<p>Right now, agentic frontend engineering and agentic mobile app development matter most to us. We expect you to work across the whole stack, with our assistance and tooling.<p>Stack: Elixir, Phoenix LiveView, React, TypeScript, Tailwind, GCP, Cloudflare and Rust, with Swift and Kotlin for our native mobile apps. Claude is part of everyday work, from planning and coding to review. We care about how well you direct coding agents, not how fast you type.<p>Small team, high trust: you own problems end to end, with real influence on what we build. Health data stays in the EU, every sign-in uses strong identification, and patient data never ends up in logs.<p>For now, working on site in Helsinki is a must, and we can&#x27;t offer relocation or visa support, so you need to already be able to work in Finland. We may hire remotely in the future, so check back later.<p>Compensation, details and how to apply: <a href=\"https:&#x2F;&#x2F;treat.health&#x2F;en&#x2F;careers&#x2F;full-stack-engineer&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;treat.health&#x2F;en&#x2F;careers&#x2F;full-stack-engineer&#x2F;</a>",
+   "created_at": "2026-10-15T14:30:58Z",
+   "created_at_i": 1792074658,
+   "objectID": "50104234",
+   "parent_id": 49922569,
+   "story_id": 49922569,
+   "story_title": "Ask HN: Who is hiring? (October 2026)",
+   "updated_at": "2026-10-20T20:04:02Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_noorhazemh",
+    "story_49922569"
+   ],
+   "author": "hn_user",
+   "comment_text": "Hi",
+   "created_at": "2026-10-22T16:30:02Z",
+   "created_at_i": 1792686602,
+   "objectID": "50197639",
+   "parent_id": 50095921,
+   "story_id": 49922569,
+   "story_title": "Ask HN: Who is hiring? (October 2026)",
+   "updated_at": "2026-10-22T16:33:54Z"
+  }
+ ],
+ "hitsPerPage": 1000,
+ "nbHits": 6,
+ "nbPages": 1,
+ "page": 0,
+ "params": "tags=comment%2Cstory_49922569&hitsPerPage=1000&page=0&advancedSyntax=true&analyticsTags=backend",
+ "processingTimeMS": 3,
+ "processingTimingsMS": {
+  "_request": {
+   "roundTrip": 17
+  },
+  "afterFetch": {
+   "format": {
+    "highlighting": 18,
+    "total": 22
+   },
+   "merge": {
+    "mergeLoop": {
+     "prepareNextHit": 2,
+     "total": 2
+    },
+    "total": 2
+   },
+   "total": 2
+  },
+  "fetch": {
+   "query": 1
+  },
+  "total": 3
+ },
+ "query": "",
+ "serverTimeMS": 26
+}

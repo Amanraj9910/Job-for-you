@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and ideas (Discussions)
+    url: https://github.com/Amanraj9910/Job-for-you/discussions
+    about: Ask how to set up or personalise JobHunt, share playbook tips.
+  - name: Documentation
+    url: https://github.com/Amanraj9910/Job-for-you/tree/main/docs
+    about: Getting started, personalising your profile, sources, scoring, vetting, troubleshooting.
+  - name: Security vulnerability
+    url: https://github.com/Amanraj9910/Job-for-you/security/advisories/new
+    about: Report privately — never in a public issue.

@@ -1,0 +1,129 @@
+company,ats,slug,careers_url,notes
+Databricks,greenhouse,databricks,,n_jobs=897 n_relevant=23 n_india_or_remote=132 checked=2026-10-28
+Cloudflare,greenhouse,cloudflare,,n_jobs=461 n_relevant=19 n_india_or_remote=102 checked=2026-10-28
+Okta,greenhouse,okta,,n_jobs=387 n_relevant=18 n_india_or_remote=96 checked=2026-10-28
+MongoDB,greenhouse,mongodb,,n_jobs=363 n_relevant=14 n_india_or_remote=82 checked=2026-10-28
+HighLevel,lever,gohighlevel,,n_jobs=105 n_relevant=14 n_india_or_remote=79 checked=2026-10-28
+Tekion,ashby,tekion,,n_jobs=92 n_relevant=12 n_india_or_remote=67 checked=2026-10-28
+Sarvam,ashby,sarvam,,n_jobs=45 n_relevant=8 n_india_or_remote=45 checked=2026-10-28
+Supabase,ashby,supabase,,n_jobs=64 n_relevant=8 n_india_or_remote=54 checked=2026-10-28
+Rubrik,greenhouse,rubrik,,n_jobs=150 n_relevant=7 n_india_or_remote=35 checked=2026-10-28
+Sigmoid,greenhouse,sigmoid,,n_jobs=41 n_relevant=7 n_india_or_remote=36 checked=2026-10-28
+Paytm,lever,paytm,,n_jobs=198 n_relevant=7 n_india_or_remote=188 checked=2026-10-28
+Glance,greenhouse,glance,,n_jobs=34 n_relevant=6 n_india_or_remote=21 checked=2026-10-28
+WNS Global Services,smartrecruiters,WNSGlobalServices144,,n_jobs=66 n_relevant=5 n_india_or_remote=66 checked=2026-10-28
+MicroStrategy India,smartrecruiters,MicroStrategy1,,n_jobs=11 n_relevant=4 n_india_or_remote=11 checked=2026-10-28
+Stripe,greenhouse,stripe,,n_jobs=713 n_relevant=4 n_india_or_remote=70 checked=2026-10-28
+Coinbase,greenhouse,coinbase,,n_jobs=227 n_relevant=4 n_india_or_remote=15 checked=2026-10-28
+Weekday,lever,weekdayworks,,n_jobs=56 n_relevant=4 n_india_or_remote=54 checked=2026-10-28
+Glean,greenhouse,gleanwork,,n_jobs=133 n_relevant=4 n_india_or_remote=23 checked=2026-10-28
+Ema,ashby,ema,,n_jobs=39 n_relevant=4 n_india_or_remote=15 checked=2026-10-28
+Meesho,lever,meesho,,n_jobs=54 n_relevant=3 n_india_or_remote=54 checked=2026-10-28
+InMobi,greenhouse,inmobi,,n_jobs=78 n_relevant=3 n_india_or_remote=50 checked=2026-10-28
+Anthropic,greenhouse,anthropic,,n_jobs=681 n_relevant=3 n_india_or_remote=5 checked=2026-10-28
+GitLab,greenhouse,gitlab,,n_jobs=236 n_relevant=3 n_india_or_remote=34 checked=2026-10-28
+Mindtickle,lever,mindtickle,,n_jobs=21 n_relevant=3 n_india_or_remote=17 checked=2026-10-28
+Razorpay,greenhouse,razorpaysoftwareprivatelimited,,n_jobs=27 n_relevant=2 n_india_or_remote=23 checked=2026-10-28
+Elastic,greenhouse,elastic,,n_jobs=405 n_relevant=2 n_india_or_remote=24 checked=2026-10-28
+Notion,ashby,notion,,n_jobs=139 n_relevant=2 n_india_or_remote=4 checked=2026-10-28
+Smart Working Solutions,lever,smart-working-solutions,,n_jobs=14 n_relevant=2 n_india_or_remote=8 checked=2026-10-28
+OpenAI,ashby,openai,,n_jobs=801 n_relevant=2 n_india_or_remote=14 checked=2026-10-28
+Sahaj,greenhouse,sahajsoftware,,n_jobs=4 n_relevant=2 n_india_or_remote=4 checked=2026-10-28
+Hevo Data,lever,hevodata,,n_jobs=53 n_relevant=2 n_india_or_remote=51 checked=2026-10-28
+Carousell,smartrecruiters,CarousellGroup,,n_jobs=3 n_relevant=1 n_india_or_remote=3 checked=2026-10-28
+Druva,greenhouse,druva,,n_jobs=30 n_relevant=1 n_india_or_remote=12 checked=2026-10-28
+Model N,lever,modeln,,n_jobs=9 n_relevant=1 n_india_or_remote=3 checked=2026-10-28
+J.S. Held,smartrecruiters,JSHeldLLC,,n_jobs=7 n_relevant=1 n_india_or_remote=7 checked=2026-10-28
+Mirantis,smartrecruiters,Mirantis,,n_jobs=4 n_relevant=1 n_india_or_remote=4 checked=2026-10-28
+Twilio,greenhouse,twilio,,n_jobs=133 n_relevant=1 n_india_or_remote=21 checked=2026-10-28
+Airbnb,greenhouse,airbnb,,n_jobs=194 n_relevant=1 n_india_or_remote=12 checked=2026-10-28
+Riveron,ashby,riveron,,n_jobs=57 n_relevant=1 n_india_or_remote=23 checked=2026-10-28
+Loopio,ashby,loopio,,n_jobs=16 n_relevant=1 n_india_or_remote=3 checked=2026-10-28
+Observe.AI,greenhouse,observeai,,n_jobs=7 n_relevant=1 n_india_or_remote=4 checked=2026-10-28
+Atlan,ashby,atlan,,n_jobs=7 n_relevant=1 n_india_or_remote=5 checked=2026-10-28
+Thoughtworks,greenhouse,thoughtworks,,n_jobs=45 n_relevant=1 n_india_or_remote=2 checked=2026-10-28
+ProClink,keka,proclinkconsulting,,n_jobs=None n_relevant=0 n_india_or_remote=0 checked=2026-10-28
+Tvarit,keka,tvarit,,n_jobs=None n_relevant=0 n_india_or_remote=0 checked=2026-10-28
+VALENTA,zohorecruit,valentabpo,,n_jobs=None n_relevant=0 n_india_or_remote=0 checked=2026-10-28
+CRED,lever,cred,,n_jobs=10 n_relevant=0 n_india_or_remote=10 checked=2026-10-28
+Zeta,lever,zeta,,n_jobs=30 n_relevant=0 n_india_or_remote=26 checked=2026-10-28
+Groww,greenhouse,groww,,n_jobs=10 n_relevant=0 n_india_or_remote=10 checked=2026-10-28
+Kanerika Software,zohorecruit,kanerika,,n_jobs=None n_relevant=0 n_india_or_remote=0 checked=2026-10-28
+Snowflake,ashby,snowflake,,n_jobs=361 n_relevant=0 n_india_or_remote=14 checked=2026-10-28
+Confluent,ashby,confluent,,n_jobs=0 n_relevant=0 n_india_or_remote=0 checked=2026-10-28
+Freshworks,lever,freshworks,,n_jobs=0 n_relevant=0 n_india_or_remote=0 checked=2026-10-28
+Figma,greenhouse,figma,,n_jobs=142 n_relevant=0 n_india_or_remote=4 checked=2026-10-28
+DoorDash,greenhouse,doordashusa,,n_jobs=442 n_relevant=0 n_india_or_remote=2 checked=2026-10-28
+Instacart,greenhouse,instacart,,n_jobs=94 n_relevant=0 n_india_or_remote=2 checked=2026-10-28
+Vinove,keka,vinove,,n_jobs=None n_relevant=0 n_india_or_remote=0 checked=2026-10-28
+Slice,greenhouse,slice,,n_jobs=23 n_relevant=0 n_india_or_remote=0 checked=2026-10-28
+Scaler,ashby,scaler,,n_jobs=0 n_relevant=0 n_india_or_remote=0 checked=2026-10-28
+Navi,ashby,navi,,n_jobs=2 n_relevant=0 n_india_or_remote=0 checked=2026-10-28
+Scale AI,greenhouse,scaleai,,n_jobs=169 n_relevant=0 n_india_or_remote=1 checked=2026-10-28
+Cohere,ashby,cohere,,n_jobs=117 n_relevant=0 n_india_or_remote=1 checked=2026-10-28
+Vercel,greenhouse,vercel,,n_jobs=93 n_relevant=0 n_india_or_remote=1 checked=2026-10-28
+Perplexity,ashby,perplexity,,n_jobs=132 n_relevant=0 n_india_or_remote=1 checked=2026-10-28
+ElevenLabs,ashby,elevenlabs,,n_jobs=155 n_relevant=0 n_india_or_remote=25 checked=2026-10-28
+Replit,ashby,replit,,n_jobs=34 n_relevant=0 n_india_or_remote=0 checked=2026-10-28
+Vercel,ashby,vercel,,n_jobs=0 n_relevant=0 n_india_or_remote=0 checked=2026-10-28
+Zapier,ashby,zapier,,n_jobs=12 n_relevant=0 n_india_or_remote=2 checked=2026-10-28
+Datadog,greenhouse,datadog,,n_jobs=424 n_relevant=0 n_india_or_remote=13 checked=2026-10-28
+PagerDuty,greenhouse,pagerduty,,n_jobs=48 n_relevant=0 n_india_or_remote=0 checked=2026-10-28
+Lightspeed,ashby,lightspeed,,n_jobs=5 n_relevant=0 n_india_or_remote=0 checked=2026-10-28
+Composio,ashby,composio,,n_jobs=30 n_relevant=0 n_india_or_remote=3 checked=2026-10-28
+Lyzr,ashby,lyzr,,n_jobs=0 n_relevant=0 n_india_or_remote=0 checked=2026-10-28
+Mistral AI,lever,mistral,,n_jobs=0 n_relevant=0 n_india_or_remote=0 checked=2026-10-28
+ClearTax,greenhouse,clear,,n_jobs=64 n_relevant=0 n_india_or_remote=0 checked=2026-10-28
+Pocket FM,lever,pocketfm,,n_jobs=11 n_relevant=0 n_india_or_remote=2 checked=2026-10-28
+100MS,lever,100ms,,from ats-scrapers; n_jobs=8 n_relevant=4 n_india_or_remote=8 checked=2026-10-28
+2K,greenhouse,2k,,from ats-scrapers; n_jobs=98 n_relevant=2 n_india_or_remote=4 checked=2026-10-28
+66degrees,greenhouse,66degrees,,from ats-scrapers; n_jobs=18 n_relevant=1 n_india_or_remote=8 checked=2026-10-28
+6sense,greenhouse,6sense,,from ats-scrapers; n_jobs=31 n_relevant=1 n_india_or_remote=8 checked=2026-10-28
+Abacus Insights,greenhouse,abacusinsights,,from ats-scrapers; n_jobs=20 n_relevant=1 n_india_or_remote=3 checked=2026-10-28
+Acceldata,lever,acceldata,,from ats-scrapers; n_jobs=34 n_relevant=3 n_india_or_remote=14 checked=2026-10-28
+Addepar,greenhouse,addepar1,,from ats-scrapers; n_jobs=113 n_relevant=1 n_india_or_remote=16 checked=2026-10-28
+Admios Jobs,greenhouse,admios,,from ats-scrapers; n_jobs=3 n_relevant=1 n_india_or_remote=1 checked=2026-10-28
+Adyen,greenhouse,adyen,,from ats-scrapers; n_jobs=246 n_relevant=1 n_india_or_remote=4 checked=2026-10-28
+Agilisys,greenhouse,agilisys,,from ats-scrapers; n_jobs=1 n_relevant=1 n_india_or_remote=1 checked=2026-10-28
+AI Squared,greenhouse,aisquared,,from ats-scrapers; n_jobs=8 n_relevant=1 n_india_or_remote=4 checked=2026-10-28
+AirTrunk,greenhouse,airtrunk,,from ats-scrapers; n_jobs=57 n_relevant=1 n_india_or_remote=7 checked=2026-10-28
+AKKO,greenhouse,akko,,from ats-scrapers; n_jobs=8 n_relevant=4 n_india_or_remote=8 checked=2026-10-28
+Alan,ashby,alan,,from ats-scrapers; n_jobs=125 n_relevant=10 n_india_or_remote=55 checked=2026-10-28
+Alif Semiconductor,lever,alifsemi,,from ats-scrapers; n_jobs=11 n_relevant=2 n_india_or_remote=2 checked=2026-10-28
+Allata,lever,Allata,,from ats-scrapers; n_jobs=12 n_relevant=5 n_india_or_remote=6 checked=2026-10-28
+Allegiant,lever,allegiantair,,from ats-scrapers; n_jobs=55 n_relevant=3 n_india_or_remote=3 checked=2026-10-28
+Alpaca,greenhouse,alpaca,,from ats-scrapers; n_jobs=69 n_relevant=3 n_india_or_remote=33 checked=2026-10-28
+AlphaSense,greenhouse,alphasense,,from ats-scrapers; n_jobs=207 n_relevant=2 n_india_or_remote=35 checked=2026-10-28
+AlphaSense India,greenhouse,alphasenseindia,,from ats-scrapers; n_jobs=33 n_relevant=2 n_india_or_remote=33 checked=2026-10-28
+Ampd Energy,lever,ampd-energy,,from ats-scrapers; n_jobs=9 n_relevant=1 n_india_or_remote=2 checked=2026-10-28
+Anovium,lever,Anovium,,from ats-scrapers; n_jobs=13 n_relevant=3 n_india_or_remote=4 checked=2026-10-28
+Anyscale,ashby,anyscale,,from ats-scrapers; n_jobs=22 n_relevant=3 n_india_or_remote=5 checked=2026-10-28
+Appen,lever,appen-2,,from ats-scrapers; n_jobs=22 n_relevant=1 n_india_or_remote=2 checked=2026-10-28
+"AppZen, Inc.",lever,appzen,,from ats-scrapers; n_jobs=17 n_relevant=2 n_india_or_remote=7 checked=2026-10-28
+Articul8,ashby,articul8,,from ats-scrapers; n_jobs=20 n_relevant=3 n_india_or_remote=5 checked=2026-10-28
+Beghou Consulting,lever,beghouconsulting,,from ats-scrapers; n_jobs=64 n_relevant=26 n_india_or_remote=41 checked=2026-10-28
+Bjak,ashby,bjakcareer,,from ats-scrapers; n_jobs=3063 n_relevant=9 n_india_or_remote=494 checked=2026-10-28
+Brevo,lever,brevo,,from ats-scrapers; n_jobs=23 n_relevant=3 n_india_or_remote=9 checked=2026-10-28
+Brillio,lever,brillio-2,,from ats-scrapers; n_jobs=220 n_relevant=37 n_india_or_remote=159 checked=2026-10-28
+Bureau,ashby,bureau,,from ats-scrapers; n_jobs=19 n_relevant=2 n_india_or_remote=19 checked=2026-10-28
+CertifyOS,ashby,certifyos,,from ats-scrapers; n_jobs=16 n_relevant=1 n_india_or_remote=9 checked=2026-10-28
+Cogent Talent Solutions,lever,cogentanalytics,,from ats-scrapers; n_jobs=158 n_relevant=1 n_india_or_remote=8 checked=2026-10-28
+Collabora,lever,collabora,,from ats-scrapers; n_jobs=2 n_relevant=2 n_india_or_remote=2 checked=2026-10-28
+Commure,ashby,commure,,from ats-scrapers; n_jobs=82 n_relevant=1 n_india_or_remote=6 checked=2026-10-28
+Constantinople,lever,cxnpl,,from ats-scrapers; n_jobs=12 n_relevant=1 n_india_or_remote=3 checked=2026-10-28
+ConverseNow.ai,lever,ConverseNow,,from ats-scrapers; n_jobs=8 n_relevant=2 n_india_or_remote=7 checked=2026-10-28
+Cprime,lever,cprime,,from ats-scrapers; n_jobs=17 n_relevant=3 n_india_or_remote=9 checked=2026-10-28
+CSC Generation,lever,cscgeneration-2,,from ats-scrapers; n_jobs=525 n_relevant=1 n_india_or_remote=17 checked=2026-10-28
+CyberMedia Technologies,greenhouse,cybermediatechnologies,,from ats-scrapers; n_jobs=48 n_relevant=1 n_india_or_remote=5 checked=2026-10-28
+Cyderes,lever,cyderes,,from ats-scrapers; n_jobs=21 n_relevant=2 n_india_or_remote=13 checked=2026-10-28
+D.A. Davidson,lever,dadavidson,,from ats-scrapers; n_jobs=46 n_relevant=1 n_india_or_remote=1 checked=2026-10-28
+"Definitive Healthcare, India",greenhouse,definitivehcindia,,from ats-scrapers; n_jobs=6 n_relevant=4 n_india_or_remote=6 checked=2026-10-28
+DexCare,lever,dexcarehealth,,from ats-scrapers; n_jobs=5 n_relevant=2 n_india_or_remote=5 checked=2026-10-28
+Distro,lever,distro,,from ats-scrapers; n_jobs=234 n_relevant=1 n_india_or_remote=13 checked=2026-10-28
+Docsumo,lever,docsumo,,from ats-scrapers; n_jobs=7 n_relevant=1 n_india_or_remote=6 checked=2026-10-28
+doola,lever,doola,,from ats-scrapers; n_jobs=7 n_relevant=1 n_india_or_remote=5 checked=2026-10-28
+Drivetrain,lever,drivetrain,,from ats-scrapers; n_jobs=35 n_relevant=3 n_india_or_remote=22 checked=2026-10-28
+Dun & Bradstreet,lever,dnb,,from ats-scrapers; n_jobs=96 n_relevant=3 n_india_or_remote=23 checked=2026-10-28
+Invisible Agency,greenhouse,agency,,from ats-scrapers; n_jobs=833 n_relevant=51 n_india_or_remote=254 checked=2026-10-28
+ThoughtWorks_new,greenhouse,abc,,from ats-scrapers; n_jobs=24 n_relevant=1 n_india_or_remote=2 checked=2026-10-28
+Trivelta,greenhouse,trivelta,,from ats-scrapers; n_jobs=7 n_relevant=1 n_india_or_remote=3 checked=2026-10-28

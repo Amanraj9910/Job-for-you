@@ -1,0 +1,8 @@
+#!/bin/sh
+# Run jobhunt from this checkout's virtualenv without activating it (handy for coding agents).
+HERE="$(cd "$(dirname "$0")/.." && pwd)"
+export PYTHONUTF8=1
+if [ -x "$HERE/.venv/bin/jobhunt" ]; then exec "$HERE/.venv/bin/jobhunt" "$@"; fi
+if [ -x "$HERE/.venv/Scripts/jobhunt.exe" ]; then exec "$HERE/.venv/Scripts/jobhunt.exe" "$@"; fi
+echo "jobhunt: no .venv found in $HERE — see docs/getting-started.md" >&2
+exit 127

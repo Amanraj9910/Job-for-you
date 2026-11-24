@@ -1,0 +1,64 @@
+name: Bug report
+description: Something in JobHunt does not work as documented.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. **Do not paste personal data**: no real resume, `profile/` files, `output/jobs.html`,
+        database contents, `.env` values or logs containing them. Reproduce with `profile.example/` if you can.
+        Security problems: use the Security tab (private reporting) instead of this form.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you ran, what you expected, what you got.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. jobhunt init
+        2. jobhunt search run --sources greenhouse --json
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output / error
+      description: Relevant output with `--verbose`. Remove names, emails, phone numbers and file paths that identify you.
+      render: text
+  - type: input
+    id: version
+    attributes:
+      label: JobHunt version
+      description: Output of `jobhunt version`, or the commit hash.
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options: [Windows, macOS, Linux, Other]
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+  - type: input
+    id: agent
+    attributes:
+      label: Coding agent (if any)
+      placeholder: e.g. Claude Code, Codex CLI, Gemini CLI, Cursor, none
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I ran `jobhunt doctor` and `jobhunt profile validate`.
+        - label: This report contains no personal data.
+          required: true

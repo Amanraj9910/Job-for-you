@@ -1,0 +1,89 @@
+{
+  "search_metadata": {"id": "6720f0c0e0a1b2c3d4e5f601", "status": "Success", "json_endpoint": "https://serpapi.com/searches/x/6720f0c0e0a1b2c3d4e5f601.json", "created_at": "2026-10-27 06:00:00 UTC", "processed_at": "2026-10-27 06:00:00 UTC", "google_jobs_url": "https://www.google.com/search?q=AI+Engineer+Bengaluru&ibp=htl;jobs&hl=en&gl=in", "total_time_taken": 2.1},
+  "search_parameters": {"q": "AI Engineer Bengaluru", "engine": "google_jobs", "location_requested": "India", "location_used": "India", "google_domain": "google.com", "hl": "en", "gl": "in"},
+  "jobs_results": [
+    {
+      "title": "AI Engineer - LLM Applications",
+      "company_name": "Acme AI Labs",
+      "location": "Bengaluru, Karnataka, India",
+      "via": "LinkedIn",
+      "share_link": "https://www.google.com/search?ibp=htl;jobs&q=AI+Engineer&htidocid=aaa111",
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:abc",
+      "extensions": ["2 days ago", "Full-time", "₹12L–₹18L a year", "Health insurance"],
+      "detected_extensions": {"posted_at": "2 days ago", "schedule_type": "Full-time", "salary": "₹12L–₹18L a year", "health_insurance": true},
+      "description": "We are looking for an AI Engineer with 1-3 years of experience building LLM applications with Python, FastAPI and Azure OpenAI.",
+      "job_highlights": [
+        {"title": "Qualifications", "items": ["1-3 years of experience with Python", "Experience with RAG pipelines"]},
+        {"title": "Responsibilities", "items": ["Build agentic workflows", "Ship to production"]}
+      ],
+      "apply_options": [
+        {"title": "LinkedIn", "link": "https://in.linkedin.com/jobs/view/ai-engineer-at-acme-4400000001?utm_campaign=google_jobs_apply"},
+        {"title": "Greenhouse", "link": "https://job-boards.greenhouse.io/acmeailabs/jobs/7000001?utm_source=google"},
+        {"title": "Indeed", "link": "https://in.indeed.com/viewjob?jk=abc123def456"}
+      ],
+      "job_id": "eyJqb2JfdGl0bGUiOiJBSSBFbmdpbmVlciAtIExMTSBBcHBsaWNhdGlvbnMiLCJodGlkb2NpZCI6ImFhYTExMSJ9"
+    },
+    {
+      "title": "Generative AI Developer",
+      "company_name": "Bharat Data Systems",
+      "location": "Pune, Maharashtra, India",
+      "via": "Naukri.com",
+      "share_link": "https://www.google.com/search?ibp=htl;jobs&q=GenAI&htidocid=bbb222",
+      "extensions": ["5 days ago", "Full-time"],
+      "detected_extensions": {"posted_at": "5 days ago", "schedule_type": "Full-time"},
+      "description": "GenAI developer, 2+ years experience with LangChain and vector databases.",
+      "apply_options": [
+        {"title": "Naukri.com", "link": "https://www.naukri.com/job-listings-generative-ai-developer-bharat-data-systems-pune-2-to-5-years-201026000001"},
+        {"title": "LinkedIn", "link": "https://in.linkedin.com/jobs/view/generative-ai-developer-4400000002"}
+      ],
+      "job_id": "eyJqb2JfdGl0bGUiOiJHZW5lcmF0aXZlIEFJIERldmVsb3BlciIsImh0aWRvY2lkIjoiYmJiMjIyIn0="
+    },
+    {
+      "title": "Applied AI Engineer",
+      "company_name": "Nimbus Robotics",
+      "location": "Indore, Madhya Pradesh, India",
+      "via": "Nimbus Robotics Careers",
+      "share_link": "https://www.google.com/search?ibp=htl;jobs&q=Applied+AI&htidocid=ccc333",
+      "extensions": ["1 day ago", "Full-time"],
+      "detected_extensions": {"posted_at": "1 day ago", "schedule_type": "Full-time"},
+      "description": "Applied AI engineer for computer vision (YOLO) and edge deployment.",
+      "apply_options": [
+        {"title": "Glassdoor", "link": "https://www.glassdoor.co.in/job-listing/applied-ai-engineer-nimbus-JV_IC2856202.htm?jl=1010300000003"},
+        {"title": "Nimbus Robotics Careers", "link": "https://careers.nimbusrobotics.example/jobs/applied-ai-engineer"}
+      ],
+      "job_id": "eyJqb2JfdGl0bGUiOiJBcHBsaWVkIEFJIEVuZ2luZWVyIiwiaHRpZG9jaWQiOiJjY2MzMzMifQ=="
+    },
+    {
+      "title": "LLM Engineer (Remote)",
+      "company_name": "Globex Remote",
+      "location": "Anywhere",
+      "via": "Himalayas",
+      "share_link": "https://www.google.com/search?ibp=htl;jobs&q=LLM&htidocid=ddd444",
+      "extensions": ["3 days ago", "Work from home", "Full-time", "$60K–$80K a year"],
+      "detected_extensions": {"posted_at": "3 days ago", "work_from_home": true, "schedule_type": "Full-time", "salary": "$60K–$80K a year"},
+      "description": "Fully remote LLM engineer role open worldwide.",
+      "apply_options": [
+        {"title": "Himalayas", "link": "https://himalayas.app/companies/globex/jobs/llm-engineer"},
+        {"title": "Workday", "link": "https://globex.wd5.myworkdayjobs.com/en-US/careers/job/LLM-Engineer_R123"},
+        {"title": "Lever", "link": "https://jobs.lever.co/globex/11111111-2222-3333-4444-555555555555"}
+      ],
+      "job_id": "eyJqb2JfdGl0bGUiOiJMTE0gRW5naW5lZXIgKFJlbW90ZSkiLCJodGlkb2NpZCI6ImRkZDQ0NCJ9"
+    },
+    {
+      "title": "Machine Learning Engineer",
+      "company_name": "Initech",
+      "location": "San Francisco, CA, United States",
+      "via": "Indeed",
+      "share_link": "https://www.google.com/search?ibp=htl;jobs&q=MLE&htidocid=eee555",
+      "extensions": ["4 days ago", "Full-time"],
+      "detected_extensions": {"posted_at": "4 days ago", "schedule_type": "Full-time"},
+      "description": "Onsite ML engineer in San Francisco.",
+      "apply_options": [{"title": "Indeed", "link": "https://www.indeed.com/viewjob?jk=999"}],
+      "job_id": "eyJqb2JfdGl0bGUiOiJNYWNoaW5lIExlYXJuaW5nIEVuZ2luZWVyIiwiaHRpZG9jaWQiOiJlZWU1NTUifQ=="
+    }
+  ],
+  "serpapi_pagination": {
+    "next_page_token": "eyJmYyI6IkVvd0JDa3hCVkVJeUluUnRZWEpmY0dGblpWOHlJaXdpZEdKdElqb2lhRzEwTUNKOSIsImZjdiI6IjMiLCJzdGFydCI6MTB9",
+    "next": "https://serpapi.com/search.json?engine=google_jobs&gl=in&hl=en&location=India&next_page_token=eyJmYyI6IkVvd0JDa3hCVkVJeUluUnRZWEpmY0dGblpWOHlJaXdpZEdKdElqb2lhRzEwTUNKOSIsImZjdiI6IjMiLCJzdGFydCI6MTB9&q=AI+Engineer+Bengaluru"
+  }
+}

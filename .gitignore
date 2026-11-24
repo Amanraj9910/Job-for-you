@@ -1,0 +1,30 @@
+# Python / tooling
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Secrets
+.env
+.secrets.env
+
+# YOUR personal data — never commit (profile.example/ is the shareable template)
+profile/
+data/jobhunt.db
+data/jobhunt.db-*
+data/backups/
+data/cache/
+data/companies/seeds/upstream/
+output/
+logs/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

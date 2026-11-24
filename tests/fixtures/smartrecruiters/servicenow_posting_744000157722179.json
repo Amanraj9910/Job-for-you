@@ -1,0 +1,139 @@
+{
+ "id": "744000157722179",
+ "name": "Software Engineer",
+ "uuid": "f5a50c94-c049-4e0d-bcf1-52a45703918d",
+ "jobId": "6c2ea604-3438-499e-8cce-39114f7f6a47",
+ "jobAdId": "b9dfc886-3fc7-4397-9a9d-c8924fcbd32a",
+ "defaultJobAd": true,
+ "refNumber": "JB0076090",
+ "company": {
+  "name": "ServiceNow",
+  "identifier": "ServiceNow"
+ },
+ "location": {
+  "city": "Hyderabad",
+  "country": "in",
+  "address": "Salarpuria Sattva Knowledge City Knowledge City, Unit II, 17 to 10 Floor Survey No. 83/1, Serilingampally Mandal",
+  "postalCode": "500081",
+  "remote": false,
+  "hybrid": false,
+  "fullLocation": "Hyderabad, , India"
+ },
+ "customField": [
+  {
+   "fieldId": "60345fa28b4ba8595bef1863",
+   "fieldLabel": "Recruiting Team",
+   "valueId": "professional",
+   "valueLabel": "Professional"
+  },
+  {
+   "fieldId": "60345e1a0b24a127cbdfa148",
+   "fieldLabel": "Employee Type",
+   "valueId": "0082f6cbe6154da19322cbab1f6aa5af",
+   "valueLabel": "Regular"
+  },
+  {
+   "fieldId": "5f63a78f1dae5c5c4e54ba2b",
+   "fieldLabel": "Department",
+   "valueId": "2294038",
+   "valueLabel": "Engineering, Infrastructure and Operations"
+  },
+  {
+   "fieldId": "COUNTRY",
+   "fieldLabel": "Country/Region",
+   "valueId": "in",
+   "valueLabel": "India"
+  },
+  {
+   "fieldId": "5f63a78f1dae5c5c4e54ba2a",
+   "fieldLabel": "Brands",
+   "valueId": "default",
+   "valueLabel": "ServiceNow"
+  },
+  {
+   "fieldId": "60345d5c5165a31b17288279",
+   "fieldLabel": "Region",
+   "valueId": "858884996eea4a49baa6231279f39054",
+   "valueLabel": "APAC - Asia Pacific"
+  },
+  {
+   "fieldId": "603462175165a31b1728827d",
+   "fieldLabel": "Cost Center",
+   "valueId": "CC6160",
+   "valueLabel": "6160 Portfolio Mgmt Engineering"
+  },
+  {
+   "fieldId": "6034601b43915a29a4b3389b",
+   "fieldLabel": "Job Location",
+   "valueId": "L_HYD002",
+   "valueLabel": "Knowledge City, Unit II, 17 to 10 Floor, Survey No. 83/1, Serilingampally Mandal, Hyderabad- 500081, Telangana, India(L_HYD002)"
+  },
+  {
+   "fieldId": "618ed92b8f5e5f110e5bfb95",
+   "fieldLabel": "Work Persona",
+   "valueId": "bf7551c6-9b06-4e7c-8217-3baf43edd060",
+   "valueLabel": "Flexible"
+  },
+  {
+   "fieldId": "690cc0e8c682c3dbadaa7d73",
+   "fieldLabel": "Job Posting Type",
+   "valueId": "early-career",
+   "valueLabel": "Early Career"
+  }
+ ],
+ "releasedDate": "2026-10-26T05:22:39.092Z",
+ "creator": {
+  "name": "",
+  "avatarUrl": ""
+ },
+ "postingUrl": "https://jobs.smartrecruiters.com/ServiceNow/744000157722179-software-engineer",
+ "applyUrl": "https://jobs.smartrecruiters.com/ServiceNow/744000157722179-software-engineer?oga=true",
+ "referralUrl": "https://jobs.smartrecruiters.com/external-referrals/company/ServiceNow/publication/f5a50c94-c049-4e0d-bcf1-52a45703918d?dcr_ci=ServiceNow",
+ "jobAd": {
+  "sections": {
+   "companyDescription": {
+    "title": "Company Description",
+    "text": "<p>It all started when engineer Fred Luddy wrote code that automated a tedious task for his coworker, Phyllis. She cried tears of joy. That moment inspired Fred to build a company that could do that for everyone—freeing people from busywork so they could focus on meaningful work. Today, ServiceNow is the AI control tower for business reinvention. Our ServiceNow AI platform brings together any AI, any data, and any workflow— helping 85% of the Fortune 500® work smarter, faster, and better. We're building an AI-native culture where technology and talent are unstoppable together. And we're just getting started.</p><p>Join us to put AI to work for people.</p><p>&#xa0;</p>"
+   },
+   "jobDescription": {
+    "title": "Job Description",
+    "text": "<p>This role is for an engineer who is beginning their software engineering career and learning to build reliable, maintainable AI-native and cloud-native software. The IC2 engineer works on well-defined features and components with close guidance from senior engineers and tech leads. They focus on developing solid software engineering fundamentals, gaining hands-on experience with modern development practices, and learning to integrate AI/ML services into applications. This role provides mentorship and opportunities to grow technical depth in Python, Java, JavaScript, and ServiceNow platform development while contributing meaningfully to the product.</p><p>Responsibility Area: Software Development<br>\n• &#xa0; &#xa0;Develop software features and components under the direction of senior engineers; take ownership of well-defined, scoped tasks<br>\n• &#xa0; &#xa0;Write clean, maintainable code with comprehensive unit tests; follow established coding standards and best practices<br>\n• &#xa0; &#xa0;Contribute to the implementation of AI-native features, including prompt design assistance, API integration, and basic evaluation<br>\n• &#xa0; &#xa0;Work with assigned features from design through development, testing, and deployment with guidance from teammates<br>\n• &#xa0; &#xa0;Troubleshoot and debug issues in development and staging environments; escalate complex issues to senior engineers<br>\n• &#xa0; &#xa0;Follow secure coding practices, including responsible handling of customer data and AI safety considerations<br>\n• &#xa0; &#xa0;Participate in code reviews and actively incorporate feedback from senior engineers<br>\n• &#xa0; &#xa0;Learn and apply CI/CD practices; contribute to automated testing and deployment pipeline<br>\n.&#xa0; &#xa0; &#xa0;Effectively leverage AI tools to maximize the daily productivity</p><p>&#xa0;</p><p>Responsibility Area: Learning &amp; Collaboration<br>\n• &#xa0; &#xa0;Learn from code reviews, pair programming, and mentorship from senior engineers<br>\n• &#xa0; &#xa0;Ask clarifying questions and seek guidance when encountering unfamiliar technical challenges<br>\n• &#xa0; &#xa0;Actively participate in team discussions, design reviews, and sprint planning<br>\n• &#xa0; &#xa0;Communicate clearly about progress, blockers, and technical challenges<br>\n• &#xa0; &#xa0;Participate in knowledge-sharing sessions and team learning opportunities<br>\n• &#xa0; &#xa0;Support junior teammates and newer developers by sharing what you've learned<br>\n• &#xa0; &#xa0;Take initiative to understand the broader system and how your work fits into the product</p>"
+   },
+   "qualifications": {
+    "title": "Qualifications",
+    "text": "<p>Bachelor's degree in computer science, engineering, or related field (or equivalent practical experience)<br>\n•&#xa0; &#xa0; 2-5 years of professional software development experience<br>\n• &#xa0; &#xa0;Proficiency in at least one programming language (Python, Java, or JavaScript); willingness to learn others<br>\n• &#xa0; &#xa0;Understanding of fundamental software engineering concepts: version control, testing, debugging<br>\n• &#xa0; &#xa0;Basic knowledge of relational databases and SQL<br>\n• &#xa0; &#xa0;Familiarity with RESTful APIs and modern web services<br>\n• &#xa0; &#xa0;Strong problem-solving skills and ability to learn quickly from feedback<br>\n• &#xa0; &#xa0;Good communication skills and ability to work collaboratively with a team<br>\n• &#xa0; &#xa0;Understanding of AI/ML concepts; hands-on experience with LLMs or AI APIs a plus<br>\n• &#xa0; &#xa0;Prior experience or coursework with ServiceNow platform is a plus<br>\n• &#xa0; &#xa0;Experience with Agile development methodologies is a plus<br>\n• &#xa0; &#xa0;Ability to take direction, ask for help when needed, and work independently on assigned tasks<br>\n.&#xa0; &#xa0; Adherence to software coding practices including owning the code from development to deployment including thorough testing.<br>\n• &#xa0; &#xa0;Passion for software quality, testing, and continuous learning</p>"
+   },
+   "additionalInformation": {
+    "title": "Additional Information",
+    "text": "<p><strong>Work Personas</strong></p><p>We approach our distributed world of work with flexibility and trust. Work personas (flexible, remote, or required in office) are categories that are assigned to ServiceNow employees depending on the nature of their work and their assigned work location. <a href=\"https://careers.servicenow.com/life-at-servicenow#workpersonas\" rel=\"noopener noreferrer\"><u>Learn more here</u></a>. To determine eligibility for a work persona, ServiceNow may confirm the distance between your primary residence and the closest ServiceNow office using a third-party service.</p><p><strong>Equal Opportunity Employer</strong></p><p>ServiceNow is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, national origin, age, disability, gender identity,&#xa0; veteran status, or any other category protected by law. In addition, all qualified applicants with arrest or conviction records will be considered for employment in accordance with legal requirements. &#xa0;</p><p><strong>Accommodations</strong></p><p>We strive to create an accessible and inclusive experience for all candidates. If you require a reasonable accommodation to complete any part of the application process, or are unable to use this online application and need an alternative method to apply, please contact <a href=\"mailto:globaltalentss@servicenow.com\" rel=\"noopener noreferrer\">globaltalentss@servicenow.com </a>for assistance.&#xa0;</p><p><strong>Export Control Regulations</strong></p><p>For positions requiring access to controlled technology subject to export control regulations, including the U.S. Export Administration Regulations (EAR), ServiceNow may be required to obtain export control approval from government authorities for certain individuals. All employment is contingent upon ServiceNow obtaining any export license or other approval that may be required by relevant export control authorities.&#xa0;</p><p>From Fortune. ©2026 Fortune Media IP Limited. All rights reserved. Used under license.</p>"
+   }
+  }
+ },
+ "active": true,
+ "visibility": "PUBLIC",
+ "industry": {
+  "id": "it_and_services",
+  "label": "Information Technology And Services"
+ },
+ "function": {
+  "id": "engineering",
+  "label": "Engineering"
+ },
+ "department": {
+  "id": 2294038,
+  "label": "Engineering, Infrastructure and Operations"
+ },
+ "experienceLevel": {
+  "id": "not_applicable",
+  "label": "Not Applicable"
+ },
+ "typeOfEmployment": {
+  "id": "permanent",
+  "label": "Full-time"
+ },
+ "language": {
+  "code": "en",
+  "label": "English",
+  "labelNative": "English (US)"
+ }
+}

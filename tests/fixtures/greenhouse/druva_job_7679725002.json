@@ -1,0 +1,40 @@
+{
+ "absolute_url": "https://www.druva.com/why-druva/explore/careers/jobs/7679725002/?gh_jid=7679725002",
+ "data_compliance": [
+  {
+   "type": "gdpr",
+   "requires_consent": false,
+   "requires_processing_consent": false,
+   "requires_retention_consent": false,
+   "retention_period": null,
+   "demographic_data_consent_applies": false
+  }
+ ],
+ "internal_job_id": null,
+ "location": {
+  "name": "Worldwide"
+ },
+ "metadata": null,
+ "id": 7679725002,
+ "updated_at": "2026-09-01T13:15:13-04:00",
+ "requisition_id": null,
+ "title": "Join Druva's Talent Community",
+ "pay_input_ranges": [],
+ "company_name": "Druva",
+ "first_published": "2024-10-10T14:05:17-04:00",
+ "language": "en",
+ "application_deadline": null,
+ "content": "&lt;p&gt;&lt;strong&gt;If you’re interested in joining the Druva family but don&#39;t see a position posted that aligns with what you&#39;re looking for, please join our talent community. Submit your resume below, and a recruiter will review and reach out when we have an opportunity arise that matches your skillset &amp;amp; interests.&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Druva, the autonomous data security company, puts data security on autopilot with a 100% SaaS, fully managed platform to secure and recover data from all threats. The Druva Data Security Cloud ensures the availability, confidentiality, and fidelity of data - providing customers with autonomous protection, rapid incident response, and guaranteed data recovery. The company is trusted by its more than 6,000 customers, including 65 of the Fortune 500, to defend business data in today’s ever-connected world. Amidst a rapidly evolving security landscape, Druva offers a $10 million Data Resiliency Guarantee ensuring customer data is protected and secured against every cyber threat. Visit &lt;a href=&quot;https://www.druva.com/&quot;&gt;druva.com&lt;/a&gt; and follow us on &lt;a href=&quot;https://www.linkedin.com/company/druva/mycompany/&quot;&gt;LinkedIn&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/druvainc&quot;&gt;X&lt;/a&gt; and &lt;a href=&quot;https://www.facebook.com/DruvaInc/&quot;&gt;Facebook&lt;/a&gt;.&lt;/p&gt;",
+ "departments": [
+  {
+   "id": 4078828002,
+   "name": "Join Druva's Talent Community",
+   "child_ids": [],
+   "parent_id": null
+  }
+ ],
+ "offices": [],
+ "ai_disclaimer": null,
+ "include_ai_disclaimer": null,
+ "ai_opt_out_request_url": null
+}

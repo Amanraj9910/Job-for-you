@@ -1,0 +1,35 @@
+name: Feature request
+description: Suggest an improvement to search, scoring, vetting, the report or the playbooks.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        JobHunt searches, scores, vets and lists jobs; the user applies themselves. Requests for auto-apply,
+        login automation, captcha solving or stealth/anti-detection will be closed (see CONTRIBUTING.md).
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What are you trying to do, and what gets in the way?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What should JobHunt do? Commands, options or report changes you have in mind.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: This does not involve logging in, applying, messaging, captcha solving or evading blocks.
+          required: true
+        - label: I would be willing to open a pull request.

@@ -1,0 +1,980 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>JobHunt profile</title>
+<style>
+:root{--bg:#f5f6f8;--panel:#fff;--fg:#1b1f24;--mut:#69707a;--bd:#e2e5e9;--acc:#2f5bd3;--ok:#1f8a4c;--okbg:#e8f6ee;
+--mid:#b7791f;--lo:#9aa0a6;--warn:#b45309;--hid:#f1f1f1;--head:#eef1f5;--err:#b42318}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101317;--panel:#181c22;--fg:#e6e8eb;
+--mut:#9aa3ad;--bd:#2a3038;--acc:#7aa2ff;--ok:#4ade80;--okbg:#15301f;--mid:#fbbf24;--lo:#6b7280;--warn:#f59e0b;
+--hid:#1c1f24;--head:#1f242b;--err:#f87171}}
+:root[data-theme="dark"]{--bg:#101317;--panel:#181c22;--fg:#e6e8eb;--mut:#9aa3ad;--bd:#2a3038;--acc:#7aa2ff;
+--ok:#4ade80;--okbg:#15301f;--mid:#fbbf24;--lo:#6b7280;--warn:#f59e0b;--hid:#1c1f24;--head:#1f242b;--err:#f87171}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 system-ui,"Segoe UI",sans-serif;overflow-wrap:anywhere}
+.wrap{max-width:1000px;margin:0 auto;padding:18px 16px 60px}
+h1{margin:0;font-size:22px}.sub{color:var(--mut);font-size:13px;margin:4px 0 14px}
+h2{margin:0 0 2px;font-size:17px}h3{margin:18px 0 4px;font-size:15px}
+code,.cmd{font:12.5px/1.4 ui-monospace,Consolas,monospace;background:var(--head);border:1px solid var(--bd);border-radius:5px;padding:0 4px}
+.bar{position:sticky;top:0;z-index:20;background:var(--panel);border-bottom:1px solid var(--bd)}
+.bar .in{max-width:1000px;margin:0 auto;padding:8px 16px;display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}
+.bar .nm{font-weight:700}.bar .saved{color:var(--mut);font-size:12px}
+.btns{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+button{padding:7px 12px;border:1px solid var(--bd);border-radius:7px;background:var(--bg);color:var(--fg);
+cursor:pointer;font-size:13px;font-family:inherit}button:hover{border-color:var(--acc)}
+button.pri{background:var(--acc);color:#fff;border-color:var(--acc)}
+button:disabled{opacity:.45;cursor:default}button:disabled:hover{border-color:var(--bd)}
+button.sm{padding:3px 8px;font-size:12px}button.danger{color:var(--err)}
+button.add{margin-top:8px;border-style:dashed;color:var(--acc)}
+button.lnk{border:0;background:none;padding:0;color:inherit;text-align:left;font-size:inherit;text-decoration:underline;
+text-decoration-color:var(--bd);text-underline-offset:2px}button.lnk:hover{color:var(--acc)}
+.pill{font-size:12px;font-weight:600;border-radius:999px;padding:2px 10px;border:1px solid var(--bd);cursor:pointer;background:none}
+.pill.ok{color:var(--ok);border-color:var(--ok)}.pill.bad{color:var(--err);border-color:var(--err)}
+.panel{background:var(--panel);border:1px solid var(--bd);border-radius:10px;padding:14px 16px;margin:0 0 14px}
+.sec{scroll-margin-top:72px}.why{color:var(--mut);font-size:13px;margin:0 0 12px}
+details.sec>summary{cursor:pointer;list-style:none}details.sec>summary::-webkit-details-marker{display:none}
+details.sec>summary h2{display:inline}details.sec>summary .adv{font-size:12px;color:var(--mut);margin-left:6px}
+details.sec>summary h2::before{content:"▸ ";color:var(--mut)}details.sec[open]>summary h2::before{content:"▾ "}
+details.sec>summary .why{margin:4px 0 0}details.sec[open]>summary .why{margin-bottom:12px}
+.toc{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.toc a{font-size:12.5px;color:var(--fg);text-decoration:none;border:1px solid var(--bd);border-radius:999px;padding:2px 10px;background:var(--panel)}
+.toc a:hover{border-color:var(--acc);color:var(--acc)}.toc a .n{color:var(--err);font-weight:700;margin-left:4px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 16px}
+.grid.g3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.fld{display:flex;flex-direction:column;gap:3px;min-width:0;margin:0;padding:0;border:0;scroll-margin-top:90px}
+.fld.wide{grid-column:1/-1}.fld.w2{grid-column:span 2}
+.lbl{font-weight:600;font-size:13px;padding:0}.req{color:var(--err)}.help{color:var(--mut);font-size:12px}
+input[type=text],input[type=number],select,textarea{width:100%;min-width:0;padding:6px 8px;border:1px solid var(--bd);border-radius:7px;
+background:var(--bg);color:var(--fg);font:inherit;font-size:13px}
+textarea{resize:vertical;min-height:52px;line-height:1.4}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--acc);outline-offset:-1px}
+.invalid>input,.invalid>textarea,.invalid>select,.invalid>.chips,.invalid>.row2>select{border-color:var(--err)}
+.err{color:var(--err);font-size:12px}.err.warn{color:var(--warn)}.err:empty{display:none}
+.chips{display:flex;flex-wrap:wrap;align-items:center;gap:5px;padding:4px;border:1px solid var(--bd);border-radius:7px;
+background:var(--bg);min-height:34px;cursor:text;min-width:0}
+.chips:focus-within{outline:2px solid var(--acc);outline-offset:-1px}
+.chips input[type=text]{flex:1 1 140px;width:auto;min-width:110px;border:0;outline:0;padding:3px 4px;background:transparent}
+.chip{display:inline-flex;align-items:center;font-size:12.5px;border:1px solid var(--bd);border-radius:999px;
+padding:1px 2px 1px 9px;background:var(--panel);max-width:100%}
+.chip.bad{border-color:var(--err);color:var(--err)}
+.chip button{border:0;background:none;padding:0 6px;font-size:15px;line-height:1;color:var(--mut)}.chip button:hover{color:var(--err)}
+.chk{display:inline-flex;align-items:flex-start;gap:6px;font-size:13px;cursor:pointer}.chk input{margin:3px 0 0}
+.chk.dim{opacity:.6;cursor:default}.opts{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:6px}
+.radios{display:grid;gap:6px}.radio{display:flex;gap:8px;align-items:flex-start;border:1px solid var(--bd);border-radius:8px;padding:7px 10px;cursor:pointer}
+.radio input{margin:3px 0 0}.radio:has(input:checked){border-color:var(--acc)}.radio span{display:block;font-size:12px;color:var(--mut)}
+.row2{display:flex;gap:8px;min-width:0}.row2>select{flex:1 1 auto}.row2>input{flex:0 0 90px}
+.prompt{margin-top:8px;border:1px solid var(--acc);border-radius:8px;padding:8px 10px;font-size:13px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.mut{color:var(--mut)}.sm{font-size:12px}.sp{flex:1}
+.note{border-color:var(--warn)}.note .btns{margin:8px 0 0}
+.probs ul{margin:8px 0 0;padding-left:18px}.probs li{margin:3px 0}.probs li.e::marker{color:var(--err)}
+.probs li.w{color:var(--mut)}.probs li.w::marker{color:var(--warn)}
+.probs .tag{font-size:11px;border:1px solid var(--bd);border-radius:5px;padding:0 5px;color:var(--mut);margin-right:4px;white-space:nowrap}
+.probs.ok{border-color:var(--ok);background:var(--okbg)}.probs.ok b{color:var(--ok)}
+.done{border-color:var(--ok)}.done .cmdrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:6px 0}
+.done .cmd{padding:6px 10px;display:inline-block;max-width:100%}
+.skills{display:grid;gap:6px}
+.srow{display:grid;grid-template-columns:minmax(0,1.3fr) 120px minmax(0,1.7fr) minmax(0,1fr) 34px;gap:6px;align-items:start}
+.srow.head{font-size:12px;color:var(--mut);font-weight:600}.srow .err{grid-column:1/-1}
+.erow{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1.6fr) 90px 34px;gap:6px;align-items:start;margin-bottom:6px}
+.erow.head{font-size:12px;color:var(--mut);font-weight:600;margin-bottom:2px}.erow .err{grid-column:1/-1}
+.card{border:1px solid var(--bd);border-radius:10px;padding:12px;margin:10px 0}
+.card-h{display:flex;align-items:center;gap:6px;margin-bottom:8px;flex-wrap:wrap}.card-h b{margin-right:auto}
+.buls{margin-top:6px}.bul{border-left:3px solid var(--bd);padding:6px 0 6px 10px;margin:8px 0}
+.bul.invalid{border-left-color:var(--err)}.bul-h{display:flex;align-items:center;gap:6px;margin-bottom:4px}
+.bul-f{display:grid;grid-template-columns:minmax(0,1fr) 200px;gap:8px;margin-top:6px}
+.bul.invalid .chips{border-color:var(--err)}
+dialog{border:1px solid var(--bd);border-radius:10px;background:var(--panel);color:var(--fg);width:min(760px,calc(100vw - 32px));padding:14px}
+dialog textarea{height:50vh;font:12px/1.4 ui-monospace,Consolas,monospace}
+@media (max-width:760px){.grid.g4,.grid.g3{grid-template-columns:repeat(2,minmax(0,1fr))}
+.srow{grid-template-columns:minmax(0,1fr) 110px 34px}.srow.head{display:none}
+.srow>:nth-child(3),.srow>:nth-child(4){grid-column:span 2}.srow>:nth-child(4){grid-column:1/3}
+.srow>:nth-child(5){grid-row:1;grid-column:3}.srow{border-bottom:1px dashed var(--bd);padding-bottom:6px}
+.bul-f{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:560px){.grid,.grid.g3,.grid.g4{grid-template-columns:minmax(0,1fr)}.fld.w2{grid-column:auto}
+.erow{grid-template-columns:minmax(0,1fr) 80px 34px}.erow.head{display:none}.erow>:nth-child(1){grid-column:1/-1}
+.bar .saved{display:none}.btns{margin-left:0}}
+</style></head><body>
+<div class="bar"><div class="in">
+ <span class="nm">JobHunt profile</span>
+ <button type="button" class="pill" id="status" title="Show problems">Checking…</button>
+ <span class="saved" id="saved"></span>
+ <div class="btns">
+  <button type="button" id="reset" title="Throw away your changes and go back to the profile this page was opened with">Start over</button>
+  <button type="button" id="copy" title="Copy the profile as JSON (to paste somewhere else)">Copy as JSON</button>
+  <button type="button" id="dl" class="pri" title="Save jobhunt-profile.json, then run: jobhunt profile import">Download profile</button>
+ </div>
+</div></div>
+<div class="wrap">
+<h1>Your JobHunt profile</h1>
+<div class="sub">Fill this in once. It tells JobHunt what jobs to look for (the first sections) and the facts it scores
+every job against (<b>Resume facts</b>, at the end). Nothing leaves your computer: when you are done, click
+<b>Download profile</b> and run the command shown. Fields marked <span class="req">*</span> are needed.
+Prefer not to type? A coding agent (Claude Code, Codex, Cursor…) can fill your profile from your resume — ask it to follow
+<code>playbooks/setup.md</code>. Advanced settings already in your files that this form does not show are kept as they are.</div>
+<div class="panel note" id="draft" hidden></div>
+<div class="panel done" id="done" hidden></div>
+<nav class="toc" id="toc" aria-label="Sections"></nav>
+<div class="panel probs" id="problems" aria-live="polite"></div>
+<div id="form"></div>
+<datalist id="dl-skills"></datalist>
+<datalist id="dl-currency"><option value="INR"><option value="USD"><option value="EUR"><option value="GBP"><option value="CAD">
+<option value="AUD"><option value="SGD"><option value="AED"><option value="CHF"><option value="JPY"><option value="NZD"><option value="SEK">
+<option value="PLN"><option value="BRL"><option value="MXN"></datalist>
+</div>
+<dialog id="copydlg"><b>Copy your profile</b><p class="help">Your browser blocked automatic copying. Select all (Ctrl+A / ⌘A) and copy (Ctrl+C / ⌘C).</p>
+<textarea id="copytxt" readonly></textarea><div class="btns" style="margin-top:8px"><button type="button" id="copyclose">Close</button></div></dialog>
+<script>
+'use strict';
+// The `jobhunt profile form` command replaces the two bare expressions below with JSON.
+let PROFILE = {}, COUNTRIES = {};
+try { PROFILE = __PROFILE__; } catch (e) { PROFILE = {}; }
+try { COUNTRIES = __COUNTRIES__; } catch (e) { COUNTRIES = {}; }
+if (!PROFILE || typeof PROFILE !== 'object' || Array.isArray(PROFILE)) PROFILE = {};
+if (!COUNTRIES || typeof COUNTRIES !== 'object' || !Object.keys(COUNTRIES).length)
+  COUNTRIES = {IN: {name: 'India', scopes: ['IN', 'APAC', 'ASIA', 'WORLDWIDE']}, US: {name: 'United States', scopes: ['US', 'WORLDWIDE']},
+               GB: {name: 'United Kingdom', scopes: ['UK', 'EMEA', 'EU', 'WORLDWIDE']}, DE: {name: 'Germany', scopes: ['DE', 'EMEA', 'EU', 'WORLDWIDE']}};
+
+const DRAFT_KEY = 'jobhunt.profileform.draft.v1';
+const REGIONS = [['APAC', 'Asia-Pacific'], ['ASIA', 'Asia'], ['EMEA', 'Europe, Middle East & Africa'], ['EU', 'Europe'],
+  ['LATAM', 'Latin America'], ['ME', 'Middle East'], ['WORLDWIDE', 'Anywhere / worldwide']];
+const SOURCES = [['jobspy_linkedin', 'LinkedIn', 'search results only'], ['jobspy_naukri', 'Naukri', 'India'],
+  ['jobspy_indeed', 'Indeed', ''], ['jobspy_glassdoor', 'Glassdoor', ''], ['himalayas', 'Himalayas', 'remote jobs'],
+  ['remotive', 'Remotive', 'remote jobs'], ['remoteok', 'Remote OK', 'remote jobs'], ['wwr', 'We Work Remotely', 'remote jobs'],
+  ['yc_jobs', 'Y Combinator startups', ''], ['serpapi', 'SerpApi (Google Jobs)', 'needs an API key']];
+const LEVELS = [['hands_on', 'Hands-on'], ['working', 'Working'], ['exposure', 'Exposure']];
+const EVIDENCE = [['implemented', 'Implemented — I built it'], ['contributed', 'Contributed — team effort'], ['explored', 'Explored — prototype / study']];
+const ENTRY_FIELDS = ['experience', 'projects', 'education', 'certifications'];
+const ID_PREFIX = {experience: 'EXP', projects: 'PRJ', education: 'EDU', certifications: 'CERT'};
+const SECT = {about: 'About you', jobs: 'Jobs you want', where: 'Where', pay: 'Pay', search: 'Search', vetting: 'Company checks',
+  report: 'Report', exclusions: 'Exclusions', resume: 'Resume facts'};
+
+// ───────────────────────────── pure data functions (no DOM) ─────────────────────────────
+const isObj = v => v !== null && typeof v === 'object' && !Array.isArray(v);
+const clone = v => v === undefined ? undefined : JSON.parse(JSON.stringify(v));
+const str = v => v == null ? '' : String(v);
+function strList(v){
+  if (v == null || v === '') return [];
+  if (!Array.isArray(v)) v = [v];
+  return v.filter(x => x != null && typeof x !== 'object').map(String);
+}
+function cleanList(a){
+  const out = [];
+  for (const x of a || []) { const t = String(x).trim(); if (t && !out.includes(t)) out.push(t); }
+  return out;
+}
+function sub(o, k){ if (!isObj(o[k])) o[k] = {}; return o[k]; }
+function numOr(v, d){ if (v === null || v === undefined || v === '') return d; const n = Number(v); return Number.isFinite(n) ? n : d; }
+const ccToken = cc => cc === 'GB' ? 'UK' : cc;
+const countryName = cc => (COUNTRIES[cc] && COUNTRIES[cc].name) || cc || 'your country';
+const defaultScopes = cc => (COUNTRIES[cc] && Array.isArray(COUNTRIES[cc].scopes)) ? COUNTRIES[cc].scopes.slice() : [ccToken(cc), 'WORLDWIDE'];
+const slug = s => (s || 'X').toUpperCase().replace(/[^A-Z0-9]+/g, '_').replace(/^_+|_+$/g, '').slice(0, 24) || 'X';
+
+/** Fill in what the form shows (with the schema's defaults) while keeping every other key untouched. */
+function normPrefs(src){
+  const p = isObj(src) ? clone(src) : {};
+  const c = sub(p, 'candidate');
+  c.years_experience = numOr(c.years_experience, 0);
+  for (const k of ['work_authorization', 'notice_period', 'summary']) c[k] = str(c[k]);
+  p.target_titles = strList(p.target_titles);
+  const tk = sub(p, 'title_keywords');
+  for (const k of ['strong', 'related', 'exclude']) tk[k] = strList(tk[k]);
+  p.core_skills = strList(p.core_skills);
+  p.languages = p.languages === undefined ? ['English'] : strList(p.languages);
+  const ex = sub(p, 'experience');
+  ex.max_required_years = numOr(ex.max_required_years, 3);
+  const loc = sub(p, 'location');
+  let cc = str(loc.home_country === undefined ? 'IN' : loc.home_country).trim().toUpperCase();
+  loc.home_country = cc === 'UK' ? 'GB' : cc;
+  for (const k of ['tier1', 'tier2', 'extra_cities']) loc[k] = strList(loc[k]);
+  loc.remote_ok_scopes = loc.remote_ok_scopes == null ? null
+    : strList(loc.remote_ok_scopes).map(s => s.trim().toUpperCase()).map(s => s === 'GB' ? 'UK' : s);
+  if (!['skip', 'remote_only', 'relocation'].includes(loc.abroad)) loc.abroad = 'relocation';
+  const sal = sub(p, 'salary');
+  sal.currency = str(sal.currency === undefined ? 'USD' : sal.currency).trim().toUpperCase();
+  sal.min_per_year = numOr(sal.min_per_year, null);
+  if (!['review', 'skip'].includes(sal.below_min_action)) sal.below_min_action = 'review';
+  const s = sub(p, 'search');
+  const q = {};
+  if (isObj(s.queries)) for (const [k, v] of Object.entries(s.queries)) q[String(k)] = strList(v);
+  for (const k of ['1', '2', '3']) if (!q[k]) q[k] = [];
+  s.queries = q;
+  s.locations = strList(s.locations);
+  s.remote_locations = s.remote_locations === undefined ? ['Remote'] : strList(s.remote_locations);
+  s.posted_within_days = numOr(s.posted_within_days, 7);
+  s.disabled_sources = strList(s.disabled_sources);
+  sub(p, 'exclusions').companies = strList(p.exclusions.companies);
+  const v = sub(p, 'vetting');
+  v.reject_rating_below = numOr(v.reject_rating_below, 2.5);
+  v.caution_rating_below = numOr(v.caution_rating_below, 3.0);
+  v.min_reviews = numOr(v.min_reviews, 50);
+  v.cache_days = numOr(v.cache_days, 90);
+  v.review_sites = v.review_sites === undefined ? ['Glassdoor', 'Indeed'] : strList(v.review_sites);
+  v.forums = v.forums === undefined ? ['reddit'] : strList(v.forums);
+  v.extra_queries = strList(v.extra_queries);
+  const r = sub(p, 'report');
+  r.title = r.title === undefined ? 'My job matches' : str(r.title);
+  r.posted_within_days = numOr(r.posted_within_days, 30);
+  return p;
+}
+function normBullet(b){
+  b = isObj(b) ? b : {text: str(b)};
+  b.text = str(b.text);
+  b.skills = strList(b.skills);
+  if (!['implemented', 'contributed', 'explored'].includes(b.evidence)) b.evidence = 'implemented';
+  return b;
+}
+function normEntry(e, full){
+  e = isObj(e) ? e : {title: str(e)};
+  e.title = str(e.title);
+  e.org = str(e.org);
+  e.end = str(e.end);
+  if (full) {
+    e.start = str(e.start);
+    e.location = str(e.location);
+    e.bullets = (Array.isArray(e.bullets) ? e.bullets : []).map(normBullet);
+  } else if (Array.isArray(e.bullets)) e.bullets = e.bullets.map(normBullet);
+  return e;
+}
+function normResume(src){
+  const r = isObj(src) ? clone(src) : {};
+  for (const k of ['name', 'headline', 'summary']) r[k] = str(r[k]);
+  r.skills = (Array.isArray(r.skills) ? r.skills : []).map(s => {
+    s = isObj(s) ? s : {name: str(s)};
+    s.name = str(s.name);
+    if (!['hands_on', 'working', 'exposure'].includes(s.level)) s.level = 'working';
+    s.aliases = strList(s.aliases);
+    s.category = str(s.category);
+    return s;
+  });
+  for (const f of ENTRY_FIELDS) r[f] = (Array.isArray(r[f]) ? r[f] : []).map(e => normEntry(e, f === 'experience' || f === 'projects'));
+  return r;
+}
+function normState(s){ s = isObj(s) ? s : {}; return {prefs: normPrefs(s.prefs), resume: normResume(s.resume)}; }
+const initialState = () => normState({prefs: PROFILE.preferences, resume: PROFILE.resume});
+
+function toNum(v){ if (v === null || v === undefined || v === '') return null; const n = Number(v); return Number.isFinite(n) ? n : null; }
+function numKey(o, k, int){ const n = toNum(o[k]); if (n === null) delete o[k]; else o[k] = int ? Math.round(n) : n; }
+function trimKeys(o, keys){ for (const k of keys) if (k in o) o[k] = str(o[k]).trim(); }
+function optKey(o, k){ if (!(k in o)) return; const t = str(o[k]).trim(); if (t) o[k] = t; else delete o[k]; }
+
+function cleanEntry(e){
+  const o = Object.assign({}, e);
+  trimKeys(o, ['title', 'org', 'location']);
+  for (const k of ['start', 'end', 'id']) optKey(o, k);
+  if (Array.isArray(o.bullets)) o.bullets = o.bullets.map(b => {
+    const x = Object.assign({}, b, {text: str(b.text).trim(), skills: cleanList(b.skills)});
+    optKey(x, 'id');
+    return x;
+  }).filter(b => b.text || b.skills.length);
+  const empty = !o.title && !o.org && !o.start && !o.end && !o.location && !(o.bullets && o.bullets.length);
+  return empty ? null : o;
+}
+
+/** The downloadable profile: {preferences, resume} exactly in the schema's shape. Pure: does not touch the DOM. */
+function collect(st){
+  const p = clone(st.prefs);
+  const c = sub(p, 'candidate');
+  trimKeys(c, ['work_authorization', 'notice_period', 'summary']);
+  numKey(c, 'years_experience');
+  p.target_titles = cleanList(p.target_titles);
+  const tk = sub(p, 'title_keywords');
+  for (const k of ['strong', 'related', 'exclude']) tk[k] = cleanList(tk[k]);
+  p.core_skills = cleanList(p.core_skills);
+  p.languages = cleanList(p.languages);
+  numKey(sub(p, 'experience'), 'max_required_years');
+  const loc = sub(p, 'location');
+  loc.home_country = str(loc.home_country).trim().toUpperCase();
+  for (const k of ['tier1', 'tier2', 'extra_cities']) loc[k] = cleanList(loc[k]);
+  loc.remote_ok_scopes = loc.remote_ok_scopes == null ? null : cleanList(loc.remote_ok_scopes);
+  const sal = sub(p, 'salary');
+  sal.currency = str(sal.currency).trim().toUpperCase();
+  sal.min_per_year = toNum(sal.min_per_year);
+  const s = sub(p, 'search');
+  const q = {};
+  for (const [k, v] of Object.entries(s.queries || {})) { const l = cleanList(v); if (l.length || k === '1' || k === '2') q[k] = l; }
+  s.queries = q;
+  s.locations = cleanList(s.locations);
+  s.remote_locations = cleanList(s.remote_locations);
+  s.disabled_sources = cleanList(s.disabled_sources);
+  if (Array.isArray(s.sources)) s.sources = cleanList(s.sources);
+  numKey(s, 'posted_within_days', true);
+  sub(p, 'exclusions').companies = cleanList(p.exclusions.companies);
+  const v = sub(p, 'vetting');
+  numKey(v, 'reject_rating_below'); numKey(v, 'caution_rating_below');
+  numKey(v, 'min_reviews', true); numKey(v, 'cache_days', true);
+  for (const k of ['review_sites', 'forums', 'extra_queries']) v[k] = cleanList(v[k]);
+  const rep = sub(p, 'report');
+  rep.title = str(rep.title).trim();
+  numKey(rep, 'posted_within_days', true);
+  delete p.kind; delete p.schema_version;
+
+  const r = clone(st.resume);
+  trimKeys(r, ['name', 'headline', 'summary']);
+  r.skills = (r.skills || []).map(sk => Object.assign({}, sk, {name: str(sk.name).trim(), level: sk.level || 'working',
+    aliases: cleanList(sk.aliases), category: str(sk.category).trim()})).filter(sk => sk.name || sk.aliases.length || sk.category);
+  for (const f of ENTRY_FIELDS) r[f] = (r[f] || []).map(cleanEntry).filter(Boolean);
+  delete r.kind; delete r.schema_version;
+  return {preferences: Object.assign({kind: 'preferences', schema_version: 1}, p),
+          resume: Object.assign({kind: 'resume', schema_version: 1}, r)};
+}
+
+/** Problems, each {sev: 'err'|'warn', sect, msg, ref: [object, key]} (ref points into the form state). */
+function validate(st){
+  const I = [], p = st.prefs, r = st.resume;
+  const add = (sev, sect, msg, ref) => I.push({sev, sect, msg, ref});
+  function num(o, k, sect, label, {min = 0, max = null, int = false, dflt = null, nullable = false} = {}){
+    const v = o[k];
+    if (v === null || v === undefined || v === '') {
+      if (!nullable) add('warn', sect, `${label} is empty — the default (${dflt}) will be used.`, [o, k]);
+      return;
+    }
+    const n = Number(v);
+    if (!Number.isFinite(n)) add('err', sect, `${label} must be a number.`, [o, k]);
+    else if (n < min || (max !== null && n > max)) add('err', sect, max === null ? `${label} must be ${min} or more.` : `${label} must be between ${min} and ${max}.`, [o, k]);
+    else if (int && !Number.isInteger(n)) add('warn', sect, `${label} must be a whole number — ${Math.round(n)} will be used.`, [o, k]);
+  }
+  // about / jobs
+  num(p.candidate, 'years_experience', 'about', 'Years of experience', {max: 60, dflt: 0});
+  if (!cleanList(p.target_titles).length) add('err', 'jobs', 'Add at least one job title you want.', [p, 'target_titles']);
+  if (!cleanList(p.title_keywords.strong).length && !cleanList(p.title_keywords.related).length)
+    add('err', 'jobs', 'Add at least one title keyword (strong or related) — otherwise company boards return every job.', [p.title_keywords, 'strong']);
+  num(p.experience, 'max_required_years', 'jobs', 'Maximum years a job may ask for', {max: 60, dflt: 3});
+  const skillNames = new Set(), skillTerms = new Set();
+  r.skills.forEach(s => { const n = s.name.trim().toLowerCase(); if (n) { skillNames.add(n); skillTerms.add(n); }
+    s.aliases.forEach(a => { a = a.trim().toLowerCase(); if (a) skillTerms.add(a); }); });
+  const badCore = cleanList(p.core_skills).filter(c => !skillNames.has(c.toLowerCase()));
+  if (badCore.length) add('err', 'jobs', `Core skills not in your Resume facts skills: ${badCore.join(', ')} — add them there or fix the spelling.`, [p, 'core_skills']);
+  // where
+  const loc = p.location;
+  if (!/^[A-Z]{2}$/.test(str(loc.home_country).trim().toUpperCase())) add('err', 'where', 'Home country must be a 2-letter code such as IN, US or DE.', [loc, 'home_country']);
+  else if (!(loc.home_country in COUNTRIES)) add('warn', 'where', `${loc.home_country} is not in the built-in country list — city detection will be limited; list your cities under "Other cities".`, [loc, 'home_country']);
+  if (Array.isArray(loc.remote_ok_scopes) && !cleanList(loc.remote_ok_scopes).length)
+    add('warn', 'where', 'No remote regions ticked — the usual set for your country will be used.', [loc, 'remote_ok_scopes']);
+  // pay
+  if (!/^[A-Z]{3}$/.test(str(p.salary.currency).trim().toUpperCase())) add('err', 'pay', 'Currency must be a 3-letter code such as INR, USD or EUR.', [p.salary, 'currency']);
+  num(p.salary, 'min_per_year', 'pay', 'Minimum salary', {nullable: true});
+  // search
+  const q = p.search.queries || {};
+  if (!cleanList(q['1']).length && !cleanList(q['2']).length) add('err', 'search', 'Add at least one search phrase in tier 1 or tier 2.', [q, '1']);
+  num(p.search, 'posted_within_days', 'search', 'Search: posted within (days)', {min: 1, max: 60, int: true, dflt: 7});
+  // vetting / report
+  num(p.vetting, 'reject_rating_below', 'vetting', 'Reject below rating', {max: 5, dflt: 2.5});
+  num(p.vetting, 'caution_rating_below', 'vetting', 'Caution below rating', {max: 5, dflt: 3.0});
+  num(p.vetting, 'min_reviews', 'vetting', 'Minimum reviews', {int: true, dflt: 50});
+  num(p.vetting, 'cache_days', 'vetting', 'Re-check after (days)', {int: true, dflt: 90});
+  num(p.report, 'posted_within_days', 'report', 'Report: posted within (days)', {min: 1, max: 365, int: true, dflt: 30});
+  // resume
+  if (!skillNames.size) add('err', 'resume', 'Add at least one skill — scoring needs your skills.', [r, 'skills']);
+  const seenSkill = new Set();
+  r.skills.forEach((s, i) => {
+    const n = s.name.trim().toLowerCase();
+    if (!n) { if (s.aliases.length || s.category.trim()) add('err', 'resume', `Skill ${i + 1} has no name.`, [s, 'name']); return; }
+    if (seenSkill.has(n)) add('err', 'resume', `Skill “${s.name.trim()}” is listed twice.`, [s, 'name']);
+    seenSkill.add(n);
+  });
+  let bullets = 0;
+  const ids = new Map();
+  const useId = (id, ref, what) => { if (ids.has(id)) add('err', 'resume', `Two items get the same id “${id}” (${what}) — give this one its own ID, e.g. ${id}_2.`, ref); else ids.set(id, ref); };
+  for (const f of ENTRY_FIELDS) {
+    r[f].forEach((e, i) => {
+      const ce = cleanEntry(e);
+      if (!ce) return;
+      const label = `${SECT_ENTRY[f]} ${i + 1}`;
+      if (!ce.title) add('err', 'resume', `${label} needs a title.`, [e, 'title']);
+      const eid = ce.id || `${ID_PREFIX[f]}_${slug(ce.org || ce.title)}`;
+      useId(eid, [e, 'id'], ce.id ? 'same ID typed twice' : 'same organisation or title');
+      let j = 0;
+      (e.bullets || []).forEach(b => {
+        const text = str(b.text).trim(), sk = cleanList(b.skills);
+        if (!text && !sk.length) return;
+        j++;
+        if (text.length >= 3) bullets++;
+        if (text.length < 3) add('err', 'resume', `${label}, bullet ${j}: write at least a few words.`, [b, 'text']);
+        const bad = sk.filter(x => !skillTerms.has(x.toLowerCase()));
+        if (bad.length) add('err', 'resume', `${label}, bullet ${j}: ${bad.join(', ')} not in your skills list — add ${bad.length > 1 ? 'them' : 'it'} under Skills or fix the spelling.`, [b, 'skills']);
+        useId(str(b.id).trim() || `${eid}.B${j}`, [e, 'id'], 'bullet id');
+      });
+    });
+  }
+  if (!bullets) add('err', 'resume', 'Add at least one job or project bullet — scoring needs evidence to cite.', [r, 'experience']);
+  return I;
+}
+const SECT_ENTRY = {experience: 'Job', projects: 'Project', education: 'Education', certifications: 'Certification'};
+
+// ───────────────────────────── DOM ─────────────────────────────
+const $ = id => document.getElementById(id);
+let _uid = 0; const uid = () => 'f' + (++_uid);
+/** Build an element. Text children become text nodes; user values are never parsed as HTML. */
+function h(tag, props, ...kids){
+  const el = document.createElement(tag);
+  if (props) for (const [k, v] of Object.entries(props)) {
+    if (v == null || v === false) continue;
+    if (k === 'class') el.className = v;
+    else if (k.startsWith('on') && typeof v === 'function') el.addEventListener(k.slice(2), v);
+    else if (k in el && k !== 'list' && !k.includes('-')) el[k] = v;
+    else el.setAttribute(k, v === true ? '' : v);
+  }
+  for (const c of kids.flat(Infinity)) if (c != null && c !== false) el.append(c instanceof Node ? c : String(c));
+  return el;
+}
+
+let state = initialState();
+let SLOTS = new WeakMap(), MARKED = [], LAST = [], SKILL_NAMES = new Set(), SKILL_TERMS = new Set(), CHIP_DRAWS = [];
+let canStore = true, saveTimer = null, touched = false;
+
+function slot(o, k, err, wrap){ let m = SLOTS.get(o); if (!m) SLOTS.set(o, m = new Map()); m.set(k, {err, wrap}); }
+function field(label, help, control, ref, opts = {}){
+  const err = h('div', {class: 'err'});
+  let lab;
+  const req = opts.req ? h('span', {class: 'req'}, ' *') : null;
+  if (opts.group) lab = h('legend', {class: 'lbl'}, label, req);
+  else {
+    const t = control.matches('input,select,textarea') ? control : control.querySelector('input,select,textarea');
+    if (t && !t.id) t.id = uid();
+    lab = h('label', {class: 'lbl', for: t ? t.id : null}, label, req);
+  }
+  const w = h(opts.group ? 'fieldset' : 'div', {class: 'fld' + (opts.wide ? ' wide' : '') + (opts.w2 ? ' w2' : '')},
+    lab, help ? h('div', {class: 'help'}, help) : null, control, err);
+  if (ref) slot(ref[0], ref[1], err, w);
+  return w;
+}
+function textIn(o, k, attrs = {}){
+  return h('input', Object.assign({type: 'text', value: str(o[k]), oninput: e => { o[k] = e.target.value; changed(); }}, attrs));
+}
+function areaIn(o, k, attrs = {}){
+  return h('textarea', Object.assign({value: str(o[k]), rows: 2, oninput: e => { o[k] = e.target.value; changed(); }}, attrs));
+}
+function numIn(o, k, attrs = {}, after){
+  const el = h('input', Object.assign({type: 'number', inputmode: 'decimal', value: o[k] == null ? '' : String(o[k]),
+    oninput: e => { const v = e.target.value; o[k] = v === '' ? null : Number(v); if (after) after(); changed(); }}, attrs));
+  return el;
+}
+function selIn(o, k, options, attrs = {}){
+  const el = h('select', Object.assign({onchange: e => { o[k] = e.target.value; changed(); }}, attrs),
+    options.map(([v, l]) => h('option', {value: v}, l)));
+  el.value = o[k];
+  return el;
+}
+function radios(o, k, options){
+  const name = uid();
+  return h('div', {class: 'radios'}, options.map(([v, l, d]) => h('label', {class: 'radio'},
+    h('input', {type: 'radio', name, value: v, checked: o[k] === v, onchange: () => { o[k] = v; changed(); }}),
+    h('div', null, l, d ? h('span', null, d) : null))));
+}
+/** Tag input for a list of strings. Enter or comma adds; × removes; pasting a list splits it. */
+function chips(o, k, opts = {}){
+  if (!Array.isArray(o[k])) o[k] = [];
+  const input = h('input', {type: 'text', placeholder: opts.placeholder || 'Type, then press Enter', list: opts.list || null,
+    'aria-label': opts.aria || null, autocomplete: 'off'});
+  const wrap = h('div', {class: 'chips', onclick: e => { if (e.target === wrap) input.focus(); }});
+  function draw(){
+    wrap.querySelectorAll('.chip').forEach(c => c.remove());
+    o[k].forEach((v, i) => {
+      const bad = opts.known && !opts.known().has(String(v).trim().toLowerCase());
+      wrap.insertBefore(h('span', {class: 'chip' + (bad ? ' bad' : ''), title: bad ? 'Not in your skills list' : null}, v,
+        h('button', {type: 'button', 'aria-label': 'Remove ' + v, title: 'Remove', onclick: () => { o[k].splice(i, 1); draw(); changed(); input.focus(); }}, '×')), input);
+    });
+  }
+  function addText(t){
+    const parts = t.split(/[\n,;]/).map(s => s.trim()).filter(Boolean);
+    input.value = '';
+    let n = 0;
+    for (const p of parts) if (!o[k].some(x => x.toLowerCase() === p.toLowerCase())) { o[k].push(p); n++; }
+    if (parts.length) { draw(); if (n) changed(); }
+  }
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ',') { e.preventDefault(); addText(input.value); }
+    else if (e.key === 'Backspace' && !input.value && o[k].length) { o[k].pop(); draw(); changed(); }
+  });
+  input.addEventListener('paste', e => {
+    const t = e.clipboardData && e.clipboardData.getData('text');
+    if (t && /[\n,;]/.test(t)) { e.preventDefault(); addText(input.value + t); }
+  });
+  input.addEventListener('input', e => {   // picked from the suggestion list
+    if (opts.list && (!e.inputType || e.inputType === 'insertReplacementText')) addText(input.value);
+  });
+  input.addEventListener('blur', () => { if (input.value.trim()) addText(input.value); });
+  wrap.append(input);
+  draw();
+  if (opts.known) CHIP_DRAWS.push({wrap, draw});
+  return wrap;
+}
+function grid(cls, ...kids){ return h('div', {class: 'grid' + (cls ? ' ' + cls : '')}, ...kids); }
+function section(id, title, why, ...body){
+  return h('section', {class: 'panel sec', id}, h('h2', null, title), h('p', {class: 'why'}, why), ...body);
+}
+const knownNames = () => SKILL_NAMES, knownTerms = () => SKILL_TERMS;
+
+function secAbout(){
+  const p = state.prefs, c = p.candidate;
+  return section('about', 'About you', 'Shown to the agent when it judges how well a job fits you; your languages decide which jobs are skipped for language.',
+    grid('',
+      field('Years of experience', 'Full-time professional experience (internships count roughly half).',
+        numIn(c, 'years_experience', {min: 0, max: 60, step: 0.5}), [c, 'years_experience']),
+      field('Notice period', 'e.g. 30 days, Immediate', textIn(c, 'notice_period'), [c, 'notice_period']),
+      field('Work authorization', 'e.g. “Citizen of India; needs visa sponsorship elsewhere”', textIn(c, 'work_authorization'), [c, 'work_authorization'], {wide: true}),
+      field('One-line summary', 'One line about you; shown to the agent when it judges fit.', areaIn(c, 'summary'), [c, 'summary'], {wide: true}),
+      field('Languages you work in', 'Jobs requiring another language are skipped.', chips(p, 'languages', {aria: 'Languages'}), [p, 'languages'], {wide: true})));
+}
+function secJobs(){
+  const p = state.prefs, tk = p.title_keywords;
+  return section('jobs', 'Jobs you want', 'These decide which postings are kept at all: company job boards are filtered by these title words, and the scorer compares job titles and skills with yours.',
+    grid('',
+      field('Job titles you would happily accept', 'Used for title similarity and shown to the agent when it judges fit. e.g. Backend Engineer',
+        chips(p, 'target_titles', {aria: 'Target titles'}), [p, 'target_titles'], {wide: true, req: true}),
+      field('Strong title words', 'A title containing one of these is clearly relevant on its own. e.g. ml, llm, data engineer',
+        chips(tk, 'strong', {aria: 'Strong title words'}), [tk, 'strong'], {req: true}),
+      field('Related title words', 'Relevant only together with a role word (engineer, developer…). e.g. python, backend',
+        chips(tk, 'related', {aria: 'Related title words'}), [tk, 'related']),
+      field('Never show titles containing', 'e.g. intern, sales, recruiter', chips(tk, 'exclude', {aria: 'Excluded title words'}), [tk, 'exclude'], {wide: true}),
+      field('Core skills', 'Skills that define your positioning; counted double when a job mentions them. Each must be a skill in Resume facts below.',
+        chips(p, 'core_skills', {list: 'dl-skills', known: knownNames, aria: 'Core skills', placeholder: 'Pick or type a skill'}), [p, 'core_skills'], {wide: true}),
+      field('Max years a job may ask for', 'Skip jobs asking for more years of experience than this.',
+        numIn(p.experience, 'max_required_years', {min: 0, max: 60, step: 0.5}), [p.experience, 'max_required_years'])));
+}
+function countryPicker(loc, onSet){
+  const codes = Object.keys(COUNTRIES).sort((a, b) => countryName(a).localeCompare(countryName(b)));
+  const known = loc.home_country in COUNTRIES;
+  const other = h('input', {type: 'text', maxLength: 2, placeholder: 'e.g. KE', value: known ? '' : loc.home_country,
+    hidden: known, 'aria-label': 'Two-letter country code', oninput: e => onSet(e.target.value.trim().toUpperCase())});
+  const sel = h('select', {onchange: () => {
+      if (sel.value === '*') { other.hidden = false; other.focus(); onSet(other.value.trim().toUpperCase()); }
+      else { other.hidden = true; onSet(sel.value); } }},
+    codes.map(cc => h('option', {value: cc}, `${countryName(cc)} (${cc})`)), h('option', {value: '*'}, 'Other country…'));
+  sel.value = known ? loc.home_country : '*';
+  return h('div', {class: 'row2'}, sel, other);
+}
+function secWhere(){
+  const p = state.prefs, loc = p.location;
+  const scopeBox = h('div'), prompt = h('div');
+  const sameSet = (a, b) => a.length === b.length && a.every(x => b.includes(x));
+  function drawScopes(){
+    const cc = loc.home_country, tok = ccToken(cc), def = defaultScopes(cc), useDef = loc.remote_ok_scopes == null;
+    const cur = useDef ? def : loc.remote_ok_scopes;
+    const tokens = cleanList([tok, ...REGIONS.map(r => r[0]), ...cur]);
+    const label = t => (REGIONS.find(r => r[0] === t) || [])[1] || (t === tok ? countryName(cc) : 'other country');
+    scopeBox.replaceChildren(
+      h('label', {class: 'chk'}, h('input', {type: 'checkbox', checked: useDef, onchange: e => {
+        loc.remote_ok_scopes = e.target.checked ? null : def.slice(); prompt.replaceChildren(); drawScopes(); changed(); }}),
+        h('span', null, `Use the usual set for ${countryName(cc)}: `, h('b', null, def.join(', ')))),
+      h('div', {class: 'opts'}, tokens.map(t => h('label', {class: 'chk' + (useDef ? ' dim' : '')},
+        h('input', {type: 'checkbox', disabled: useDef, checked: cur.includes(t), onchange: e => {
+          const a = loc.remote_ok_scopes; const i = a.indexOf(t);
+          if (e.target.checked && i < 0) a.push(t); else if (!e.target.checked && i >= 0) a.splice(i, 1);
+          changed(); }}),
+        h('span', null, h('b', null, t), ' ', h('span', {class: 'mut'}, label(t)))))));
+  }
+  function setCountry(cc){
+    const old = loc.home_country;
+    loc.home_country = cc;
+    prompt.replaceChildren();
+    if (/^[A-Z]{2}$/.test(cc) && cc !== old && loc.remote_ok_scopes != null && !sameSet(loc.remote_ok_scopes, defaultScopes(cc))) {
+      const def = defaultScopes(cc);
+      prompt.append(h('div', {class: 'prompt'}, h('span', null, `Switch remote regions to the usual set for ${countryName(cc)} (${def.join(', ')})?`),
+        h('button', {type: 'button', class: 'sm pri', onclick: () => { loc.remote_ok_scopes = null; prompt.replaceChildren(); drawScopes(); changed(); }}, 'Yes, switch'),
+        h('button', {type: 'button', class: 'sm', onclick: () => prompt.replaceChildren()}, 'Keep mine')));
+    }
+    drawScopes(); changed();
+  }
+  drawScopes();
+  return section('where', 'Where', 'Jobs in your first-choice cities rank highest, then second-choice cities, then the rest of your country. Remote jobs are kept only when they are open to where you live.',
+    grid('',
+      field('Home country', 'The country you live and can work in.', countryPicker(loc, setCountry), [loc, 'home_country'], {req: true}),
+      field('Other cities in your country', 'Cities the built-in list does not know (small towns, new names).', chips(loc, 'extra_cities', {aria: 'Other cities'}), [loc, 'extra_cities']),
+      field('First-choice cities', 'e.g. the city you live in.', chips(loc, 'tier1', {aria: 'First-choice cities'}), [loc, 'tier1']),
+      field('Second-choice cities', 'Anywhere else in your country ranks after these.', chips(loc, 'tier2', {aria: 'Second-choice cities'}), [loc, 'tier2']),
+      field('Remote jobs open to', 'A remote job is kept when its region includes one of these.', h('div', null, scopeBox, prompt), [loc, 'remote_ok_scopes'], {wide: true, group: true}),
+      field('Jobs in other countries', null, radios(loc, 'abroad', [
+        ['skip', 'No onsite jobs abroad', 'Remote jobs open to you are still kept.'],
+        ['remote_only', 'Abroad only if remote', 'Remote and open to where you live.'],
+        ['relocation', 'Also onsite abroad with relocation help', 'Onsite abroad only when the job offers relocation or visa support.']]),
+        [loc, 'abroad'], {wide: true, group: true})));
+}
+function secPay(){
+  const sal = state.prefs.salary;
+  const echo = h('div', {class: 'help'});
+  const drawEcho = () => {
+    const n = toNum(sal.min_per_year), cur = str(sal.currency).trim().toUpperCase();
+    let txt = '';
+    if (n !== null) { try { txt = '= ' + new Intl.NumberFormat(cur === 'INR' ? 'en-IN' : undefined).format(n) + ' ' + cur + ' per year'; } catch (e) { txt = ''; } }
+    echo.textContent = txt;
+  };
+  drawEcho();
+  const curIn = textIn(sal, 'currency', {maxLength: 3, list: 'dl-currency', placeholder: 'e.g. INR', autocomplete: 'off'});
+  curIn.addEventListener('input', drawEcho);
+  return section('pay', 'Pay', 'Jobs that state a salary below your minimum are flagged (or skipped). Jobs without a salary are not penalised.',
+    grid('g3',
+      field('Currency', '3-letter code, e.g. INR, USD, EUR.', curIn, [sal, 'currency'], {req: true}),
+      field('Minimum per year', 'Yearly, in that currency. Leave empty for no minimum.', h('div', {class: 'fld'}, numIn(sal, 'min_per_year', {min: 0, step: 1000, 'aria-label': 'Minimum salary per year'}, drawEcho), echo), [sal, 'min_per_year']),
+      field('When a job pays less', null, radios(sal, 'below_min_action', [['review', 'Flag it, keep it'], ['skip', 'Skip it']]), [sal, 'below_min_action'], {group: true})));
+}
+function secSearch(){
+  const s = state.prefs.search, q = s.queries;
+  const disabled = s.disabled_sources;
+  return section('search', 'Search', 'These phrases are what JobHunt types into job sites (Indeed, Glassdoor, LinkedIn, Himalayas…). Short, specific phrases work best.',
+    grid('',
+      field('Tier 1 — best-fit phrases', 'Run every time. e.g. data engineer', chips(q, '1', {aria: 'Tier 1 phrases'}), [q, '1'], {wide: true, req: true}),
+      field('Tier 2 — broader phrases', 'Run every time.', chips(q, '2', {aria: 'Tier 2 phrases'}), [q, '2'], {wide: true}),
+      field('Tier 3 — extra phrases', ['Only when you ask for it: ', h('code', null, 'jobhunt search run --tiers 1,2,3')], chips(q, '3', {aria: 'Tier 3 phrases'}), [q, '3'], {wide: true}),
+      field('Search in these places', 'Where job-site searches look, e.g. your cities.', chips(s, 'locations', {aria: 'Search locations'}), [s, 'locations']),
+      field('Remote searches', 'Extra searches for remote jobs, e.g. Remote.', chips(s, 'remote_locations', {aria: 'Remote search locations'}), [s, 'remote_locations']),
+      field('Posted within (days)', 'Only fetch jobs posted in the last 1–60 days.', numIn(s, 'posted_within_days', {min: 1, max: 60, step: 1}), [s, 'posted_within_days']),
+      field('Skip these job sites', 'Ticked sites are not searched. Company career pages are always searched.',
+        h('div', {class: 'opts'}, SOURCES.map(([k, l, d]) => h('label', {class: 'chk'},
+          h('input', {type: 'checkbox', checked: disabled.includes(k), onchange: e => {
+            const i = disabled.indexOf(k);
+            if (e.target.checked && i < 0) disabled.push(k); else if (!e.target.checked && i >= 0) disabled.splice(i, 1);
+            changed(); }}),
+          h('span', null, l, d ? h('span', {class: 'mut'}, ' · ' + d) : null)))),
+        [s, 'disabled_sources'], {wide: true, group: true})));
+}
+function secVetting(){
+  const v = state.prefs.vetting;
+  return h('details', {class: 'panel sec', id: 'vetting'},
+    h('summary', null, h('h2', null, 'Company checks'), h('span', {class: 'adv'}, 'advanced — defaults are fine'),
+      h('p', {class: 'why'}, 'Before you apply to a high-scoring job (80+), the agent checks the company for fake-job reports, fees, service bonds, unpaid salaries and poor ratings.')),
+    grid('g4',
+      field('Reject below rating', 'With at least the minimum number of reviews.', numIn(v, 'reject_rating_below', {min: 0, max: 5, step: 0.1}), [v, 'reject_rating_below']),
+      field('Caution below rating', 'Shown as “check before applying”.', numIn(v, 'caution_rating_below', {min: 0, max: 5, step: 0.1}), [v, 'caution_rating_below']),
+      field('Minimum reviews', 'Ratings count only with this many reviews.', numIn(v, 'min_reviews', {min: 0, step: 1}), [v, 'min_reviews']),
+      field('Re-check after (days)', 'How long a company check is reused.', numIn(v, 'cache_days', {min: 0, step: 1}), [v, 'cache_days'])),
+    h('div', {style: 'height:12px'}),
+    grid('',
+      field('Review sites', 'Where the agent looks up ratings, e.g. Glassdoor, Indeed, Kununu.', chips(v, 'review_sites', {aria: 'Review sites'}), [v, 'review_sites']),
+      field('Forums', 'Communities that discuss employers in your country or field.', chips(v, 'forums', {aria: 'Forums'}), [v, 'forums']),
+      field('Extra searches', ['More searches; ', h('code', null, '{company}'), ' is replaced, e.g. “{company} layoffs”.'], chips(v, 'extra_queries', {aria: 'Extra searches'}), [v, 'extra_queries'], {wide: true})));
+}
+function secReport(){
+  const r = state.prefs.report;
+  return section('report', 'Report', 'The report is the page where you browse your matches and tick off the ones you applied to.',
+    grid('',
+      field('Report title', 'Shown at the top of the report page.', textIn(r, 'title'), [r, 'title']),
+      field('Show jobs posted within (days)', '1–365.', numIn(r, 'posted_within_days', {min: 1, max: 365, step: 1}), [r, 'posted_within_days'])));
+}
+function secExclusions(){
+  const e = state.prefs.exclusions;
+  return section('exclusions', 'Exclusions', 'Companies listed here are dropped from every search and report.',
+    field('Companies you never want to see', null, chips(e, 'companies', {aria: 'Excluded companies'}), [e, 'companies'], {wide: true}));
+}
+
+function renameSkill(oldName, newName){
+  const o = oldName.trim().toLowerCase(), n = newName.trim();
+  if (!o || !n || o === n.toLowerCase()) return;
+  if (state.resume.skills.some(s => s.name.trim().toLowerCase() === o)) return;   // the old name still exists
+  const swap = a => a.forEach((x, i) => { if (x.trim().toLowerCase() === o) a[i] = n; });
+  swap(state.prefs.core_skills);
+  for (const f of ENTRY_FIELDS) state.resume[f].forEach(e => (e.bullets || []).forEach(b => swap(b.skills)));
+  CHIP_DRAWS.forEach(c => c.draw());
+}
+function skillsTable(){
+  const box = h('div', {class: 'skills'});
+  const arr = () => state.resume.skills;
+  function row(s, i){
+    const err = h('div', {class: 'err'});
+    let before = s.name;
+    const name = textIn(s, 'name', {placeholder: 'e.g. Python', 'aria-label': `Skill ${i + 1} name`,
+      onfocus: () => { before = s.name; }, onchange: () => { renameSkill(before, s.name); before = s.name; changed(); }});
+    const aliases = h('input', {type: 'text', value: s.aliases.join(', '), placeholder: 'Other names (optional), e.g. k8s', 'aria-label': `Skill ${i + 1} other names`,
+      oninput: e => { s.aliases = e.target.value.split(',').map(x => x.trim()).filter(Boolean); changed(); }});
+    const r = h('div', {class: 'srow'}, name, selIn(s, 'level', LEVELS, {'aria-label': `Skill ${i + 1} level`}), aliases,
+      textIn(s, 'category', {placeholder: 'Category (optional)', 'aria-label': `Skill ${i + 1} category`}),
+      h('button', {type: 'button', class: 'sm danger', title: 'Remove skill', 'aria-label': `Remove skill ${i + 1}`,
+        onclick: () => { arr().splice(i, 1); draw(); changed(); }}, '×'), err);
+    slot(s, 'name', err, r);
+    return r;
+  }
+  function draw(){
+    box.replaceChildren(
+      h('div', {class: 'srow head', 'aria-hidden': 'true'}, h('span', null, 'Skill'), h('span', null, 'Level'),
+        h('span', null, 'Other names (comma-separated)'), h('span', null, 'Category'), h('span')),
+      ...arr().map(row),
+      h('div', null, h('button', {type: 'button', class: 'add', onclick: () => {
+        arr().push({name: '', level: 'working', aliases: [], category: ''}); draw(); changed();
+        const ins = box.querySelectorAll('.srow:not(.head)'); ins[ins.length - 1].querySelector('input').focus(); }}, '+ Add skill')));
+  }
+  draw();
+  return box;
+}
+function newEntry(full){
+  return full ? {title: '', org: '', start: '', end: '', location: '', bullets: [{text: '', skills: [], evidence: 'implemented'}]}
+              : {title: '', org: '', end: ''};
+}
+function entryCards(fk){
+  const box = h('div');
+  const arr = () => state.resume[fk];
+  const noun = SECT_ENTRY[fk].toLowerCase();
+  function bulletRow(e, b, j, drawB){
+    const err = h('div', {class: 'err'});
+    const r = h('div', {class: 'bul'},
+      h('div', {class: 'bul-h'}, h('span', {class: 'mut sm'}, `Bullet ${j + 1}`, b.id ? ` · id ${b.id}` : ''), h('span', {class: 'sp'}),
+        h('button', {type: 'button', class: 'sm danger', 'aria-label': `Remove bullet ${j + 1}`,
+          onclick: () => { e.bullets.splice(j, 1); drawB(); changed(); }}, 'Remove')),
+      areaIn(b, 'text', {'aria-label': `Bullet ${j + 1} text`, placeholder: 'One achievement: what you built or did, with what, and the result'}),
+      h('div', {class: 'bul-f'},
+        h('div', null, h('div', {class: 'help'}, 'Skills this shows (from your skills list)'),
+          chips(b, 'skills', {list: 'dl-skills', known: knownTerms, aria: `Bullet ${j + 1} skills`, placeholder: 'Pick or type a skill'})),
+        h('div', null, h('div', {class: 'help'}, 'Evidence'), selIn(b, 'evidence', EVIDENCE, {'aria-label': `Bullet ${j + 1} evidence`}))),
+      err);
+    slot(b, 'text', err, r); slot(b, 'skills', err, r);
+    return r;
+  }
+  function card(e, i){
+    const buls = h('div', {class: 'buls'});
+    if (!Array.isArray(e.bullets)) e.bullets = [];
+    function drawB(){
+      buls.replaceChildren(...e.bullets.map((b, j) => bulletRow(e, b, j, drawB)),
+        h('button', {type: 'button', class: 'sm add', onclick: () => {
+          e.bullets.push({text: '', skills: [], evidence: 'implemented'}); drawB(); changed();
+          const t = buls.querySelectorAll('textarea'); t[t.length - 1].focus(); }}, '+ Add bullet'));
+    }
+    drawB();
+    const move = d => () => { const a = arr(); [a[i], a[i + d]] = [a[i + d], a[i]]; draw(); changed(); };
+    const exp = fk === 'experience';
+    return h('div', {class: 'card'},
+      h('div', {class: 'card-h'}, h('b', null, `${SECT_ENTRY[fk]} ${i + 1}`),
+        h('button', {type: 'button', class: 'sm', disabled: i === 0, title: 'Move up', 'aria-label': 'Move up', onclick: move(-1)}, '↑'),
+        h('button', {type: 'button', class: 'sm', disabled: i === arr().length - 1, title: 'Move down', 'aria-label': 'Move down', onclick: move(1)}, '↓'),
+        h('button', {type: 'button', class: 'sm danger', onclick: () => {
+          const c = cleanEntry(e);
+          if (c && !confirm(`Remove ${noun} ${i + 1}${c.title ? ' (' + c.title + ')' : ''} and its bullets?`)) return;
+          arr().splice(i, 1); draw(); changed(); }}, `Remove ${noun}`)),
+      grid('g4',
+        field(exp ? 'Role' : 'Project name', exp ? 'e.g. Software Engineer' : null, textIn(e, 'title'), [e, 'title'], {req: true, w2: true}),
+        field(exp ? 'Organisation' : 'Organisation (optional)', null, textIn(e, 'org'), [e, 'org'], {w2: true}),
+        field('Start', 'e.g. 2024-07', textIn(e, 'start'), [e, 'start']),
+        field('End', 'e.g. 2025-03 or present', textIn(e, 'end'), [e, 'end']),
+        field('Location', null, textIn(e, 'location'), [e, 'location']),
+        field('ID (optional)', 'Made for you when blank.', textIn(e, 'id', {placeholder: ID_PREFIX[fk] + '_…'}), [e, 'id'])),
+      h('div', {class: 'lbl', style: 'margin-top:10px'}, 'What you did — one achievement per bullet'),
+      buls);
+  }
+  function draw(){
+    box.replaceChildren(...arr().map(card),
+      h('button', {type: 'button', class: 'add', onclick: () => {
+        arr().push(newEntry(true)); draw(); changed();
+        const c = box.querySelectorAll('.card'); c[c.length - 1].querySelector('input').focus(); }}, `+ Add ${noun}`));
+  }
+  draw();
+  return box;
+}
+function entryRows(fk){
+  const box = h('div');
+  const arr = () => state.resume[fk];
+  const edu = fk === 'education';
+  function draw(){
+    box.replaceChildren(
+      h('div', {class: 'erow head', 'aria-hidden': 'true'}, h('span', null, edu ? 'Degree / course' : 'Certification'),
+        h('span', null, edu ? 'School / university' : 'Issued by'), h('span', null, 'Year'), h('span')),
+      ...arr().map((e, i) => {
+        const err = h('div', {class: 'err'});
+        const r = h('div', {class: 'erow'},
+          textIn(e, 'title', {placeholder: edu ? 'e.g. B.Sc. Computer Science' : 'e.g. Cloud Practitioner', 'aria-label': `${SECT_ENTRY[fk]} ${i + 1} title`}),
+          textIn(e, 'org', {placeholder: edu ? 'Institution' : 'Issuer', 'aria-label': `${SECT_ENTRY[fk]} ${i + 1} organisation`}),
+          textIn(e, 'end', {placeholder: 'e.g. 2024', 'aria-label': `${SECT_ENTRY[fk]} ${i + 1} year`}),
+          h('button', {type: 'button', class: 'sm danger', title: 'Remove', 'aria-label': `Remove ${SECT_ENTRY[fk].toLowerCase()} ${i + 1}`,
+            onclick: () => { arr().splice(i, 1); draw(); changed(); }}, '×'), err);
+        slot(e, 'title', err, r); slot(e, 'id', err, r);
+        return r;
+      }),
+      h('button', {type: 'button', class: 'add', onclick: () => {
+        arr().push(newEntry(false)); draw(); changed();
+        const rs = box.querySelectorAll('.erow:not(.head)'); rs[rs.length - 1].querySelector('input').focus(); }}, `+ Add ${SECT_ENTRY[fk].toLowerCase()}`));
+  }
+  draw();
+  return box;
+}
+function secResume(){
+  const r = state.resume;
+  const skillsErr = h('div', {class: 'err'}), bulErr = h('div', {class: 'err'});
+  const skillsBox = h('div', {class: 'fld'}, skillsTable(), skillsErr);
+  const expBox = h('div', {class: 'fld'}, entryCards('experience'), bulErr);
+  slot(r, 'skills', skillsErr, skillsBox); slot(r, 'experience', bulErr, expBox);
+  return section('resume', 'Resume facts', 'Every job is scored against these facts only. A requirement with no evidence here counts as unmet, so write only what is true and you could defend in an interview.',
+    grid('',
+      field('Name', null, textIn(r, 'name', {autocomplete: 'name'}), [r, 'name']),
+      field('Headline', 'e.g. Backend engineer', textIn(r, 'headline'), [r, 'headline']),
+      field('Summary', 'Two or three sentences about your work.', areaIn(r, 'summary', {rows: 3}), [r, 'summary'], {wide: true})),
+    h('h3', null, 'Skills', h('span', {class: 'req'}, ' *')),
+    h('p', {class: 'help'}, 'Level: ', h('b', null, 'hands-on'), ' = used for real work, ', h('b', null, 'working'), ' = used, would need ramp-up, ',
+      h('b', null, 'exposure'), ' = courses / tinkering. Other names are spellings a job ad might use, e.g. “k8s” for Kubernetes.'),
+    skillsBox,
+    h('h3', null, 'Experience'),
+    h('p', {class: 'help'}, 'Evidence: ', h('b', null, 'implemented'), ' = you built it, ', h('b', null, 'contributed'), ' = team effort, ',
+      h('b', null, 'explored'), ' = prototype / study. Bullet skills must be names (or other names) from your skills list. At least one bullet is needed.'),
+    expBox,
+    h('h3', null, 'Projects'), entryCards('projects'),
+    h('h3', null, 'Education'), entryRows('education'),
+    h('h3', null, 'Certifications'), entryRows('certifications'));
+}
+
+function refreshSkillLists(){
+  SKILL_NAMES = new Set(); SKILL_TERMS = new Set();
+  const names = [];
+  state.resume.skills.forEach(s => {
+    const n = s.name.trim();
+    if (n) { SKILL_NAMES.add(n.toLowerCase()); SKILL_TERMS.add(n.toLowerCase()); if (!names.includes(n)) names.push(n); }
+    s.aliases.forEach(a => { a = a.trim().toLowerCase(); if (a) SKILL_TERMS.add(a); });
+  });
+  const dl = $('dl-skills');
+  const sig = names.join('\n');
+  if (dl.dataset.sig !== sig) { dl.replaceChildren(...names.map(n => h('option', {value: n}))); dl.dataset.sig = sig; }
+  CHIP_DRAWS = CHIP_DRAWS.filter(c => c.wrap.isConnected);
+  CHIP_DRAWS.forEach(c => c.draw());
+}
+function renderToc(issues){
+  const n = {};
+  for (const i of issues || []) if (i.sev === 'err') n[i.sect] = (n[i.sect] || 0) + 1;
+  $('toc').replaceChildren(...Object.entries(SECT).map(([id, name]) => h('a', {href: '#' + id, onclick: () => { const d = $(id); if (d && d.tagName === 'DETAILS') d.open = true; }},
+    name, n[id] ? h('span', {class: 'n', title: `${n[id]} to fix`}, n[id]) : null)));
+}
+function goTo(it){
+  const target = (it.slot && it.slot.wrap && it.slot.wrap.isConnected) ? it.slot.wrap : $(it.sect);
+  if (!target) return;
+  const d = target.closest('details'); if (d) d.open = true;
+  target.scrollIntoView({behavior: 'smooth', block: 'center'});
+  const inp = target.querySelector('input:not([type=hidden]):not([disabled]),select,textarea');
+  if (inp) setTimeout(() => inp.focus({preventScroll: true}), 300);
+}
+function renderProblems(issues){
+  const box = $('problems');
+  const errs = issues.filter(i => i.sev === 'err'), warns = issues.filter(i => i.sev === 'warn');
+  const st = $('status');
+  st.className = 'pill ' + (errs.length ? 'bad' : 'ok');
+  st.textContent = errs.length ? `${errs.length} to fix` : 'Ready';
+  if (!issues.length) {
+    box.className = 'panel probs ok';
+    box.replaceChildren(h('b', null, '✓ Looks good. '), 'Everything needed is filled in — download your profile when you are ready.');
+    return;
+  }
+  box.className = 'panel probs';
+  box.replaceChildren(
+    h('div', null, h('b', null, errs.length ? `${errs.length} thing${errs.length > 1 ? 's' : ''} to fix` : 'Nothing to fix'),
+      warns.length ? h('span', {class: 'mut'}, ` · ${warns.length} note${warns.length > 1 ? 's' : ''}`) : null,
+      h('span', {class: 'mut'}, errs.length ? ' — you can still download, but the import or ' : ''),
+      errs.length ? h('code', null, 'jobhunt profile validate') : null, h('span', {class: 'mut'}, errs.length ? ' will report these.' : '')),
+    h('ul', null, issues.map(it => h('li', {class: it.sev === 'err' ? 'e' : 'w'}, h('span', {class: 'tag'}, SECT[it.sect]),
+      h('button', {type: 'button', class: 'lnk', onclick: () => goTo(it)}, it.msg)))));
+}
+function runValidate(){
+  refreshSkillLists();
+  const issues = validate(state);
+  LAST = issues;
+  for (const s of MARKED) { s.err.textContent = ''; s.err.classList.remove('warn'); s.wrap.classList.remove('invalid'); }
+  MARKED = [];
+  const byErr = new Map();
+  for (const it of issues) {
+    const m = it.ref && SLOTS.get(it.ref[0]);
+    const s = m && m.get(it.ref[1]);
+    if (!s) continue;
+    it.slot = s;
+    if (!byErr.has(s.err)) byErr.set(s.err, {s, list: []});
+    byErr.get(s.err).list.push(it);
+  }
+  for (const {s, list} of byErr.values()) {
+    s.err.textContent = list.map(i => i.msg).join(' · ');
+    const hard = list.some(i => i.sev === 'err');
+    s.err.classList.toggle('warn', !hard);
+    if (hard) s.wrap.classList.add('invalid');
+    MARKED.push(s);
+  }
+  renderProblems(issues);
+  renderToc(issues);
+}
+function renderAll(){
+  SLOTS = new WeakMap(); MARKED = []; CHIP_DRAWS = [];
+  $('form').replaceChildren(secAbout(), secJobs(), secWhere(), secPay(), secSearch(), secVetting(), secReport(), secExclusions(), secResume());
+  runValidate();
+}
+
+// ───────────────────────────── draft, buttons ─────────────────────────────
+function setSaved(t){ $('saved').textContent = t; }
+function saveDraft(){
+  try {
+    localStorage.setItem(DRAFT_KEY, JSON.stringify({v: 1, saved: new Date().toISOString(), state}));
+    setSaved('Draft saved in this browser ' + new Date().toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'}));
+  } catch (e) { canStore = false; setSaved('Drafts cannot be saved in this browser — download before closing.'); }
+}
+function loadDraft(){
+  try { const raw = localStorage.getItem(DRAFT_KEY); if (!raw) return null; const d = JSON.parse(raw); return d && isObj(d.state) ? d : null; }
+  catch (e) { return null; }
+}
+function clearDraft(){ try { localStorage.removeItem(DRAFT_KEY); } catch (e) { /* storage unavailable */ } }
+function changed(){
+  touched = true;
+  runValidate();
+  if (!canStore) return;
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(saveDraft, 400);
+}
+function offerDraft(){
+  const d = loadDraft();
+  if (!d) return;
+  let ds;
+  try { ds = normState(d.state); } catch (e) { return; }
+  if (JSON.stringify(ds) === JSON.stringify(state)) return;
+  const when = (() => { try { return new Date(d.saved).toLocaleString(); } catch (e) { return 'earlier'; } })();
+  const box = $('draft');
+  box.replaceChildren(h('b', null, 'You have an unfinished draft'), h('span', {class: 'mut'}, ` from ${when}, saved in this browser.`),
+    h('div', {class: 'help'}, 'Restore it to continue where you left off, or discard it and keep the profile shown below.'),
+    h('div', {class: 'btns'},
+      h('button', {type: 'button', class: 'pri', onclick: () => { state = ds; box.hidden = true; renderAll(); setSaved('Draft restored'); }}, 'Restore draft'),
+      h('button', {type: 'button', onclick: () => { clearDraft(); box.hidden = true; setSaved(''); }}, 'Discard draft')));
+  box.hidden = false;
+}
+const outputText = () => JSON.stringify(collect(state), null, 2);
+function downloadFile(name, text){
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([text], {type: 'application/json'}));
+  a.download = name;
+  document.body.append(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+}
+function copyText(t){
+  const b = h('button', {type: 'button', class: 'sm', onclick: async () => {
+    try { await navigator.clipboard.writeText(t); b.textContent = 'Copied'; } catch (e) { b.textContent = 'Select and copy it'; }
+    setTimeout(() => { b.textContent = 'Copy'; }, 1500); }}, 'Copy');
+  return b;
+}
+function showDone(){
+  const cmd = 'jobhunt profile import <path>/jobhunt-profile.json';
+  const box = $('done');
+  box.replaceChildren(
+    h('b', null, '✓ Saved jobhunt-profile.json'), h('span', {class: 'mut'}, ' — check your browser’s downloads.'),
+    h('div', null, 'Next, in a terminal in your JobHunt folder, run:'),
+    h('div', {class: 'cmdrow'}, h('code', {class: 'cmd'}, cmd), copyText(cmd)),
+    h('div', {class: 'help'}, 'Replace ', h('code', null, '<path>'), ' with the folder the file was saved to — usually Downloads, e.g. ',
+      h('code', null, '~/Downloads/jobhunt-profile.json'), ' (Windows PowerShell: ', h('code', null, '$HOME\\Downloads\\jobhunt-profile.json'),
+      '). If your browser renamed it, e.g. “jobhunt-profile (1).json”, use that name in quotes. Then check it with ', h('code', null, 'jobhunt profile validate'), '.'),
+    h('div', {class: 'help', style: 'margin-top:6px'}, 'Tip: a coding agent can fill your profile from your resume instead — ask it to follow ',
+      h('code', null, 'playbooks/setup.md'), '.'));
+  box.hidden = false;
+  box.scrollIntoView({behavior: 'smooth', block: 'nearest'});
+}
+
+$('dl').addEventListener('click', () => {
+  if (document.activeElement && document.activeElement.blur) document.activeElement.blur();
+  const errs = validate(state).filter(i => i.sev === 'err');
+  if (errs.length && !confirm(`${errs.length} thing${errs.length > 1 ? 's' : ''} still need${errs.length > 1 ? '' : 's'} fixing (see the list at the top).\n\n` +
+      'You can download anyway and fix them later, but `jobhunt profile import` or `jobhunt profile validate` will report them.\n\nDownload anyway?')) return;
+  downloadFile('jobhunt-profile.json', outputText());
+  showDone();
+});
+$('copy').addEventListener('click', async () => {
+  const t = outputText(), b = $('copy');
+  try { await navigator.clipboard.writeText(t); b.textContent = 'Copied ✓'; setTimeout(() => { b.textContent = 'Copy as JSON'; }, 1500); }
+  catch (e) {
+    const d = $('copydlg'), ta = $('copytxt');
+    ta.value = t;
+    if (d.showModal) { d.showModal(); ta.focus(); ta.select(); } else alert('Copy failed; your browser blocked clipboard access.');
+  }
+});
+$('copyclose').addEventListener('click', () => $('copydlg').close());
+$('reset').addEventListener('click', () => {
+  if (!confirm('Start over? This replaces everything in the form with the profile this page was opened with, and deletes your saved draft.')) return;
+  state = initialState(); clearDraft(); touched = false; $('draft').hidden = true; $('done').hidden = true;
+  renderAll(); setSaved('Reset to the original profile');
+});
+$('status').addEventListener('click', () => $('problems').scrollIntoView({behavior: 'smooth', block: 'start'}));
+
+try { localStorage.getItem(DRAFT_KEY); } catch (e) { canStore = false; }
+renderAll();
+if (canStore) offerDraft(); else setSaved('Drafts cannot be saved in this browser — download before closing.');
+</script></body></html>

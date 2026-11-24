@@ -1,0 +1,18 @@
+id,site,job_url,job_url_direct,title,company,location,date_posted,job_type,salary_source,interval,min_amount,max_amount,currency,is_remote,job_level,job_function,listing_type,emails,description,company_industry,company_url,company_logo,company_url_direct,company_addresses,company_num_employees,company_revenue,company_description,skills,experience_range,company_rating,company_reviews_count,vacancy_count,work_from_home_type
+gd-1010306615450,glassdoor,https://www.glassdoor.co.in/job-listing/j?jl=1010306615450,,Python/Django Developer,Netzary Infodynamics,India,2026-10-27,fulltime,,,,,,False,,,organic,,,,,,,,,,,,,,,,
+gd-1010306099886,glassdoor,https://www.glassdoor.co.in/job-listing/j?jl=1010306099886,,Full Stack Developer,Codeverse Technologies,"Bengaluru, India",2026-10-26,fulltime,direct_data,yearly,69000.0,819000.0,INR,False,,,organic,,,,https://www.glassdoor.co.in/Overview/W-EI_IE5531142.htm,,https://www.codeverse.in,"Bengaluru, India",51 to 200 Employees,Unknown / Non-Applicable,,,,2.8,,,
+gd-1010304675094,glassdoor,https://www.glassdoor.co.in/job-listing/j?jl=1010304675094,,Full Stack Developer - Python,WSP,"Bengaluru, India",2026-10-24,,,,,,,False,,,organic,,,Architectural & Engineering Services,https://www.glassdoor.co.in/Overview/W-EI_IE13584.htm,https://media.glassdoor.com/sql/13584/wsp-squarelogo-1494428744957.png,https://www.wsp.com,"Montreal, Canada",10000+ Employees,$10+ billion (USD),"We are one of the world’s leading professional services firms, uniting our engineering, advisory and science-based expertise to shape communities to advance humanity. ​
+
+From local beginnings to a globe-spanning presence today, we operate in over 50 countries and employ approximately 73,000 professionals, known as Visioneers. ​
+
+Together they pioneer solutions and deliver innovative projects across sectors: Transport & Infrastructure, Property & Buildings, Earth & Environment, Water, Power & Energy and Mining & Metals. ​
+​
+Together let’s unlock potential everywhere.​
+
+#WeAreWSP",,,3.7,,,
+gd-1010303528552,glassdoor,https://www.glassdoor.co.in/job-listing/j?jl=1010303528552,,Python Backend Developer,DIAN Technology Solutions Pvt Ltd,"Bengaluru, India",2026-10-23,fulltime,,,,,,False,,,organic,,,,,,,,,,,,,,,,
+gd-1010303561906,glassdoor,https://www.glassdoor.co.in/job-listing/j?jl=1010303561906,,"Software Developer -C++,Python",Siemens Healthineers,"Bengaluru, India",2026-10-23,fulltime,direct_data,yearly,625000.0,944424.0,INR,False,,,organic,,,Biotechnology,https://www.glassdoor.co.in/Overview/W-EI_IE1317005.htm,https://media.glassdoor.com/sql/1317005/siemens-healthineers-squareLogo-1736444535837.png,https://www.siemens-healthineers.com/,"Erlangen, Germany",10000+ Employees,$10+ billion (USD),"We drive innovation to help humans live healthier and longer.
+
+The products, services and solutions offered by Siemens Healthineers help physicians, medical staff and healthcare providers prevent illnesses from occurring and to correctly diagnose and determine the right treatments for people who do become ill, helping them to recover faster. Every hour, more than 240,000 patients are touched by technologies provided by Siemens Healthineers. We are at the center of clinical decision making: Almost three-quarters of all critical clinical decisions are influenced by  our solutions. 
+
+Built on a 120-year history of innovation, today we are a global player with  a strong heritage in German engineering. Just one year after X-rays were discovered by Wilhelm Conrad Roentgen in 1895, we created the world's first medical X-ray device. Our archives still hold a letter from Roentgen dating back to 1896 praising the quality of tubes provided by Siemens.",,,4.1,,,

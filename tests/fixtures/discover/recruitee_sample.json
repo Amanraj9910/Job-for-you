@@ -1,0 +1,841 @@
+{
+ "offers": [
+  {
+   "max_hours": 40,
+   "options_cover_letter": "off",
+   "position": 26,
+   "mailbox_email": "job.howrp@aihr.recruitee.com",
+   "company_name": "AIHR",
+   "cover_image": {
+    "url": "https://careers.recruiteecdn.com/image/upload/ats-production/offers/2767417/offer_cover_image_ofluyls1317a.jpeg"
+   },
+   "options_photo": "off",
+   "highlight": null,
+   "options_salutation": "off",
+   "employment_type_code": "fulltime_fixed_term",
+   "city": "Rotterdam",
+   "slug": "growth-account-executive-account-manager-1",
+   "hybrid": true,
+   "location": "Rotterdam, Zuid-Holland, Netherlands",
+   "guid": "howrp",
+   "published_at": "2026-10-08 09:51:54 UTC",
+   "min_hours": 36,
+   "tags": [
+    "Mid-level"
+   ],
+   "sharing_image": null,
+   "country_code": "NL",
+   "salary": {
+    "max": null,
+    "min": null,
+    "period": null,
+    "currency": null
+   },
+   "country": "Netherlands",
+   "locations_question": "What is your preferred work location?",
+   "options_phone": "required",
+   "close_at": null,
+   "requirements": "<p><strong><span style=\"color:#000000\">Who you are</span></strong></p><p style=\"min-height: 1.7em;\"></p><p><span style=\"color:#000000\">We’re looking for someone positive, resilient, and curious, a true relationship builder with excellent communication skills, and someone who is not afraid to fail.</",
+   "department": "Sales",
+   "locations": [
+    {
+     "id": 237655,
+     "name": "Rotterdam",
+     "state": "Zuid-Holland",
+     "country": "Netherlands",
+     "city": "Rotterdam",
+     "translations": {
+      "en": {
+       "name": "Rotterdam",
+       "city": "Rotterdam",
+       "postal_code": "3012 CN",
+       "street": "Weena 690",
+       "note": "Rotterdam Central - Weena"
+      }
+     },
+     "country_code": "NL",
+     "state_code": "ZH",
+     "postal_code": "3012 CN",
+     "street": "Weena 690",
+     "note": "Rotterdam Central - Weena"
+    }
+   ],
+   "careers_url": "https://aihr.recruitee.com/o/growth-account-executive-account-manager-1",
+   "state_name": "Zuid-Holland",
+   "description": "<p><span style=\"color:#000000\">Are you energized by growing existing business, building relationships, and finding hidden opportunities in a large portfolio? Do you enjoy combining structure and process with commercial instincts, and using AI to work smarter? At AIHR, we’re looking for a </span><str",
+   "open_questions": [
+    {
+     "id": 4408733,
+     "position": 1,
+     "options": {},
+     "required": false,
+     "body": "Why do you want to work in AIHR in this specific role?",
+     "kind": "text",
+     "translations": {
+      "en": {
+       "body": "Why do you want to work in AIHR in this specific role?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4408734,
+     "position": 2,
+     "options": {},
+     "required": false,
+     "body": "Please share your last 3 years' sales quota and attainment with € and %.",
+     "kind": "text",
+     "translations": {
+      "en": {
+       "body": "Please share your last 3 years' sales quota and attainment with € and %."
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4408735,
+     "position": 3,
+     "options": {},
+     "required": false,
+     "body": "What types of products or services have you sold in your career?",
+     "kind": "text",
+     "translations": {
+      "en": {
+       "body": "What types of products or services have you sold in your career?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4408736,
+     "position": 4,
+     "options": {},
+     "required": false,
+     "body": "Please share the number of clients or the size of your client portfolio you were responsible for simultaneously.",
+     "kind": "text",
+     "translations": {
+      "en": {
+       "body": "Please share the number of clients or the size of your client portfolio you were responsible for simultaneously."
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4408737,
+     "position": 5,
+     "options": {},
+     "required": false,
+     "body": "Are you eligible to work in the Netherlands without visa sponsorship?",
+     "kind": "boolean",
+     "translations": {
+      "en": {
+       "body": "Are you eligible to work in the Netherlands without visa sponsorship?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4408738,
+     "position": 6,
+     "options": {},
+     "required": true,
+     "body": "<p>By submitting my application, I consent to AIHR processing and storing my personal data for recruitment purposes for up to one year, in accordance with applicable data protection laws. I understand that I can request access to, correction of, or deletion of my data at any time.</p>",
+     "kind": "legal",
+     "translations": {
+      "en": {
+       "body": "<p>By submitting my application, I consent to AIHR processing and storing my personal data for recruitment purposes for up to one year, in accordance with applicable data protection laws. I understand that I can request access to, correction of, or deletion of my data at any time.</p>"
+      }
+     },
+     "open_question_options": []
+    }
+   ],
+   "postal_code": "3012 CN",
+   "careers_apply_url": "https://aihr.recruitee.com/o/growth-account-executive-account-manager-1/c/new",
+   "experience_code": "mid_level",
+   "remote": false,
+   "min_hours_per_week": "36",
+   "category_code": "sales",
+   "sharing_description": "Are you energized by growing existing business, building relationships, and finding hidden opportunities in a large portfolio? Do you enjoy combining structure and process with commercial instincts, a",
+   "created_at": "2026-10-01 13:14:04 UTC",
+   "options_cv": "required",
+   "sharing_title": "Growth Account Executive / Account Manager",
+   "location_question_visible": false,
+   "options_title": "off",
+   "id": 2767417,
+   "locations_question_required": true,
+   "education_code": "professional",
+   "max_hours_per_week": "40",
+   "on_site": false,
+   "dynamic_fields": [],
+   "locations_question_type": "multiple_choice",
+   "title": "Growth Account Executive / Account Manager",
+   "status": "published",
+   "updated_at": "2026-10-13 07:28:23 UTC",
+   "state_code": "ZH"
+  },
+  {
+   "max_hours": 40,
+   "options_cover_letter": "optional",
+   "position": 20,
+   "mailbox_email": "job.copb5@aihr.recruitee.com",
+   "company_name": "AIHR",
+   "cover_image": null,
+   "options_photo": "off",
+   "highlight": null,
+   "options_salutation": "off",
+   "employment_type_code": "fulltime_fixed_term",
+   "city": "Rotterdam",
+   "slug": "senior-partnership-manager",
+   "hybrid": true,
+   "location": "Rotterdam, Zuid-Holland, Netherlands",
+   "guid": "copb5",
+   "published_at": "2026-09-29 08:48:28 UTC",
+   "min_hours": 40,
+   "tags": [],
+   "sharing_image": null,
+   "country_code": "NL",
+   "salary": {
+    "max": null,
+    "min": null,
+    "period": null,
+    "currency": null
+   },
+   "country": "Netherlands",
+   "locations_question": "What is your preferred work location?",
+   "options_phone": "required",
+   "close_at": null,
+   "requirements": "<p><strong><span style=\"color:#000000\">Who you are</span></strong></p><p style=\"min-height: 1.7em;\"></p><ul><li><p><strong><span style=\"color:#000000\">7+ years of experience in commercial partnerships, channel sales, business development, or strategic account management</span></strong><span style=\"c",
+   "department": "Sales",
+   "locations": [
+    {
+     "id": 237655,
+     "name": "Rotterdam",
+     "state": "Zuid-Holland",
+     "country": "Netherlands",
+     "city": "Rotterdam",
+     "translations": {
+      "en": {
+       "name": "Rotterdam",
+       "city": "Rotterdam",
+       "postal_code": "3012 CN",
+       "street": "Weena 690",
+       "note": "Rotterdam Central - Weena"
+      }
+     },
+     "country_code": "NL",
+     "state_code": "ZH",
+     "postal_code": "3012 CN",
+     "street": "Weena 690",
+     "note": "Rotterdam Central - Weena"
+    }
+   ],
+   "careers_url": "https://aihr.recruitee.com/o/senior-partnership-manager",
+   "state_name": "Zuid-Holland",
+   "description": "<p><em><span style=\"color:#000000\">Do you look at a partner program that works and immediately see what it could become at three times the size? Are you the kind of person who owns your number and a running book of business, while designing the channels that will carry the next phase of growth? Do y",
+   "open_questions": [
+    {
+     "id": 4394767,
+     "position": 1,
+     "options": {},
+     "required": false,
+     "body": "Why do you want to work in AIHR in this specific role?",
+     "kind": "text",
+     "translations": {
+      "en": {
+       "body": "Why do you want to work in AIHR in this specific role?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4394912,
+     "position": 2,
+     "options": {},
+     "required": false,
+     "body": "How many years of experience do you have working in partnership management?",
+     "kind": "string",
+     "translations": {
+      "en": {
+       "body": "How many years of experience do you have working in partnership management?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4394914,
+     "position": 3,
+     "options": {},
+     "required": false,
+     "body": "This role involves managing the full partnership lifecycle (from acquiring partners to strategically managing their growth &amp; impact. You’ll spend around 30% - 40% of your time finding new partners. In your most relevant role, approximately how many hours per week did you personally spend on outbound prospecting?",
+     "kind": "text",
+     "translations": {
+      "en": {
+       "body": "This role involves managing the full partnership lifecycle (from acquiring partners to strategically managing their growth &amp; impact. You’ll spend around 30% - 40% of your time finding new partners. In your most relevant role, approximately how many hours per week did you personally spend on outbound prospecting?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4394916,
+     "position": 4,
+     "options": {},
+     "required": false,
+     "body": "What is the largest number of active partner relationships you have managed at one time?",
+     "kind": "string",
+     "translations": {
+      "en": {
+       "body": "What is the largest number of active partner relationships you have managed at one time?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4394917,
+     "position": 5,
+     "options": {},
+     "required": false,
+     "body": "Describe the most valuable or complex task you have completed using AI that show your level of AI fluency. What tools did you use, what did you do, and what was the result?",
+     "kind": "text",
+     "translations": {
+      "en": {
+       "body": "Describe the most valuable or complex task you have completed using AI that show your level of AI fluency. What tools did you use, what did you do, and what was the result?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4394918,
+     "position": 6,
+     "options": {},
+     "required": true,
+     "body": "Are you eligible to work in the Netherlands without visa sponsorship?",
+     "kind": "boolean",
+     "translations": {
+      "en": {
+       "body": "Are you eligible to work in the Netherlands without visa sponsorship?"
+      }
+     },
+     "open_question_options": []
+    }
+   ],
+   "postal_code": "3012 CN",
+   "careers_apply_url": "https://aihr.recruitee.com/o/senior-partnership-manager/c/new",
+   "experience_code": "experienced",
+   "remote": false,
+   "min_hours_per_week": "40",
+   "category_code": "sales",
+   "sharing_description": "Do you look at a partner program that works and immediately see what it could become at three times the size? Are you the kind of person who owns your number and a running book of business, while desi",
+   "created_at": "2026-09-25 08:09:08 UTC",
+   "options_cv": "required",
+   "sharing_title": "Senior Partnership Manager",
+   "location_question_visible": false,
+   "options_title": "off",
+   "id": 2759212,
+   "locations_question_required": true,
+   "education_code": "bachelor_degree",
+   "max_hours_per_week": "40",
+   "on_site": false,
+   "dynamic_fields": [],
+   "locations_question_type": "multiple_choice",
+   "title": "Senior Partnership Manager",
+   "status": "published",
+   "updated_at": "2026-10-06 08:34:44 UTC",
+   "state_code": "ZH"
+  },
+  {
+   "max_hours": null,
+   "options_cover_letter": "optional",
+   "position": 19,
+   "mailbox_email": "job.8kekr@aihr.recruitee.com",
+   "company_name": "AIHR",
+   "cover_image": null,
+   "options_photo": "off",
+   "highlight": null,
+   "options_salutation": "off",
+   "employment_type_code": "fulltime_fixed_term",
+   "city": "Rotterdam",
+   "slug": "partnership-manager",
+   "hybrid": true,
+   "location": "Rotterdam, Zuid-Holland, Netherlands",
+   "guid": "8kekr",
+   "published_at": "2026-09-15 13:31:44 UTC",
+   "min_hours": 40,
+   "tags": [
+    "Senior"
+   ],
+   "sharing_image": null,
+   "country_code": "NL",
+   "salary": {
+    "max": null,
+    "min": null,
+    "period": null,
+    "currency": null
+   },
+   "country": "Netherlands",
+   "locations_question": "What is your preferred work location?",
+   "options_phone": "required",
+   "close_at": null,
+   "requirements": "<p><strong><span style=\"color:#000000\">Who You Are</span></strong></p><p style=\"min-height: 1.7em;\"></p><ul><li><p><strong><span style=\"color:#000000\">3+ years of experience in both commercial partnership acquisition and partnership/account management</span></strong><span style=\"color:#000000\">, ide",
+   "department": "Sales",
+   "locations": [
+    {
+     "id": 237655,
+     "name": "Rotterdam",
+     "state": "Zuid-Holland",
+     "country": "Netherlands",
+     "city": "Rotterdam",
+     "translations": {
+      "en": {
+       "name": "Rotterdam",
+       "city": "Rotterdam",
+       "postal_code": "3012 CN",
+       "street": "Weena 690",
+       "note": "Rotterdam Central - Weena"
+      }
+     },
+     "country_code": "NL",
+     "state_code": "ZH",
+     "postal_code": "3012 CN",
+     "street": "Weena 690",
+     "note": "Rotterdam Central - Weena"
+    }
+   ],
+   "careers_url": "https://aihr.recruitee.com/o/partnership-manager",
+   "state_name": "Zuid-Holland",
+   "description": "<p><em><span style=\"color:#000000\">Do you love the thrill of closing a new partner, but also get real satisfaction from watching that relationship grow, quarter after quarter? Are you the kind of person who owns your number and knows exactly which levers to pull to hit it? Do you want a book of busi",
+   "open_questions": [
+    {
+     "id": 4357955,
+     "position": 1,
+     "options": {},
+     "required": false,
+     "body": "Why do you want to work in AIHR in this specific role?",
+     "kind": "text",
+     "translations": {
+      "en": {
+       "body": "Why do you want to work in AIHR in this specific role?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4358033,
+     "position": 2,
+     "options": {},
+     "required": false,
+     "body": "How many years of experience do you have working in partnership management?",
+     "kind": "string",
+     "translations": {
+      "en": {
+       "body": "How many years of experience do you have working in partnership management?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4358037,
+     "position": 3,
+     "options": {},
+     "required": false,
+     "body": "This role involves managing the full partnership lifecycle (from acquiring partners to strategically managing their growth &amp; impact. You’ll spend around 30% - 40% of your time finding new partners. In your most relevant role, approximately how many hours per week did you personally spend on outbound prospecting?",
+     "kind": "text",
+     "translations": {
+      "en": {
+       "body": "This role involves managing the full partnership lifecycle (from acquiring partners to strategically managing their growth &amp; impact. You’ll spend around 30% - 40% of your time finding new partners. In your most relevant role, approximately how many hours per week did you personally spend on outbound prospecting?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4358038,
+     "position": 4,
+     "options": {},
+     "required": false,
+     "body": "What is the largest number of active partner relationships you have managed at one time?",
+     "kind": "text",
+     "translations": {
+      "en": {
+       "body": "What is the largest number of active partner relationships you have managed at one time?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4358039,
+     "position": 5,
+     "options": {},
+     "required": false,
+     "body": "Describe the most valuable or complex task you have completed using AI that show your level of AI fluency. What tools did you use, what did you do, and what was the result?",
+     "kind": "text",
+     "translations": {
+      "en": {
+       "body": "Describe the most valuable or complex task you have completed using AI that show your level of AI fluency. What tools did you use, what did you do, and what was the result?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4358040,
+     "position": 6,
+     "options": {},
+     "required": true,
+     "body": "Are you eligible to work in the Netherlands without visa sponsorship?",
+     "kind": "boolean",
+     "translations": {
+      "en": {
+       "body": "Are you eligible to work in the Netherlands without visa sponsorship?"
+      }
+     },
+     "open_question_options": []
+    }
+   ],
+   "postal_code": "3012 CN",
+   "careers_apply_url": "https://aihr.recruitee.com/o/partnership-manager/c/new",
+   "experience_code": "experienced",
+   "remote": false,
+   "min_hours_per_week": "40",
+   "category_code": "sales",
+   "sharing_description": "Do you love the thrill of closing a new partner, but also get real satisfaction from watching that relationship grow, quarter after quarter? Are you the kind of person who owns your number and knows e",
+   "created_at": "2026-09-08 13:35:29 UTC",
+   "options_cv": "required",
+   "sharing_title": "Partnership Manager",
+   "location_question_visible": false,
+   "options_title": "off",
+   "id": 2739024,
+   "locations_question_required": true,
+   "education_code": "bachelor_degree",
+   "max_hours_per_week": null,
+   "on_site": false,
+   "dynamic_fields": [],
+   "locations_question_type": "multiple_choice",
+   "title": "Partnership Manager",
+   "status": "published",
+   "updated_at": "2026-10-06 08:33:40 UTC",
+   "state_code": "ZH"
+  },
+  {
+   "max_hours": 40,
+   "options_cover_letter": "optional",
+   "position": 18,
+   "mailbox_email": "job.v24v6@aihr.recruitee.com",
+   "company_name": "AIHR",
+   "cover_image": null,
+   "options_photo": "off",
+   "highlight": null,
+   "options_salutation": "off",
+   "employment_type_code": "fulltime_fixed_term",
+   "city": "Rotterdam",
+   "slug": "sales-operations-salesops-manager",
+   "hybrid": true,
+   "location": "Rotterdam, Zuid-Holland, Netherlands",
+   "guid": "v24v6",
+   "published_at": "2026-08-31 07:41:59 UTC",
+   "min_hours": 40,
+   "tags": [],
+   "sharing_image": null,
+   "country_code": "NL",
+   "salary": {
+    "max": null,
+    "min": null,
+    "period": null,
+    "currency": null
+   },
+   "country": "Netherlands",
+   "locations_question": "What is your preferred work location?",
+   "options_phone": "required",
+   "close_at": null,
+   "requirements": "<p><strong><span style=\"color:#000000\">Who you are</span></strong></p><p style=\"min-height: 1.7em;\"></p><p><span style=\"color:#000000\">We are looking for someone who combines strong operational execution with commercial awareness.</span></p><p><span style=\"color:#000000\">You are comfortable getting ",
+   "department": "Business Operations",
+   "locations": [
+    {
+     "id": 237655,
+     "name": "Rotterdam",
+     "state": "Zuid-Holland",
+     "country": "Netherlands",
+     "city": "Rotterdam",
+     "translations": {
+      "en": {
+       "name": "Rotterdam",
+       "city": "Rotterdam",
+       "postal_code": "3012 CN",
+       "street": "Weena 690",
+       "note": "Rotterdam Central - Weena"
+      }
+     },
+     "country_code": "NL",
+     "state_code": "ZH",
+     "postal_code": "3012 CN",
+     "street": "Weena 690",
+     "note": "Rotterdam Central - Weena"
+    }
+   ],
+   "careers_url": "https://aihr.recruitee.com/o/sales-operations-salesops-manager",
+   "state_name": "Zuid-Holland",
+   "description": "<p><span style=\"color:#000000\">Do you like making it easier for a Sales team to do its best work? Do you enjoy owning the details that keep deals moving, while also spotting where the process could work better? And do you get satisfaction from turning repetitive work into a simpler, smarter way of w",
+   "open_questions": [
+    {
+     "id": 4331615,
+     "position": 1,
+     "options": {},
+     "required": false,
+     "body": "Why are you interested in this Sales Operations Manager role at AIHR?",
+     "kind": "text",
+     "translations": {
+      "en": {
+       "body": "Why are you interested in this Sales Operations Manager role at AIHR?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4339692,
+     "position": 2,
+     "options": {},
+     "required": false,
+     "body": "Tell us about a Sales or operational problem you identified and improved. What did you learn about the problem, and what did you change?",
+     "kind": "text",
+     "translations": {
+      "en": {
+       "body": "Tell us about a Sales or operational problem you identified and improved. What did you learn about the problem, and what did you change?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4331616,
+     "position": 3,
+     "options": {},
+     "required": false,
+     "body": "Do you live in the Netherlands?",
+     "kind": "boolean",
+     "translations": {
+      "en": {
+       "body": "Do you live in the Netherlands?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4331618,
+     "position": 4,
+     "options": {},
+     "required": true,
+     "body": "Do you need visa sponsorship from us to work in the Netherlands?",
+     "kind": "boolean",
+     "translations": {
+      "en": {
+       "body": "Do you need visa sponsorship from us to work in the Netherlands?"
+      }
+     },
+     "open_question_options": []
+    }
+   ],
+   "postal_code": "3012 CN",
+   "careers_apply_url": "https://aihr.recruitee.com/o/sales-operations-salesops-manager/c/new",
+   "experience_code": "experienced",
+   "remote": false,
+   "min_hours_per_week": "40",
+   "category_code": "sales",
+   "sharing_description": "Do you like making it easier for a Sales team to do its best work? Do you enjoy owning the details that keep deals moving, while also spotting where the process could work better? And do you get satis",
+   "created_at": "2026-08-26 14:13:32 UTC",
+   "options_cv": "required",
+   "sharing_title": "Sales Operations (SalesOps) Manager",
+   "location_question_visible": false,
+   "options_title": "off",
+   "id": 2723275,
+   "locations_question_required": true,
+   "education_code": "bachelor_degree",
+   "max_hours_per_week": "40",
+   "on_site": false,
+   "dynamic_fields": [],
+   "locations_question_type": "multiple_choice",
+   "title": "Sales Operations (SalesOps) Manager",
+   "status": "published",
+   "updated_at": "2026-10-22 13:30:23 UTC",
+   "state_code": "ZH"
+  },
+  {
+   "max_hours": 40,
+   "options_cover_letter": "optional",
+   "position": 17,
+   "mailbox_email": "job.l53vp@aihr.recruitee.com",
+   "company_name": "AIHR",
+   "cover_image": null,
+   "options_photo": "off",
+   "highlight": null,
+   "options_salutation": "off",
+   "employment_type_code": "fulltime_fixed_term",
+   "city": "Rotterdam",
+   "slug": "lead-analytics-engineer",
+   "hybrid": true,
+   "location": "Rotterdam, Zuid-Holland, Netherlands",
+   "guid": "l53vp",
+   "published_at": "2026-09-15 13:27:06 UTC",
+   "min_hours": 40,
+   "tags": [],
+   "sharing_image": null,
+   "country_code": "NL",
+   "salary": {
+    "max": null,
+    "min": null,
+    "period": null,
+    "currency": null
+   },
+   "country": "Netherlands",
+   "locations_question": "What is your preferred work location?",
+   "options_phone": "required",
+   "close_at": null,
+   "requirements": "<p><strong><span style=\"color:#000000\">Who you are</span></strong></p><p style=\"min-height: 1.7em;\"></p><p><span style=\"color:#121317\">You are a hands-on technical leader: commercially sharp, calm under challenge, and confident enough to defend your numbers in any room. You also have the patience to",
+   "department": "Business Operations",
+   "locations": [
+    {
+     "id": 237655,
+     "name": "Rotterdam",
+     "state": "Zuid-Holland",
+     "country": "Netherlands",
+     "city": "Rotterdam",
+     "translations": {
+      "en": {
+       "name": "Rotterdam",
+       "city": "Rotterdam",
+       "postal_code": "3012 CN",
+       "street": "Weena 690",
+       "note": "Rotterdam Central - Weena"
+      }
+     },
+     "country_code": "NL",
+     "state_code": "ZH",
+     "postal_code": "3012 CN",
+     "street": "Weena 690",
+     "note": "Rotterdam Central - Weena"
+    }
+   ],
+   "careers_url": "https://aihr.recruitee.com/o/lead-analytics-engineer",
+   "state_name": "Zuid-Holland",
+   "description": "<p><span style=\"color:#121317\">Do you love turning messy business questions into data people can trust? Can you connect the customer journey from the first marketing touch through sales conversion, revenue, retention, and product usage and explain the numbers equally clearly to an engineer, a CMO, a",
+   "open_questions": [
+    {
+     "id": 4331556,
+     "position": 1,
+     "options": {},
+     "required": true,
+     "body": "Why do you want to work for AIHR at this specific position?",
+     "kind": "text",
+     "translations": {
+      "en": {
+       "body": "Why do you want to work for AIHR at this specific position?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4372443,
+     "position": 2,
+     "options": {},
+     "required": true,
+     "body": "Tell us about one commercial metric (for example renewal rate, ARR, or churn) where you were responsible for the definition or calculation logic behind it. What was unclear or inconsistent before, what did you change - in the definition, the data model, or the reporting - and what was the result for the business? (Max 5 sentences)",
+     "kind": "text",
+     "translations": {
+      "en": {
+       "body": "Tell us about one commercial metric (for example renewal rate, ARR, or churn) where you were responsible for the definition or calculation logic behind it. What was unclear or inconsistent before, what did you change - in the definition, the data model, or the reporting - and what was the result for the business? (Max 5 sentences)"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4372445,
+     "position": 3,
+     "options": {},
+     "required": true,
+     "body": "Which of your past roles is most relevant to this job description? Tell us what that company did, what they sold and to whom, and what your part was.",
+     "kind": "text",
+     "translations": {
+      "en": {
+       "body": "Which of your past roles is most relevant to this job description? Tell us what that company did, what they sold and to whom, and what your part was."
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4372446,
+     "position": 4,
+     "options": {},
+     "required": true,
+     "body": "What is the most complex piece of business logic you ever had to model in data, and what made it tricky? (Max 5 sentences)",
+     "kind": "text",
+     "translations": {
+      "en": {
+       "body": "What is the most complex piece of business logic you ever had to model in data, and what made it tricky? (Max 5 sentences)"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4372457,
+     "position": 5,
+     "options": {},
+     "required": true,
+     "body": "Which AI tools do you use on a regular or daily basis in your work, and what do you use them for?",
+     "kind": "text",
+     "translations": {
+      "en": {
+       "body": "Which AI tools do you use on a regular or daily basis in your work, and what do you use them for?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4331557,
+     "position": 6,
+     "options": {},
+     "required": false,
+     "body": "Do you live in the Netherlands?",
+     "kind": "boolean",
+     "translations": {
+      "en": {
+       "body": "Do you live in the Netherlands?"
+      }
+     },
+     "open_question_options": []
+    },
+    {
+     "id": 4331559,
+     "position": 7,
+     "options": {},
+     "required": true,
+     "body": "Do you need visa sponsorship from us to work in the Netherlands?",
+     "kind": "boolean",
+     "translations": {
+      "en": {
+       "body": "Do you need visa sponsorship from us to work in the Netherlands?"
+      }
+     },
+     "open_question_options": []
+    }
+   ],
+   "postal_code": "3012 CN",
+   "careers_apply_url": "https://aihr.recruitee.com/o/lead-analytics-engineer/c/new",
+   "experience_code": "manager",
+   "remote": false,
+   "min_hours_per_week": "40",
+   "category_code": "technical",
+   "sharing_description": "Do you love turning messy business questions into data people can trust? Can you connect the customer journey from the first marketing touch through sales conversion, revenue, retention, and product u",
+   "created_at": "2026-08-26 13:45:02 UTC",
+   "options_cv": "required",
+   "sharing_title": "Lead Analytics Engineer",
+   "location_question_visible": false,
+   "options_title": "off",
+   "id": 2723192,
+   "locations_question_required": true,
+   "education_code": "bachelor_degree",
+   "max_hours_per_week": "40",
+   "on_site": false,
+   "dynamic_fields": [],
+   "locations_question_type": "multiple_choice",
+   "title": "Lead Analytics Engineer",
+   "status": "published",
+   "updated_at": "2026-10-13 10:52:51 UTC",
+   "state_code": "ZH"
+  }
+ ]
+}

@@ -1,0 +1,172 @@
+{
+ "jobs": [
+  {
+   "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5443882008",
+   "data_compliance": [
+    {
+     "type": "gdpr",
+     "requires_consent": false,
+     "requires_processing_consent": false,
+     "requires_retention_consent": false,
+     "retention_period": null,
+     "demographic_data_consent_applies": false
+    }
+   ],
+   "internal_job_id": 4557752008,
+   "location": {
+    "name": "Bangalore, India"
+   },
+   "metadata": [
+    {
+     "id": 4036944008,
+     "name": "Location Type",
+     "value": "On-Site",
+     "value_type": "single_select"
+    }
+   ],
+   "id": 5443882008,
+   "updated_at": "2026-10-09T00:06:04-04:00",
+   "requisition_id": "REQ-26-0472-01",
+   "title": "Applied AI Architect",
+   "company_name": "Anthropic",
+   "first_published": "2026-10-08T01:01:57-04:00",
+   "language": "en",
+   "application_deadline": null
+  },
+  {
+   "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5424310008",
+   "data_compliance": [
+    {
+     "type": "gdpr",
+     "requires_consent": false,
+     "requires_processing_consent": false,
+     "requires_retention_consent": false,
+     "retention_period": null,
+     "demographic_data_consent_applies": false
+    }
+   ],
+   "internal_job_id": 4548228008,
+   "location": {
+    "name": "Mumbai, India"
+   },
+   "metadata": [
+    {
+     "id": 4036944008,
+     "name": "Location Type",
+     "value": "On-Site",
+     "value_type": "single_select"
+    }
+   ],
+   "id": 5424310008,
+   "updated_at": "2026-09-21T03:22:45-04:00",
+   "requisition_id": "267512",
+   "title": "Applied AI Architect",
+   "company_name": "Anthropic",
+   "first_published": "2026-09-21T03:22:45-04:00",
+   "language": "en",
+   "application_deadline": null
+  },
+  {
+   "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5447368008",
+   "data_compliance": [
+    {
+     "type": "gdpr",
+     "requires_consent": false,
+     "requires_processing_consent": false,
+     "requires_retention_consent": false,
+     "retention_period": null,
+     "demographic_data_consent_applies": false
+    }
+   ],
+   "internal_job_id": 4559485008,
+   "location": {
+    "name": "Bangalore, India"
+   },
+   "metadata": [
+    {
+     "id": 4036944008,
+     "name": "Location Type",
+     "value": "On-Site",
+     "value_type": "single_select"
+    }
+   ],
+   "id": 5447368008,
+   "updated_at": "2026-10-16T07:39:28-04:00",
+   "requisition_id": "REQ-26-0514-01",
+   "title": "Applied AI Architect, Partnerships",
+   "company_name": "Anthropic",
+   "first_published": "2026-10-08T14:10:17-04:00",
+   "language": "en",
+   "application_deadline": null
+  },
+  {
+   "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/5456619008",
+   "data_compliance": [
+    {
+     "type": "gdpr",
+     "requires_consent": false,
+     "requires_processing_consent": false,
+     "requires_retention_consent": false,
+     "retention_period": null,
+     "demographic_data_consent_applies": false
+    }
+   ],
+   "internal_job_id": 4563891008,
+   "location": {
+    "name": "San Francisco, CA | Seattle, WA"
+   },
+   "metadata": [
+    {
+     "id": 4036944008,
+     "name": "Location Type",
+     "value": "On-Site",
+     "value_type": "single_select"
+    }
+   ],
+   "id": 5456619008,
+   "updated_at": "2026-10-19T11:17:24-04:00",
+   "requisition_id": "REQ-26-1145-01",
+   "title": "3P Revenue Accounting & Reporting",
+   "company_name": "Anthropic",
+   "first_published": "2026-10-19T11:17:24-04:00",
+   "language": "en",
+   "application_deadline": null
+  },
+  {
+   "absolute_url": "https://job-boards.greenhouse.io/anthropic/jobs/4461450008",
+   "data_compliance": [
+    {
+     "type": "gdpr",
+     "requires_consent": false,
+     "requires_processing_consent": false,
+     "requires_retention_consent": false,
+     "retention_period": null,
+     "demographic_data_consent_applies": false
+    }
+   ],
+   "internal_job_id": 4147866008,
+   "location": {
+    "name": "New York City, NY; San Francisco, CA | New York City, NY"
+   },
+   "metadata": [
+    {
+     "id": 4036944008,
+     "name": "Location Type",
+     "value": "On-Site",
+     "value_type": "single_select"
+    }
+   ],
+   "id": 4461450008,
+   "updated_at": "2026-08-21T21:32:54-04:00",
+   "requisition_id": "3356",
+   "title": "Account Executive, AI Native",
+   "company_name": "Anthropic",
+   "first_published": "2024-12-20T13:53:38-05:00",
+   "language": "en",
+   "application_deadline": null
+  }
+ ],
+ "meta": {
+  "total": 5
+ }
+}

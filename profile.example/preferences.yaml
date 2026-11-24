@@ -1,0 +1,99 @@
+# ─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+#  JobHunt preferences — WHAT you want.  (Facts about you go in resume.yaml.)
+#
+#  This is an EXAMPLE for a fictional person ("Sam Example", a Python/AI engineer in Bengaluru, ~2 years).
+#  `jobhunt init` copies it to profile/preferences.yaml — edit that copy, never this one.
+#  Faster ways to fill it:  `jobhunt profile form`  (browser form)  or ask your coding agent to follow
+#  playbooks/setup.md.  Check it with  `jobhunt profile validate`.   Full guide: docs/personalize.md
+# ─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+kind: preferences
+schema_version: 1
+
+candidate:
+  years_experience: 2            # full-time professional experience (internships count roughly half)
+  work_authorization: "Citizen of India; needs visa sponsorship elsewhere"
+  notice_period: "30 days"
+  summary: "Backend / applied-AI engineer: Python, FastAPI, RAG and LLM apps on AWS."
+
+# Titles you would happily accept. Used for title similarity and shown to the agent when it judges fit.
+target_titles:
+  - AI Engineer
+  - Machine Learning Engineer
+  - LLM Engineer
+  - Generative AI Engineer
+  - Applied AI Engineer
+  - Backend Engineer
+  - Python Developer
+  - Software Engineer
+
+# Title filter for company job boards and the report.
+#   strong:  a title containing one of these is clearly relevant on its own
+#   related: relevant only together with a role word (engineer, developer, ...)
+#   exclude: never show titles containing these
+title_keywords:
+  strong: [ai, ml, machine learning, llm, genai, generative, nlp, rag, agentic, computer vision, deep learning, mlops]
+  related: [python, backend, back end, software, platform, data, full stack, fullstack, api]
+  exclude: [intern, internship, sales, recruiter, marketing, account executive, legal, finance, hr, teacher, tutor]
+  # role_words: [engineer, developer, scientist, ...]   # optional; sensible default built in
+
+# Skills that define your positioning; counted double when a job mentions them.
+# Every name must exist in resume.yaml → skills.
+core_skills: [Python, FastAPI, RAG, LLM APIs, AWS]
+
+languages: [English, Hindi]      # jobs requiring another language are skipped
+
+experience:
+  max_required_years: 4          # skip jobs asking for more years than this
+  # skip_title_words: [staff, principal, director, head, vp, chief, manager, architect, ...]   # default
+  # cap_title_words: [senior, sr, lead]   # allowed only if the JD's years fit; otherwise ranked lower
+
+location:
+  home_country: IN               # ISO-2 code: IN, US, GB, DE, CA, AU, SG, AE, NL, ... (see src/jobhunt/geo.py)
+  tier1: [Bengaluru]             # first-choice cities
+  tier2: [Hyderabad, Pune]       # second choice; anywhere else in your country ranks after these
+  extra_cities: []               # cities in your country that the built-in list does not know
+  # Remote jobs are kept when their scope includes you. Tokens: your country code (IN, US, UK, DE...),
+  # APAC, ASIA, EMEA, EU, LATAM, ME, WORLDWIDE. Leave it out for a sensible default for your country.
+  remote_ok_scopes: [IN, APAC, ASIA, WORLDWIDE]
+  abroad: relocation             # skip | remote_only | relocation (onsite abroad only with relocation/visa help)
+
+salary:
+  currency: INR
+  min_per_year: 1200000          # jobs that STATE less are flagged; jobs without a salary are not penalised
+  below_min_action: review       # review (flag, keep) | skip
+
+search:
+  # Phrases sent to job sites (Indeed, Glassdoor, LinkedIn, Himalayas, ...). Tiers 1 and 2 run every time,
+  # tier 3 when you ask for it (`jobhunt search run --tiers 1,2,3`). Short, specific phrases work best.
+  queries:
+    1: [LLM engineer, RAG engineer, Generative AI engineer]
+    2: [AI engineer, Machine learning engineer, Python backend developer]
+    3: [Software engineer Python, Data engineer]
+  locations: [Bengaluru, Hyderabad, Pune]     # where job-site searches look
+  remote_locations: [Remote]                  # extra remote searches
+  posted_within_days: 7
+  results_per_call: 30
+  # sources: [greenhouse, lever, ashby, jobspy_indeed, himalayas, ...]   # default: all (see docs/sources.md)
+  disabled_sources: []                        # e.g. [jobspy_linkedin, jobspy_naukri]
+  budgets:                                    # max calls per run for the rate-limited job sites
+    jobspy_indeed: 12
+    jobspy_glassdoor: 4
+    jobspy_linkedin: 4
+    jobspy_naukri: 4
+    serpapi: 4
+
+exclusions:
+  companies: []                  # company names you never want to see
+
+vetting:                         # company checks for jobs scoring 80+ (docs/vetting.md)
+  reject_rating_below: 2.5       # with at least min_reviews reviews
+  caution_rating_below: 3.0
+  min_reviews: 50
+  cache_days: 90
+  review_sites: [AmbitionBox, Glassdoor]       # where the agent looks up ratings (Glassdoor/Indeed/Kununu…)
+  forums: [reddit developersIndia]             # communities that discuss employers in your country/field
+  extra_queries: []                            # more searches; {company} is replaced, e.g. "{company} layoffs"
+
+report:
+  title: "Sam's job matches"
+  posted_within_days: 30

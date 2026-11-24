@@ -1,0 +1,229 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>__TITLE__</title>
+<style>
+:root{--bg:#f5f6f8;--panel:#fff;--fg:#1b1f24;--mut:#69707a;--bd:#e2e5e9;--acc:#2f5bd3;--ok:#1f8a4c;--okbg:#e8f6ee;
+--mid:#b7791f;--lo:#9aa0a6;--warn:#b45309;--hid:#f1f1f1;--head:#eef1f5}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101317;--panel:#181c22;--fg:#e6e8eb;
+--mut:#9aa3ad;--bd:#2a3038;--acc:#7aa2ff;--ok:#4ade80;--okbg:#15301f;--mid:#fbbf24;--lo:#6b7280;--warn:#f59e0b;
+--hid:#1c1f24;--head:#1f242b}}
+:root[data-theme="dark"]{--bg:#101317;--panel:#181c22;--fg:#e6e8eb;--mut:#9aa3ad;--bd:#2a3038;--acc:#7aa2ff;
+--ok:#4ade80;--okbg:#15301f;--mid:#fbbf24;--lo:#6b7280;--warn:#f59e0b;--hid:#1c1f24;--head:#1f242b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 system-ui,"Segoe UI",sans-serif}
+.wrap{max-width:1600px;margin:0 auto;padding:20px 16px}
+h1{margin:0;font-size:22px}.sub{color:var(--mut);font-size:13px;margin:4px 0 14px}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+.stat{background:var(--panel);border:1px solid var(--bd);border-radius:10px;padding:8px 14px;min-width:110px}
+.stat b{display:block;font-size:20px}.stat span{color:var(--mut);font-size:12px}.stat.ok b{color:var(--ok)}
+.filters{background:var(--panel);border:1px solid var(--bd);border-radius:10px;padding:12px;display:flex;
+flex-wrap:wrap;gap:10px 14px;align-items:end;position:sticky;top:0;z-index:5}
+.f{display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--mut)}
+.f input[type=search],.f select{padding:6px 8px;border:1px solid var(--bd);border-radius:7px;background:var(--bg);
+color:var(--fg);font-size:13px}.f input[type=search]{min-width:220px}
+.chk{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--fg);padding-bottom:6px}
+.btns{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+button{padding:7px 12px;border:1px solid var(--bd);border-radius:7px;background:var(--bg);color:var(--fg);
+cursor:pointer;font-size:13px}button:hover{border-color:var(--acc)}button.pri{background:var(--acc);color:#fff;border-color:var(--acc)}
+.note{font-size:12px;color:var(--warn);margin:8px 2px}
+.tw{margin-top:12px;overflow:auto;border:1px solid var(--bd);border-radius:10px;background:var(--panel);max-height:calc(100vh - 120px)}
+table{border-collapse:collapse;width:100%;min-width:1350px}
+th{position:sticky;top:0;background:var(--head);text-align:left;font-size:12px;color:var(--mut);font-weight:600;
+padding:8px;border-bottom:1px solid var(--bd);white-space:nowrap;cursor:pointer;user-select:none;z-index:2}
+th.ns{cursor:default}th .ar{opacity:.5}
+td{padding:8px;border-bottom:1px solid var(--bd);vertical-align:top}
+tr.applied td{background:var(--okbg)}tr.hidden td{background:var(--hid);opacity:.6}tr.gated td{opacity:.65}
+td.c{text-align:center}td.c input{width:18px;height:18px;cursor:pointer;accent-color:var(--ok)}
+.t{font-weight:600}.t a{color:var(--fg);text-decoration:none}.t a:hover{color:var(--acc);text-decoration:underline}
+.co{color:var(--mut);font-size:12.5px}.br{color:var(--mut);font-size:12px;max-width:440px;display:-webkit-box;
+-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:3px}
+.why{font-size:11.5px;color:var(--warn);margin-top:2px}
+.sc{font-weight:700;font-size:12px;border-radius:6px;padding:2px 7px;color:#fff;display:inline-block}
+.sc.hi{background:var(--ok)}.sc.mid{background:var(--mid)}.sc.lo{background:var(--lo)}
+.pill{font-size:11.5px;border:1px solid var(--bd);border-radius:999px;padding:1px 8px;white-space:nowrap;display:inline-block}
+.pill.r{border-color:var(--ok);color:var(--ok)}.mut{color:var(--mut)}.sm{font-size:12px}
+.man{color:var(--warn);font-size:11.5px;font-weight:600}
+td input.nt{width:150px;padding:4px 6px;border:1px solid var(--bd);border-radius:6px;background:var(--bg);color:var(--fg);font-size:12px}
+a.go{color:var(--acc);font-weight:600;text-decoration:none;white-space:nowrap}
+.empty{padding:30px;text-align:center;color:var(--mut)}
+.tr{font-size:11.5px;font-weight:600;white-space:nowrap;display:inline-block;border-radius:6px;padding:1px 7px;margin:0 4px 3px 0}
+.tr.ok{color:var(--ok);border:1px solid var(--ok)}.tr.caution{color:var(--warn);border:1px solid var(--warn)}
+.tr.reject{color:#fff;background:#b42318;border:1px solid #b42318}.tr.none{color:var(--mut);border:1px dashed var(--bd)}
+.tr.direct{color:var(--acc);border:1px solid var(--acc)}
+.legend{font-size:12px;color:var(--mut);margin:-6px 2px 12px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tr.reject{background:#7a1a12;border-color:#f87171}}
+</style></head><body><div class="wrap">
+<h1>__TITLE__</h1>
+<div class="sub">Generated __GEN__ · __SCOPE__ · posted in the last __DAYS__ days ·
+<b>Match</b> = fit score (agent-judged ★, otherwise keyword estimate) vs your resume. Tick <b>Applied</b> when you apply — saved in this browser instantly.</div>
+<div class="legend"><b>Trust:</b> <span class="tr direct">Direct</span> posted on the employer's own job board ·
+<span class="tr ok">Vetted</span> company checked (fake-job / fee / bond / unpaid-salary reports, ratings) ·
+<span class="tr caution">Caution</span> check before applying · <span class="tr reject">Rejected</span> hidden unless “Show filtered-out” ·
+<span class="tr none">Not vetted</span> run the vet step on high matches.</div>
+<div class="stats" id="stats"></div>
+<div class="filters">
+ <label class="f">Search<input type="search" id="q" placeholder="title, company, city, skill…"></label>
+ <label class="f">Region<select id="region"><option value="">All</option><option value="Home">__HOME__</option><option value="Foreign">Remote abroad</option></select></label>
+ <label class="f">Trust<select id="trust"><option value="">Any (not rejected)</option><option value="vetted">Vetted OK</option><option value="direct">Direct from employer</option><option value="safe">Vetted or direct</option></select></label>
+ <label class="f">Work type<select id="work"><option value="">All</option><option>Remote</option><option>Hybrid</option><option>On-site</option><option>Not stated</option></select></label>
+ <label class="f">Posted<select id="age"><option value="">Any</option><option value="3">Last 3 days</option><option value="7">Last 7 days</option><option value="14">Last 14 days</option><option value="30">Last 30 days</option></select></label>
+ <label class="f">Min match<select id="min"><option value="0">Any</option><option value="50">50+</option><option value="70">70+</option><option value="85">85+</option></select></label>
+ <label class="f">Status<select id="status"><option value="">All (not hidden)</option><option value="todo">Not applied</option><option value="applied">Applied</option><option value="hidden">Not interested</option></select></label>
+ <label class="chk"><input type="checkbox" id="pay"> Pay disclosed</label>
+ <label class="chk"><input type="checkbox" id="gated"> Show filtered-out</label>
+ <div class="btns">
+  <button id="csv" title="Download the rows currently shown as a CSV">Export CSV</button>
+  <button id="save" class="pri" title="Download your ticks and notes as a backup file (also used to sync into the tracker)">Save backup</button>
+  <button id="load" title="Restore ticks from a backup file">Load backup</button>
+  <input type="file" id="file" accept=".json" hidden>
+ </div>
+</div>
+<div class="note" id="warn" hidden></div>
+<div class="tw"><table><thead><tr>
+ <th data-k="applied" class="c">Applied ✓<span class="ar"></span></th>
+ <th data-k="on">Applied on<span class="ar"></span></th>
+ <th data-k="title">Role / Company<span class="ar"></span></th>
+ <th data-k="score">Match<span class="ar"></span></th>
+ <th data-k="trust">Trust<span class="ar"></span></th>
+ <th data-k="region">Region<span class="ar"></span></th>
+ <th data-k="loc">Location<span class="ar"></span></th>
+ <th data-k="work">Work type<span class="ar"></span></th>
+ <th data-k="comp">Compensation<span class="ar"></span></th>
+ <th data-k="exp">Exp (yrs)<span class="ar"></span></th>
+ <th data-k="posted">Posted<span class="ar"></span></th>
+ <th class="ns">Link</th>
+ <th class="ns">Notes</th>
+ <th data-k="hidden" class="c" title="Not interested — hides the row">Not<br>interested<span class="ar"></span></th>
+</tr></thead><tbody id="tb"></tbody></table><div class="empty" id="empty" hidden>No jobs match these filters.</div></div>
+</div>
+<script>
+const JOBS = __DATA__;
+const KEY = 'jobhunt.tracker.v1';
+const HOME = '__HOME__';
+const APPLIED_DB = new Set(['applied','interview','offer','rejected']);
+const TRUST_RANK = {reject: 0, '': 1, caution: 2, ok: 4};
+const trustRank = j => (TRUST_RANK[j.vf] ?? 1) + (j.direct ? 1 : 0);
+let store = {}, canStore = true;
+try { store = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { canStore = false; }
+function persist(){ try { localStorage.setItem(KEY, JSON.stringify(store)); } catch (e) { canStore = false; warn(); } }
+function warn(){ const w = document.getElementById('warn'); if (!canStore) { w.hidden = false;
+  w.textContent = 'This browser is not saving ticks automatically — use "Save backup" before closing.'; } }
+const today = () => new Date().toISOString().slice(0,10);
+function st(j){
+  const s = store[j.id] || {};
+  return {
+    applied: 'applied' in s ? s.applied : APPLIED_DB.has(j.st),
+    hidden: 'hidden' in s ? s.hidden : j.st === 'not_interested',
+    on: s.on || (APPLIED_DB.has(j.st) ? j.upd : ''),
+    note: 'note' in s ? s.note : (j.notes || '')
+  };
+}
+function setSt(id, patch){ store[id] = Object.assign({}, store[id] || {}, patch); persist(); }
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const daysAgo = d => d ? Math.floor((Date.now() - new Date(d + 'T00:00:00Z')) / 864e5) : 9999;
+let sortK = 'score', sortDir = -1;
+const $ = id => document.getElementById(id);
+const F = ['q','region','trust','work','age','min','status','pay','gated'];
+try { const saved = JSON.parse(localStorage.getItem(KEY + '.filters') || '{}');
+  F.forEach(k => { if (k in saved) { const el = $(k); el.type === 'checkbox' ? el.checked = saved[k] : el.value = saved[k]; } }); } catch (e) {}
+function saveFilters(){ try { const o = {}; F.forEach(k => { const el = $(k); o[k] = el.type === 'checkbox' ? el.checked : el.value; });
+  localStorage.setItem(KEY + '.filters', JSON.stringify(o)); } catch (e) {} }
+
+function visible(){
+  const q = $('q').value.trim().toLowerCase(), region = $('region').value, trust = $('trust').value, work = $('work').value,
+    age = +$('age').value || 0, min = +$('min').value, status = $('status').value, pay = $('pay').checked, gated = $('gated').checked;
+  return JOBS.filter(j => {
+    const s = st(j);
+    if (status === 'hidden') { if (!s.hidden) return false; }
+    else if (s.hidden) return false;
+    if (status === 'applied' && !s.applied) return false;
+    if (status === 'todo' && s.applied) return false;
+    if ((j.skip || j.vf === 'reject') && !gated && !s.applied) return false;
+    if (trust === 'vetted' && j.vf !== 'ok') return false;
+    if (trust === 'direct' && !j.direct) return false;
+    if (trust === 'safe' && !(j.vf === 'ok' || j.direct) ) return false;
+    if (region && j.region !== region) return false;
+    if (work && j.work !== work) return false;
+    if (age && daysAgo(j.posted) > age) return false;
+    if (min && (j.score || 0) < min) return false;
+    if (pay && !j.hc) return false;
+    if (q && !(j.title + ' ' + j.company + ' ' + j.loc + ' ' + j.brief + ' ' + s.note).toLowerCase().includes(q)) return false;
+    return true;
+  });
+}
+function sortVal(j, k){
+  const s = st(j);
+  if (k === 'applied') return s.applied ? 1 : 0;
+  if (k === 'hidden') return s.hidden ? 1 : 0;
+  if (k === 'on') return s.on || '';
+  if (k === 'score') return j.score ?? -1;
+  if (k === 'trust') return trustRank(j);
+  if (k === 'exp') return j.exp === '' ? 99 : parseFloat(j.exp);
+  if (k === 'comp') return j.hc ? 1 : 0;
+  return (j[k] ?? '').toString().toLowerCase();
+}
+function render(){
+  saveFilters();
+  const rows = visible().sort((a, b) => { const x = sortVal(a, sortK), y = sortVal(b, sortK);
+    return (x > y ? 1 : x < y ? -1 : 0) * sortDir || (b.score ?? 0) - (a.score ?? 0); });
+  $('tb').innerHTML = rows.map(j => {
+    const s = st(j), sc = j.score;
+    const cls = sc == null ? '' : sc >= 70 ? 'hi' : sc >= 50 ? 'mid' : 'lo';
+    const trustCell = (j.direct ? '<span class="tr direct" title="Posted on the employer’s own job board (ATS)">Direct</span>' : '') +
+      ({ok: '<span class="tr ok" title="Company vetted: no fake-job, fee, bond or unpaid-salary reports found">Vetted</span>',
+        caution: '<span class="tr caution" title="Vetting found something to check — see your vet notes">Caution</span>',
+        reject: '<span class="tr reject" title="Vetting rejected this company">Rejected</span>'}[j.vf] || '<span class="tr none">Not vetted</span>') +
+      (j.rf ? `<div class="why">⚠ ${esc(j.rf)}</div>` : '');
+    return `<tr class="${s.applied ? 'applied' : ''} ${s.hidden ? 'hidden' : ''} ${(j.skip || j.vf === 'reject') ? 'gated' : ''}" data-id="${j.id}">
+<td class="c"><input type="checkbox" class="ap" ${s.applied ? 'checked' : ''} aria-label="Applied"></td>
+<td class="sm">${esc(s.on) || '<span class="mut">—</span>'}</td>
+<td><div class="t">${j.url ? `<a href="${esc(j.url)}" target="_blank" rel="noopener noreferrer">${esc(j.title)}</a>` : esc(j.title)}</div>
+<div class="co">${esc(j.company)}${j.manual ? ' · <span class="man">manual apply</span>' : ''}</div>
+<div class="br" title="${esc(j.brief)}">${esc(j.brief)}</div>${j.why ? `<div class="why">⚠ ${esc(j.why)}</div>` : ''}</td>
+<td>${sc == null ? '<span class="mut">—</span>' : `<span class="sc ${cls}" title="${j.fit ? 'Fit score judged by your agent against resume.yaml' : 'Keyword estimate (not judged yet)'}">${sc}${j.fit ? ' ★' : ''}</span>`}</td>
+<td>${trustCell}</td>
+<td><span class="pill ${j.region === 'Foreign' ? 'r' : ''}">${j.region === 'Foreign' ? 'Remote abroad' : esc(HOME)}</span></td>
+<td class="sm">${esc(j.loc) || '<span class="mut">—</span>'}</td>
+<td class="sm">${esc(j.work)}${j.emp ? `<div class="mut">${esc(j.emp)}</div>` : ''}</td>
+<td class="sm">${j.comp ? esc(j.comp) : '<span class="mut">Not disclosed</span>'}</td>
+<td class="sm">${esc(j.exp) || '<span class="mut">—</span>'}</td>
+<td class="sm">${esc(j.posted) || '—'}${j.pe ? '<div class="mut">first seen</div>' : ''}<div class="mut">${esc(j.src)}</div></td>
+<td>${j.url ? `<a class="go" href="${esc(j.url)}" target="_blank" rel="noopener noreferrer">Open ↗</a>` : '—'}</td>
+<td><input class="nt" value="${esc(s.note)}" placeholder="note…"></td>
+<td class="c"><input type="checkbox" class="hd" ${s.hidden ? 'checked' : ''} aria-label="Not interested"></td></tr>`;
+  }).join('');
+  $('empty').hidden = rows.length > 0;
+  const all = JOBS.map(st);
+  const applied = all.filter(s => s.applied).length, hidden = all.filter(s => s.hidden && !s.applied).length;
+  const ind = JOBS.filter(j => j.region === 'Home' && !j.skip).length, frn = JOBS.filter(j => j.region === 'Foreign' && !j.skip).length;
+  const vetted = JOBS.filter(j => j.vf === 'ok' && !j.skip).length;
+  $('stats').innerHTML = [
+    ['Showing', rows.length, ''], ['Applied', applied, 'ok'], ['Not interested', hidden, ''],
+    [HOME + ' (passing)', ind, ''], ['Remote abroad (passing)', frn, ''], ['Vetted companies', vetted, 'ok']
+  ].map(([l, v, c]) => `<div class="stat ${c}"><b>${v}</b><span>${l}</span></div>`).join('');
+  document.querySelectorAll('th[data-k] .ar').forEach(a => a.textContent = '');
+  const th = document.querySelector(`th[data-k="${sortK}"] .ar`); if (th) th.textContent = sortDir > 0 ? ' ▲' : ' ▼';
+}
+$('tb').addEventListener('change', e => {
+  const tr = e.target.closest('tr'); if (!tr) return; const id = tr.dataset.id;
+  if (e.target.classList.contains('ap')) setSt(id, { applied: e.target.checked, on: e.target.checked ? today() : '' });
+  else if (e.target.classList.contains('hd')) setSt(id, { hidden: e.target.checked });
+  else if (e.target.classList.contains('nt')) { setSt(id, { note: e.target.value }); return; }
+  render();
+});
+F.forEach(k => $(k).addEventListener('input', render));
+document.querySelectorAll('th[data-k]').forEach(th => th.addEventListener('click', () => {
+  const k = th.dataset.k; if (sortK === k) sortDir = -sortDir; else { sortK = k; sortDir = ['title','company','loc','region','work'].includes(k) ? 1 : -1; } render(); }));
+function download(name, text, type){ const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([text], { type })); a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000); }
+$('save').onclick = () => download('applied_ticks.json', JSON.stringify({ version: 1, saved: new Date().toISOString(), jobs: store }, null, 1), 'application/json');
+$('load').onclick = () => $('file').click();
+$('file').onchange = async e => { const f = e.target.files[0]; if (!f) return;
+  try { const d = JSON.parse(await f.text()); Object.assign(store, d.jobs || d); persist(); render(); alert('Backup loaded.'); }
+  catch (err) { alert('Could not read that file: ' + err.message); } e.target.value = ''; };
+$('csv').onclick = () => {
+  const cols = ['Applied','Applied on','Title','Company','Match','Agent-judged','Trust','Direct','Region','Location','Work type','Employment','Compensation','Exp (yrs)','Posted','Source','Link','Notes'];
+  const q = v => '"' + String(v ?? '').replace(/"/g, '""') + '"';
+  const lines = visible().map(j => { const s = st(j); return [s.applied ? 'Yes' : '', s.on, j.title, j.company, j.score ?? '', j.fit ? 'Yes' : '', j.vf || 'not vetted', j.direct ? 'Yes' : '', j.region === 'Foreign' ? 'Remote abroad' : HOME, j.loc, j.work, j.emp, j.comp || 'Not disclosed', j.exp, j.posted, j.src, j.url, s.note].map(q).join(','); });
+  download('jobs.csv', '﻿' + [cols.map(q).join(','), ...lines].join('\r\n'), 'text/csv');
+};
+warn(); render();
+</script></body></html>

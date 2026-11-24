@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss">
+  <channel>
+    <title>We Work Remotely: Remote jobs in design, programming, marketing and more</title>
+    <link>https://weworkremotely.com/categories/remote-programming-jobs.rss</link>
+    <description>We Work Remotely: Remote jobs in design, programming, marketing and more</description>
+    <language>en-US</language>
+    <ttl>60</ttl>
+    <item>
+      <title>Webflow: Senior Infrastructure Engineer</title>
+      <region>Anywhere in the World</region>
+      <category>Full-Stack Programming</category>
+      <description>
+
+&lt;p&gt;
+  &lt;strong&gt;Headquarters:&lt;/strong&gt; Argentina Remote
+&lt;/p&gt;
+
+&lt;p&gt;Webflow is the agentic web marketing platform for modern marketing teams, helping organizations build, manage, and optimize high-performing web experiences that drive predictable growth and strengthen brand trust. Building at Webflow will need grit, because we move fast, without ever sacrificing craft or quality.&lt;/p&gt;
+&lt;h2&gt;&lt;strong&gt;About the Role&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;We’re looking for a &lt;strong&gt;S&lt;/strong&gt;&lt;strong&gt;enior Infrastructure Engineer &lt;/strong&gt;to improve reliability and stability of Webflow’s customer-facing, production infrastructure, serving millions of page views per hour. Our product is used by over 2 million users world-wide across 190 countries, and you’ll help ensure our platform is secure and scalable for these users as tens of thousands of projects are launched on Webflow each month.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Location: Remote-first (Argentina)&lt;/li&gt;
+&lt;li&gt;Permanent, full-time employee (this is not a contractor position)&lt;/li&gt;
+&lt;li&gt;Application Information:
+&lt;ul&gt;
+&lt;li&gt;Application deadline: applications accepted on an ongoing basis until position is closed and filled&lt;/li&gt;
+&lt;li&gt;This posting is for a new position.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As an &lt;strong&gt;Senior Infrastructure Engineer&lt;/strong&gt; you will:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Own and evolve the cloud platform that Webflow's product and engineering teams depend on, including our compute layer, EKS fleet, serverless infrastructure, networking, and cloud operations across AWS and GCP.&lt;/li&gt;
+&lt;li&gt;Help design and maintain our infrastructure-as-code foundation, evolving the patterns and shared components other teams build on.&lt;/li&gt;
+&lt;li&gt;Design and maintain the networking layer that connects Webflow's services, ensuring reliability, security, and scalability across our cloud environments.&lt;/li&gt;
+&lt;li&gt;Help make observability data the foundation of how we operate,&amp;nbsp; improving the dashboards, alerts, and SLOs for the infrastructure you own so that issues are caught before customers notice, and on-call pages are actionable instead of noisy.&lt;/li&gt;
+&lt;li&gt;Build and maintain AI-powered automation that improves how we manage cloud infrastructure, from policy-as-code and drift detection to LLM-assisted runbook generation.</description>
+      <pubDate>Tue, 06 Oct 2026 07:31:05 +0000</pubDate>
+      <guid>https://weworkremotely.com/remote-jobs/webflow-senior-infrastructure-engineer</guid>
+      <link>https://weworkremotely.com/remote-jobs/webflow-senior-infrastructure-engineer</link>
+    </item>
+<item>
+      <title>Wrike: Director, Global GTM Strategy &amp; Operations</title>
+      <region>Anywhere in the World</region>
+      <category>Full-Stack Programming</category>
+      <description>
+
+&lt;p&gt;
+  &lt;strong&gt;Headquarters:&lt;/strong&gt; US - Remote
+&lt;/p&gt;
+
+&lt;div class="content-intro"&gt;&lt;div&gt;Wrike is the most powerful work management platform. Built for teams and organizations looking to collaborate, create, and exceed every day, Wrike brings everyone and all work into a single place to remove complexity, increase productivity, and free people up to focus on their most purposeful work.&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;Wrike is our people, not a place. As a distributed team, we own our growth, stay globally connected, and rely on the product we build to deliver impactful work alongside brilliant minds. You'll have real ownership over meaningful work, a global team that has your back, and the flexibility to do your best work your way. If that sounds like you, we'd love to hear from you.&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Our vision:&amp;nbsp; &lt;/strong&gt;A world where everyone is free to focus on their most purposeful work, together.&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;h3&gt;About the Role:&lt;/h3&gt;
+&lt;p&gt;You'll own your outcomes, from the strategies you run to the conversations that shape what we build next. Collaborative work management is a $14B category growing at 15% a year, and the enterprise competitive set is consolidating fast. Wrike is hiring a Director of Go-To-Market Operations to lead our global GTM Operations team across Sales, Customer Success, and Marketing.&lt;/p&gt;
+&lt;p&gt;You will own Wrike’s revenue planning and operational architecture end-to-end driving annual planning, quota setting, territory management, and cross-functional alignment across our global revenue engine.&lt;/p&gt;
+&lt;p&gt;Reporting directly to GTM leadership, you will serve as a strategic co-pilot to executive leaders while leading a hands-on global team of 6–15 operations partners and analysts.&lt;/p&gt;
+&lt;p&gt;This is an action-oriented leadership role for an operational "athlete'' - someone equally comfortable steering C-level strategic decisions, designing enterprise sales workflows, coaching an international team across time zones, and diving deep into the details of compensation plans or GTM forecasting.&lt;/p&gt;
+&lt;h3&gt;Your Impact:&lt;/h3&gt;
+&lt;ul&gt;
+</description>
+      <pubDate>Mon, 05 Oct 2026 07:31:29 +0000</pubDate>
+      <guid>https://weworkremotely.com/remote-jobs/wrike-director-global-gtm-strategy-operations</guid>
+      <link>https://weworkremotely.com/remote-jobs/wrike-director-global-gtm-strategy-operations</link>
+    </item>
+<item>
+      <media:content url="https://wwr-pro.s3.amazonaws.com/logos/0071/4151/logo.gif" type="image/png"/>
+      <title>A.Team: Senior Independent AI Engineer / Architect</title>
+      <region>Anywhere in the World</region>
+      <category>Full-Stack Programming</category>
+      <description>&lt;img src="https://we-work-remotely.imgix.net/logos/0071/4151/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress" /&gt;
+
+&lt;p&gt;
+  &lt;strong&gt;Headquarters:&lt;/strong&gt; NYC and TLV
+    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href="http://a.team/ai-jobs?utm_source=wwr&amp;amp;utm_medium=post&amp;amp;utm_campaign=wwrai"&gt;http://a.team/ai-jobs?utm_source=wwr&amp;amp;utm_medium=post&amp;amp;utm_campaign=wwrai&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Senior Independent AI Engineer / Architect&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Remote | Americas, Europe, or Israel&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Most AI engineers can find work.&lt;/p&gt;
+&lt;p&gt;Finding work worth doing is harder.&lt;/p&gt;
+&lt;p&gt;A.Team is an invite-only network of senior AI engineers, ML engineers, and AI architects working on production AI systems for startups, scale-ups, and global companies.&lt;/p&gt;
+&lt;p&gt;Since 2020, builders in the network have earned more than $200M working with companies including Lyft, Google X, HCA, Unilever, Sightful, D-ID, and others.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Work&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You'll join small teams tackling problems that matter.&lt;/p&gt;
+&lt;p&gt;Not demos.&lt;/p&gt;
+&lt;p&gt;Not prototypes that never ship.&lt;/p&gt;
+&lt;p&gt;Not another chatbot wrapper.&lt;/p&gt;
+&lt;p&gt;Real systems. Real users. Real outcomes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Recent work has included:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;- LLM-powered products and workflows&lt;br&gt;- Agent architectures and orchestration systems&lt;br&gt;- Retrieval, evaluation, and reliability infrastructure&lt;br&gt;- Enterprise AI deployments&lt;br&gt;- AI-native products built from zero to one&lt;br&gt;- Machine learning platforms operating at scale&lt;/p&gt;
+&lt;p&gt;You'll work directly with founders, CTOs, and product leaders, helping shape both the technical approach and the outcome.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Why Builders Join&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Most independent engineers eventually run into the same problem:&lt;/p&gt;
+&lt;p&gt;The best opportunities rarely make it to the open market.&lt;/p&gt;
+&lt;p&gt;A.Team exists to solve that.&lt;/p&gt;
+&lt;p&gt;No bidding.&lt;/p&gt;
+&lt;p&gt;No prospecting.&lt;/p&gt;
+&lt;p&gt;No competing with thousands of other freelancers.&lt;/p&gt;
+&lt;p&gt;Just access to ambitious companies, difficult problems, and experienced peers.&lt;/p&gt;
+</description>
+      <pubDate>Sun, 16 Jun 2024 18:08:52 +0000</pubDate>
+      <guid>https://weworkremotely.com/remote-jobs/a-team-senior-independent-ai-engineer-architect</guid>
+      <link>https://weworkremotely.com/remote-jobs/a-team-senior-independent-ai-engineer-architect</link>
+    </item>
+<item>
+      <media:content url="https://wwr-pro.s3.amazonaws.com/logos/0171/6491/logo.gif" type="image/png"/>
+      <title>bondex: Fullstack Web3 Engineer (Solidity / Rust / Typescript)</title>
+      <region>Remote - Americas</region>
+      <category>Front-End Programming</category>
+      <description>&lt;img src="https://we-work-remotely.imgix.net/logos/0171/6491/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress" /&gt;
+
+&lt;p&gt;
+  &lt;strong&gt;Headquarters:&lt;/strong&gt; Remote - Americas, El Salvador
+    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href="http://bondex.app"&gt;http://bondex.app&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;div class="jp-text"&gt;
+&lt;div&gt;
+&lt;p&gt;We're recruiting a &lt;strong&gt;Web 3 Fullstack Developer (Solidity / Rust / Typescript)&lt;/strong&gt; who is looking for a new challenge and ready to join an exciting new chapter to expand our clients product value proposition in the DeFi Web3 realm.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;The client is is revoluzionezing financial interoperability and the &lt;strong&gt;requirements&lt;/strong&gt; for the role are:&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Minimum 4 years of professional experience in WEB development; preferably with Typescript&lt;/li&gt;&lt;li&gt;Experience as Fullstack Web3 developer at least 2 years in the following programming languages:&lt;/li&gt;&lt;li&gt;Web3: High level of &lt;strong&gt;Solidity&lt;/strong&gt; (demonstrated experience) / &lt;strong&gt;Rust&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;FRONTEND: &lt;strong&gt;Typescript&lt;/strong&gt; / Javascript / React / NodeJS&lt;/li&gt;&lt;li&gt;BACKEND: NodeJS; nice to have Golang &amp;amp; Python&lt;/li&gt;&lt;li&gt;&lt;strong&gt;FLUENT proficient English&lt;/strong&gt;, passable and/or with strong accent will not do.&lt;/li&gt;&lt;li&gt;Ability to work with clients.&lt;/li&gt;&lt;li&gt;Desirable experience in Smart contracts and DeFi protocols (curve, uniswap, AAVE etc);&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;100% Remote but ONLY residents of countries with US time zones (EST-PST)&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span&gt;As a Web 3 Full stack developer&lt;/span&gt;, you're main responsibilities will be:&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Participate in the entire software development lifecycle;&lt;/li&gt;&lt;li&gt;Collaborate closely with developers and CTO to deliver high-quality software solutions;&lt;/li&gt;&lt;li&gt;Troubleshoot and debug issues, providing timely resolutions;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;About the client:&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Remote first&lt;/li&gt;</description>
+      <pubDate>Tue, 29 Sep 2026 19:13:52 +0000</pubDate>
+      <guid>https://weworkremotely.com/remote-jobs/bondex-fullstack-web3-engineer-solidity-rust-typescript</guid>
+      <link>https://weworkremotely.com/remote-jobs/bondex-fullstack-web3-engineer-solidity-rust-typescript</link>
+    </item>
+<item>
+      <media:content url="https://wwr-pro.s3.amazonaws.com/logos/0171/6471/logo.gif" type="image/png"/>
+      <title>Air Apps: Framer Website Designer</title>
+      <region>Helsinki</region>
+      <category>Front-End Programming</category>
+      <description>&lt;img src="https://we-work-remotely.imgix.net/logos/0171/6471/logo.gif?ixlib=rails-4.0.0&amp;w=50&amp;h=50&amp;dpr=2&amp;fit=fill&amp;auto=compress" /&gt;
+
+&lt;p&gt;
+  &lt;strong&gt;Headquarters:&lt;/strong&gt; Helsinki
+    &lt;br /&gt;&lt;strong&gt;URL:&lt;/strong&gt; &lt;a href="http://airapps.com"&gt;http://airapps.com&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h2&gt;&lt;strong&gt;Framer Website Designer (Onsite – Presidio, San Francisco)&lt;/strong&gt;&lt;/h2&gt;&lt;h3&gt;&lt;strong&gt;About Air Apps&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;At Air Apps, we believe in thinking bigger and moving faster. We’re a family-founded company on a mission to create the world’s first AI-powered Personal &amp;amp; Entrepreneurial Resource Planner (PRP), and we need your passion and ambition to help us change how people plan, work, and live. Born in Lisbon, Portugal in 2018 and now with offices in both Lisbon and San Francisco, we’ve remained self-funded while reaching over 100 million downloads worldwide.&lt;/p&gt;&lt;p&gt;Our long-term focus drives us to challenge the status quo every day, pushing the boundaries of AI-driven solutions that truly make a difference. Here, you’ll be a creative force, shaping products that empower people across the globe.&lt;/p&gt;&lt;p&gt;Join us on this journey to redefine resource management and change lives along the way.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;This is a &lt;strong&gt;fully onsite position&lt;/strong&gt;, based at our office in Lisbon, where you will collaborate closely with cross-functional teams in person and contribute to a dynamic and fast-paced environment. &lt;strong&gt;We are open to support with relocation efforts.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;&lt;strong&gt;The Role&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;As a &lt;strong&gt;Framer Website Designer&lt;/strong&gt;, you’ll take ownership of designing and building high-performing, visually compelling websites using &lt;strong&gt;Framer&lt;/strong&gt;. You’ll collaborate closely with our marketing, product, and engineering teams to create seamless web experiences that reflect our brand vision while meeting business and performance goals.&lt;/p&gt;&lt;p&gt;You’ll also work directly with &lt;strong&gt;SEO professionals</description>
+      <pubDate>Mon, 28 Sep 2026 22:12:46 +0000</pubDate>
+      <guid>https://weworkremotely.com/remote-jobs/air-apps-framer-website-designer-1</guid>
+      <link>https://weworkremotely.com/remote-jobs/air-apps-framer-website-designer-1</link>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,86 @@
+# ─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+#  JobHunt resume — FACTS about you, used to score every job.  (What you want goes in preferences.yaml.)
+#
+#  EXAMPLE for a fictional person. `jobhunt init` copies it to profile/resume.yaml — replace everything there.
+#  Easiest: ask your coding agent to draft this from your real resume (playbooks/setup.md), then review it.
+#
+#  Rules that make scoring honest:
+#   • Only write what is true and you could defend in an interview. A requirement with no evidence here is "unmet".
+#   • skills.level: hands_on (used for real work), working (used, would need ramp-up), exposure (courses/tinkering)
+#   • bullet.evidence: implemented (you built it) | contributed (team effort) | explored (prototype / study)
+#   • ids are optional — they are generated (EXP_ACME_ANALYTICS.B1 …). Give an `id:` if two entries clash.
+#   • bullet.skills must be names (or aliases) from `skills`.
+# ─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+kind: resume
+schema_version: 1
+name: Sam Example
+headline: Backend & applied-AI engineer
+summary: >-
+  Two years building Python services and LLM features: retrieval-augmented chat, document extraction and
+  evaluation pipelines, deployed on AWS.
+
+skills:
+  - {name: Python, level: hands_on, category: language, aliases: [python3]}
+  - {name: SQL, level: hands_on, category: language, aliases: [PostgreSQL, Postgres]}
+  - {name: TypeScript, level: exposure, category: language, aliases: [JavaScript]}
+  - {name: FastAPI, level: hands_on, category: framework}
+  - {name: Django, level: working, category: framework}
+  - {name: RAG, level: hands_on, category: ai, aliases: [retrieval augmented generation, retrieval-augmented generation]}
+  - {name: LLM APIs, level: hands_on, category: ai, aliases: [OpenAI API, LLM, LLMs, large language models]}
+  - {name: Prompt engineering, level: working, category: ai}
+  - {name: LangChain, level: working, category: ai}
+  - {name: Vector databases, level: working, category: ai, aliases: [pgvector, vector search, FAISS]}
+  - {name: Machine learning, level: working, category: ai, aliases: [ML, scikit-learn]}
+  - {name: PyTorch, level: exposure, category: ai}
+  - {name: AWS, level: working, category: cloud, aliases: [Amazon Web Services, Lambda, S3]}
+  - {name: Docker, level: hands_on, category: devops}
+  - {name: CI/CD, level: working, category: devops, aliases: [GitHub Actions]}
+  - {name: Git, level: hands_on, category: tools}
+  - {name: REST APIs, level: hands_on, category: backend, aliases: [REST, API design]}
+
+experience:
+  - id: EXP_ACME
+    title: Software Engineer (AI)
+    org: Acme Analytics (fictional)
+    start: 2024-07
+    end: present
+    location: Bengaluru
+    bullets:
+      - text: Built a retrieval-augmented support assistant (FastAPI, pgvector, OpenAI API) that answers from 4,000 help articles.
+        skills: [RAG, FastAPI, Vector databases, LLM APIs, Python]
+      - text: Designed an evaluation set of 300 real questions and a nightly regression run to track answer quality.
+        skills: [Python, LLM APIs]
+      - text: Shipped an invoice field-extraction service with prompt templates and JSON validation, reducing manual entry.
+        skills: [LLM APIs, Prompt engineering, Python, REST APIs]
+      - text: Containerised the services with Docker and set up GitHub Actions deploys to AWS.
+        skills: [Docker, CI/CD, AWS]
+        evidence: contributed
+  - id: EXP_BETA
+    title: Backend Developer Intern
+    org: Beta Labs (fictional)
+    start: 2023-12
+    end: 2024-06
+    location: Pune
+    bullets:
+      - text: Added REST endpoints and PostgreSQL queries to a Django order-management app.
+        skills: [Django, SQL, REST APIs]
+
+projects:
+  - id: PRJ_RESUME_MATCHER
+    title: Resume–job matcher (personal project)
+    bullets:
+      - text: Ranked job posts against a resume with embeddings and a small scikit-learn classifier.
+        skills: [Machine learning, Python, Vector databases]
+        evidence: explored
+
+education:
+  - id: EDU_BTECH
+    title: B.Tech, Computer Science
+    org: Example Institute of Technology
+    end: "2024"
+
+certifications:
+  - id: CERT_AWS_CP
+    title: AWS Certified Cloud Practitioner
+    org: Amazon Web Services
+    end: "2025"
