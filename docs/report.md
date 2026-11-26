@@ -45,37 +45,36 @@ initial order is: passing jobs first, then by score, highest first.
 
 ## The header
 
-Under the title (`report.title` in your profile) you see when the page was generated, which places are included (for
-example *India roles + remote roles open to you (APAC, ASIA, IN, WORLDWIDE)*), and the age window. A legend explains
-the Trust badges. Six counters follow:
+At the top: the logo and title (`report.title` in your profile), which places are included (for example *India roles +
+remote roles open to you (APAC, ASIA, IN, WORLDWIDE)*), the age window and when the page was generated. On the right:
+**Export CSV**, **Load backup**, **Save backup** and the theme button **◐** (auto → light → dark; remembered in your
+browser). Six cards follow:
 
-| Counter | Counts |
+| Card | Counts |
 |---|---|
 | Showing | Rows visible with the current filters |
+| Strong matches (80+) | Passing jobs with a score of 80 or more |
 | Applied | Jobs ticked Applied |
-| Not interested | Jobs ticked Not interested (and not applied) |
-| *Home country* (passing) | Home-country jobs that weren't gate-skipped |
-| Remote abroad (passing) | Remote jobs based abroad that weren't gate-skipped |
-| Vetted companies | Passing jobs at companies with verdict ok |
+| At vetted companies | Passing jobs at companies with verdict ok |
+| In *your home country* | Passing home-country jobs |
+| Remote abroad | Passing remote jobs based abroad |
+
+"Passing" means not gate-skipped and not at a rejected company. **What do the badges and scores mean?** under the
+filter bar opens a short legend.
 
 ## Columns
 
 | Column | What it shows |
 |---|---|
-| **Applied ✓** | Tick when you apply. The row turns green. Saved in your browser immediately. |
-| **Applied on** | The date you ticked Applied (or the date the status was set in the database). |
-| **Role / Company** | The job title (links to the job), the company, "manual apply" when the link leads to a job board, account portal, email or LinkedIn/Naukri, and a two-line **brief** taken from the description (hover for the full text). Gate reasons appear in orange with ⚠, e.g. *⚠ senior/lead title without a <=4 yr requirement*. |
-| **Match** | The score, 0–100. **★** means a fit score judged by your agent against `resume.yaml`. Without ★ it is the keyword estimate H. Green ≥ 70, amber 50–69, grey below 50, "—" if not scored yet. See [scoring.md](scoring.md). |
-| <a id="trust"></a>**Trust** | **Direct** if posted on the employer's own job board; then **Vetted**, **Caution**, **Rejected** or **Not vetted** for the company; then any job-description red flags in orange (e.g. *⚠ candidate fee; free email recruiter*). See [vetting.md](vetting.md#how-it-shows-in-the-report). |
-| **Region** | Your home country, or *Remote abroad*. |
-| **Location** | The location as stated by the source. |
-| **Work type** | Remote, Hybrid, On-site or Not stated, plus the employment type (Full-time, Contract, …) when known. |
-| **Compensation** | The stated pay range per year, month or hour (e.g. `₹18.0 L – ₹25.0 L/yr`, `$120k – $150k/yr`). If the source has no structured salary, a pay figure found in the description is shown with "(JD)". Implausible values show "Listed value looks invalid". Otherwise "Not disclosed". |
-| **Exp (yrs)** | Years required as parsed from the ad: `3+`, `2–4`, … |
-| **Posted** | Posting date ("first seen" when the source gives none) and the source name. |
-| **Link** | **Open ↗**, the apply link (or the source page). |
+| **Applied** | Tick when you apply. The row turns green and the date appears under the tick. Saved in your browser immediately. |
+| **Job** | The job title (links to the job), the company, an **apply on job site** tag when the link leads to a job board, account portal, email or LinkedIn/Naukri, and a two-line **brief** from the description (hover for the full text). Gate reasons appear in orange with ⚠, e.g. *⚠ senior/lead title without a <=4 yr requirement*. |
+| **Match** | The score, 0–100, as a coloured pill: green ≥ 70, amber 50–69, grey below 50, "—" if not scored yet. Underneath: **AI-judged** (your agent checked each requirement against `resume.yaml`) or **estimate** (the keyword score H). See [scoring.md](scoring.md). |
+| <a id="trust"></a>**Trust** | **Direct** if posted on the employer's own job board; then **✓ Vetted**, **! Caution**, **✕ Rejected** or **Not vetted** for the company; then any job-description red flags in orange (e.g. *⚠ candidate fee; free email recruiter*). See [vetting.md](vetting.md#how-it-shows-in-the-report). |
+| **Location** | The location as stated by the source, with tags for the region (your home country or *Remote abroad*), the work type (Remote, Hybrid, On-site, Not stated) and the employment type (Full-time, Contract, …) when known. |
+| **Pay & experience** | The stated pay range per year, month or hour (e.g. `₹18.0 L – ₹25.0 L/yr`, `$120k – $150k/yr`); a pay figure found in the description is shown with "(JD)"; implausible values show "Listed value looks invalid"; otherwise "Not disclosed". Below it, the years required as parsed from the ad (`3+`, `2–4`, …). |
+| **Posted** | How long ago it was posted (Today, Yesterday, *n* days ago; "first seen" when the source gives no date) and the source name. |
 | **Notes** | A free-text note per job ("referral from a friend", "applied via email"). Saved as you type. |
-| **Not interested** | Tick to hide the job. It disappears unless the Status filter is *Not interested*. |
+| *(last)* | **Open ↗**, the apply link (or the source page), and **Hide** to hide the job. Hidden jobs disappear unless the Status filter is *Hidden*. |
 
 ## Filters
 
@@ -84,14 +83,14 @@ The filter bar stays at the top while you scroll. Filter choices are remembered 
 | Filter | Options |
 |---|---|
 | Search | Free text across title, company, location, brief and your note |
-| Region | All, your home country, Remote abroad |
+| Region | All regions, your home country, Remote abroad |
 | Trust | Any (not rejected), Vetted OK, Direct from employer, Vetted or direct |
-| Work type | All, Remote, Hybrid, On-site, Not stated |
-| Posted | Any, last 3 / 7 / 14 / 30 days |
-| Min match | Any, 50+, 70+, 85+ |
-| Status | All (not hidden), Not applied, Applied, Not interested |
-| Pay disclosed | Only jobs with a stated or detected pay figure |
-| Show filtered-out | Also show gate-skipped jobs and rejected companies (dimmed) |
+| Work type | Any, Remote, Hybrid, On-site, Not stated |
+| Posted | Any time, last 3 / 7 / 14 / 30 days |
+| Match | Any score, 50+, 70+, 80+ |
+| Status | All (not hidden), Not applied, Applied, Hidden |
+| Pay disclosed (switch) | Only jobs with a stated or detected pay figure |
+| Show filtered-out (switch) | Also show gate-skipped jobs and rejected companies (dimmed) |
 
 ## Sorting
 
@@ -100,7 +99,7 @@ score. Trust sorts by a simple rank: rejected < not vetted < caution < vetted, w
 
 ## Your ticks and notes
 
-Applied ticks, Not interested ticks and notes are stored in your **browser's local storage** for this file. They
+Applied ticks, Hide ticks and notes are stored in your **browser's local storage** for this file. They
 survive closing the tab and rebuilding the report, as long as you open the page at the same path in the same
 browser.
 
@@ -125,7 +124,7 @@ Ticks made in the page show up in the database (and in `jobhunt status`) only af
   | In the page | In the database |
   |---|---|
   | Applied ticked | Status `applied` (unless already applied, interview, offer or rejected) |
-  | Not interested ticked | Status `not_interested` (unless applied etc.) |
+  | Hide ticked | Status `not_interested` (unless applied etc.) |
   | Unticked again | Status back to `new` (only if it was `applied` or `not_interested`) |
   | Note changed | Note saved |
 

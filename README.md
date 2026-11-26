@@ -18,9 +18,12 @@
 
 <br>
 
-<img src="assets/report.png" alt="The JobHunt jobs page: matches with fit scores, Trust badges, location, pay and links" width="100%">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/report-dark.png">
+  <img src="assets/report.png" alt="The JobHunt jobs page: summary cards, filters, and matches with fit scores, Trust badges, location, pay and links" width="100%">
+</picture>
 
-<sub>Your jobs page: every match with its fit score, a Trust badge, location, pay and the link to apply. (Demo data, fictional companies.)</sub>
+<sub>Your jobs page: summary cards, filters, and every match with its fit score, Trust badges, location, pay and the link to apply. Light and dark themes. (Demo data, fictional companies.)</sub>
 
 </div>
 
@@ -59,7 +62,7 @@ and the jobs page still work.
 | 🛡️ | **Fake-job protection** | Flags registration fees, deposits, service bonds, WhatsApp-only recruiters and other scam signs. Companies of top matches are researched for fraud reports, unpaid salaries and ratings. |
 | ✅ | **Trust badges** | **Direct** = posted on the employer's own job board. **Vetted / Caution / Rejected** = result of the company check. Rejected companies are hidden. |
 | 🧹 | **No duplicates** | The same job on LinkedIn, Indeed and the company site shows up once, with the employer's own link. |
-| 📄 | **One page to work from** | An offline HTML page with filters, sorting, **Applied ✓** ticks, notes, "not interested", backup and CSV export. |
+| 📄 | **One clean page to work from** | An offline HTML page with summary cards, filters, sorting, **Applied** ticks, notes, hide, light/dark theme, backup and CSV export. |
 | 🤖 | **Works with any AI agent** | Plain-English playbooks (`AGENTS.md`, `playbooks/`) any coding agent can follow. No vendor lock-in. |
 | 🔒 | **Private by default** | Your resume, profile and results never leave your computer and are never committed to git. |
 

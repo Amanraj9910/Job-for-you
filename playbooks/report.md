@@ -1,7 +1,7 @@
 # Playbook: the jobs report
 
 **Purpose:** build `output/jobs.html` — one self-contained page listing the user's matches — open it, and keep
-the user's ticks (Applied / Not interested) in sync with the database. Details: [docs/report.md](../docs/report.md).
+the user's ticks (Applied / Hide) in sync with the database. Details: [docs/report.md](../docs/report.md).
 
 ## Steps
 
@@ -21,16 +21,15 @@ posted within `report.posted_within_days` (plus anything already marked applied,
 
 | Column | Meaning |
 |---|---|
-| Applied ✓ / Applied on | The user's own tick when they applied (the tool never applies) |
-| Role / Company | Title and employer; click for a short description |
-| Match | Fit score 0–100 from judging; un-judged jobs show the heuristic estimate |
+| Applied | The user's own tick when they applied, with the date (the tool never applies) |
+| Job | Title, employer and a two-line description; ⚠ lines are gate warnings |
+| Match | Fit score 0–100: "AI-judged" when the agent judged it, otherwise "estimate" (keyword score) |
 | Trust | Company vetting verdict (ok / caution / reject), "Direct" when posted on the employer's own ATS, and job-text red flags |
-| Region / Location / Work type | Home or foreign, place, remote / hybrid / on-site |
-| Compensation | From the posting, or from the job text "(JD)"; blank when not stated |
-| Exp (yrs) | Years the posting asks for |
-| Posted | Posting date (or first seen) |
-| Link | Opens the original posting — where the user applies |
-| Notes / Not interested | Free-text notes; "Not interested" hides the row |
+| Location | Place, plus tags: home country or remote abroad, remote / hybrid / on-site, employment type |
+| Pay & experience | Pay from the posting (or from the job text "(JD)"), and the years the posting asks for |
+| Posted | How long ago it was posted (or first seen), and the source |
+| Notes | Free-text notes |
+| Open ↗ / Hide | Opens the original posting (where the user applies); "Hide" hides the row |
 
 Rows at `reject` companies and gate-skipped jobs sort to the bottom. The page has filters and CSV export, and
 works offline.

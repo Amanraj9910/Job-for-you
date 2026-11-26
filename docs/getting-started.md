@@ -173,7 +173,7 @@ jobhunt report build --open
 ```
 
 Without an agent, the **Match** column shows the keyword score H. With an agent, shortlisted jobs also get a judged
-fit score (marked ★). See [scoring.md](scoring.md). Agent-only steps (judging and vetting) are described in
+fit score (marked **AI-judged**). See [scoring.md](scoring.md). Agent-only steps (judging and vetting) are described in
 [scoring.md](scoring.md#judging-with-an-agent) and [vetting.md](vetting.md).
 
 When you apply somewhere, tick **Applied ✓** in the page. To copy your ticks into the database, click

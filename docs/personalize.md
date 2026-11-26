@@ -549,7 +549,7 @@ Run a search, build the report, then adjust. Small changes, one at a time, work 
 - Lower `experience.max_required_years`, or add words to `skip_title_words`.
 - Remove remote scopes you can't really work in (for example `WORLDWIDE` if most of those jobs need US hours).
 - Add companies you never want to `exclusions.companies`.
-- In the report, raise **Min match** and tick **Not interested** on noise.
+- In the report, raise the **Match** filter and tick **Hide** on noise.
 
 **Too few jobs?**
 
@@ -569,7 +569,7 @@ Run a search, build the report, then adjust. Small changes, one at a time, work 
 
 - Check that `resume.yaml` uses the spellings job ads use (add `aliases`).
 - Check `candidate.years_experience` and `core_skills`.
-- Remember that without an agent the **Match** column is only the keyword estimate H. Scores marked ★ are judged.
+- Remember that without an agent the **Match** column is only the keyword estimate H. Scores marked **AI-judged** are judged by your agent.
   See [scoring.md](scoring.md).
 
 After editing the profile, re-score existing jobs with `jobhunt match run --rescore` and rebuild the report.

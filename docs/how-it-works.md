@@ -86,7 +86,7 @@ That is why the outcome is the same whichever agent you use, and why you can run
    researches and writes a verdict JSON, and `jobhunt vet ingest` applies the rules. See [vetting.md](vetting.md).
 5. **Report** (`jobhunt report build`). Collects live canonical jobs that pass the report's title, place and age
    filters and writes one self-contained `output/jobs.html`. See [report.md](report.md).
-6. **Sync** (`jobhunt report sync`). Your Applied / Not interested ticks and notes, saved from the page, are written
+6. **Sync** (`jobhunt report sync`). Your Applied / Hide ticks and notes, saved from the page, are written
    back as job statuses.
 
 ## The database

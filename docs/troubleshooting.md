@@ -165,7 +165,7 @@ jobhunt match run
 jobhunt report build --open
 ```
 
-The **Match** column then shows the keyword score H (no ★). The Trust column still shows **Direct** and job-text red
+The **Match** column then shows the keyword score H (labelled **estimate**). The Trust column still shows **Direct** and job-text red
 flags, but companies stay *Not vetted*. You can judge individual jobs yourself (see
 [scoring.md](scoring.md#without-an-agent)) and record your own company decisions with
 `jobhunt vet decide --company "<name>" ok` (or `reject`).

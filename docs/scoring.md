@@ -200,7 +200,7 @@ are the ones whose companies get [vetted](vetting.md).
 Everything except step 3 works without an agent:
 
 - `jobhunt match run` applies the gates and computes H.
-- The report's **Match** column shows H for unjudged jobs, without the ★. Use **Min match** to filter.
+- The report's **Match** column shows H for unjudged jobs, labelled **estimate**. Use the **Match** filter to narrow it.
 - H is a keyword estimate. It doesn't understand "nice to have" versus "must have" and can't tell real experience
   from a word in a list. Open the ad before you apply.
 
