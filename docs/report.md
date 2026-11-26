@@ -1,5 +1,7 @@
 # The jobs page (`output/jobs.html`)
 
+**[▶ Live demo](https://amanraj9910.github.io/Job-for-you/demo/)** — the real page with fictional jobs.
+
 `jobhunt report build` writes one self-contained HTML file with your jobs. It needs no server and no internet. Open
 it in any modern browser, keep it on your desktop, and tick jobs off as you apply.
 

@@ -14,16 +14,18 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-1f8a4c)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/Amanraj9910/Job-for-you?style=social)](https://github.com/Amanraj9910/Job-for-you/stargazers)
 
-[**Quick start**](#-quick-start-5-minutes) · [**Set up your profile**](#-set-up-your-profile-and-resume) · [**Features**](#-features) · [**How it works**](#-how-it-works) · [**Docs**](#-documentation)
+[**▶ Live demo**](https://amanraj9910.github.io/Job-for-you/demo/) · [**Quick start**](#-quick-start-5-minutes) · [**Set up your profile**](#-set-up-your-profile-and-resume) · [**Features**](#-features) · [**Your jobs page**](#your-jobs-page) · [**Docs**](#-documentation)
 
 <br>
 
+<a href="https://amanraj9910.github.io/Job-for-you/demo/">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/report-dark.png">
   <img src="assets/report.png" alt="The JobHunt jobs page: summary cards, filters, and matches with fit scores, Trust badges, location, pay and links" width="100%">
 </picture>
+</a>
 
-<sub>Your jobs page: summary cards, filters, and every match with its fit score, Trust badges, location, pay and the link to apply. Light and dark themes. (Demo data, fictional companies.)</sub>
+<sub>Your jobs page: summary cards, filters, and every match with its fit score, Trust badges, location, pay and the link to apply.<br><b><a href="https://amanraj9910.github.io/Job-for-you/demo/">▶ Open the live demo</a></b> — click around, filter, sort, switch light/dark. (Demo data, fictional companies.)</sub>
 
 </div>
 
@@ -65,6 +67,41 @@ and the jobs page still work.
 | 📄 | **One clean page to work from** | An offline HTML page with summary cards, filters, sorting, **Applied** ticks, notes, hide, light/dark theme, backup and CSV export. |
 | 🤖 | **Works with any AI agent** | Plain-English playbooks (`AGENTS.md`, `playbooks/`) any coding agent can follow. No vendor lock-in. |
 | 🔒 | **Private by default** | Your resume, profile and results never leave your computer and are never committed to git. |
+
+<a id="your-jobs-page"></a>
+## 🖥️ Your jobs page
+
+Every search ends in **one page** (`output/jobs.html`) that opens in any browser, works offline and needs no server.
+**[▶ Try the live demo](https://amanraj9910.github.io/Job-for-you/demo/)** — it is the real page, filled with fictional jobs.
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**At a glance**
+- **Summary cards:** how many jobs are showing, strong matches (80+), applied, at vetted companies, in your country,
+  remote abroad.
+- **Match score** as a coloured pill — green is a strong fit. *AI-judged* means your agent checked every
+  requirement against your resume; *estimate* is the quick keyword score.
+- **Trust badges:** *Direct* (from the employer's own job board), *✓ Vetted*, *! Caution*, *✕ Rejected*, plus ⚠ red
+  flags found in the job text.
+
+</td>
+<td width="50%" valign="top">
+
+**Work through your list**
+- **Filters:** search, region, trust, work type, posting date, minimum match, status, "pay disclosed".
+- **Track progress:** tick **Applied** (the date is saved), write notes, **Hide** jobs you don't want.
+- **Keep it:** export to **CSV**, save a backup and load it on another computer, light or dark theme.
+- **Open ↗** takes you straight to the posting — you apply yourself.
+
+</td>
+</tr>
+</table>
+
+```bash
+jobhunt report build --open      # build and open your page any time
+```
 
 ## 🧭 How it works
 
