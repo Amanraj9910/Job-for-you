@@ -4,6 +4,9 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
+    # Only open a PR when a new release falls outside the supported range in pyproject.toml.
+    # Raising minimum versions is not needed and makes installing harder for users.
+    versioning-strategy: increase-if-necessary
     open-pull-requests-limit: 5
 
   - package-ecosystem: github-actions
