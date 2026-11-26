@@ -20,8 +20,8 @@
 
 <a href="https://amanraj9910.github.io/Job-for-you/demo/">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/report-dark.png">
-  <img src="assets/report.png" alt="The JobHunt jobs page: summary cards, filters, and matches with fit scores, Trust badges, location, pay and links" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/jobs-page-dark.png">
+  <img src="assets/jobs-page-light.png" alt="The JobHunt jobs page: summary cards, filters, and matches with fit scores, Trust badges, location, pay and links" width="100%">
 </picture>
 </a>
 
@@ -208,7 +208,10 @@ these three ways:
 jobhunt profile form          # opens an offline form, prefilled with the example
 ```
 
-<img src="assets/profile-form.png" alt="The JobHunt profile form" width="100%">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-form-dark.png">
+  <img src="assets/profile-form-light.png" alt="The JobHunt profile form: sections for you, the jobs you want, location, pay, search and your resume facts" width="100%">
+</picture>
 
 Fill it in, click **Download profile**, then:
 
